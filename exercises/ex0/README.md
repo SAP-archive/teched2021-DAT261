@@ -1,7 +1,7 @@
 # Launching SAP HANA Cloud Central
 
 1. Open SAP BTP Cockpit
-<br>![](/exercises/ex0/images/001.png)
+<br>![](/exercises/ex0/images/001_new.png)
 
 2. Go to any SAP HANA instances
 <br>![](/exercises/ex0/images/001.png)
