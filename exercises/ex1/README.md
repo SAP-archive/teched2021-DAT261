@@ -29,9 +29,14 @@ For example - If the user wants to see list of instances with the alert 'Error',
 
 <br>![](/exercises/ex1/images/002.png)
 
-7. Modifications to the filtering of instances can be restored by clicking on the ‘Restore’ option. 
+7. More of the modifications to the filtering of instances can be done by clicking on the 'Adapt Filters' option. A pop up opens with similar options to filtering that were earlier discussed.
 
 <br>![](/exercises/ex1/images/002.png)
+
+8. Modifications to the filtering of instances can be restored by clicking on the ‘Restore’ option. 
+
+<br>![](/exercises/ex1/images/002.png)
+
 
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
