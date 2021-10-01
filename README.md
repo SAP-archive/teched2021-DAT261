@@ -32,7 +32,7 @@ A new SAP HANA Cloud instance will be created, and this process will take approx
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
-- [Launch SAP HANA Cloud Central](exercises/ex0/)
+- [Getting Started: Launch SAP HANA Cloud Central](exercises/ex0/)
 - [Exercise 1 - Apply Filters](exercises/ex1/)
 - [Exercise 2 - Create Instances](exercises/ex2/)
 - [Exercise 3 - Edit Instances](exercises/ex3/)
