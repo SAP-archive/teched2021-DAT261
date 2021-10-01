@@ -35,11 +35,10 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Launch SAP HANA Cloud Central](exercises/ex0/)
 - [Apply Filters](exercises/ex1/)
 - [Create Instances](exercises/ex2/)
-- [Create Instances](exercises/ex3/)
-- [Edit Instances](exercises/ex4/)
-- [Configure Storage](exercises/ex5/)
-- [Start, Stop, and Upgrade Instances](exercises/ex6/)
-- [Delete Instances](exercises/ex7/)
+- [Edit Instances](exercises/ex3/)
+- [Configure Storage](exercises/ex4/)
+- [Start, Stop, and Upgrade Instances](exercises/ex5/)
+- [Delete Instances](exercises/ex6/)
 
   
 **OR** Link to the Tutorial Navigator for example...
