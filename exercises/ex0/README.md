@@ -4,7 +4,7 @@
 
 <br>![](/exercises/ex0/images/001_new.png)
 
-
-SAP HANA Cloud central is launched in a new tab.
+2. SAP HANA Cloud central is launched in a new tab.
+<br>![](/exercises/ex0/images/003.png)
 
 Continue to - [Exercise 1 - Apply Filters](../ex1/README.md)
