@@ -1,4 +1,4 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 - Apply Filters
 
 In this exercise, we will create...
 
