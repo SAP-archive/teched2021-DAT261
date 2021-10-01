@@ -7,4 +7,4 @@
 5. By clicking on the above option, SAP HANA Cloud central is launched in a new tab.
 
 
-Continue to - [Exercise 2 - Apply Filters](../ex1/README.md)
+Continue to - [Exercise 1 - Apply Filters](../ex1/README.md)
