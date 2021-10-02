@@ -1,1 +1,13 @@
+# Exercise 6 - Delete Instances
+
+In this section, we will see how to Delete an instance that we have created and worked on so far. The Delete functionality is similar across all types of instances. Here is a look at Deleting an ASE instance we created earlier.
+
+1. Click on More(...) button under the Actions list.
+
+<br>![](/exercises/ex2/images/02_01_0010.png)
+
+2. Click on Delete. A Delete pop up comes up, asking to type ‘DELETE’ if we want to delete. 
+
+3. On the overview page, we can see that the status is now Deleting for the instance we just deleted. Click on Deleting hyperlink to have a look at details. 
+
 
