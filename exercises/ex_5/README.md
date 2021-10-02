@@ -39,15 +39,11 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 17. First is the Copy SQL Endpoint functionality - On clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint.
 
-18.
+18. We get a success message saying that the SQL endpoint is copied to the clipboard.
+
+19. Next is the Copy Instance ID option - This will help us copy the instance id to the clipboard. This function is similar to the previous copy option we discussed. On clicking Copy Instance ID option, we get a success message.
+
+20. Other Copy options help in directly copying the Landscape Id, Port ID, Coordinator Endpoint and Worker. You can find these options under the Copy option in the Actions list for a Data Lake instance. All the IDs are directly copied to the clipboard. Click on the Copy option.
 
 
-
-
-
-
-
-
-
-
-Continue to - [Exercise 4 - Excercise 4 ](../ex_4/README.md)
+Continue to - [Exercise 6 - Excercise 6 ](../ex_6/README.md)
