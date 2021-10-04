@@ -7,7 +7,7 @@ Note - You can see the options to create Data Lake, ASE, and ASE Replication ins
 
 <br>![](/exercises/ex2/images/1.png)
 
-Click on SAP HANA Database option. Here is the screen you will see if you go ahead with the option of creating SAP HANA Cloud instance. On this screen, we see info icons corresponding to certain fields, on clicking them we get more details and insights on the respective fields. Let us have a look at info icon next to the field Instance Name.
+Click on SAP HANA Database option. Here is the screen you will see if you go ahead with the option of creating SAP HANA Cloud instance. On this screen, we see information corresponding to certain fields.
 
 <br>![](/exercises/ex2/images/2.png)
 <br>![](/exercises/ex2/images/3.png)
