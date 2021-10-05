@@ -62,4 +62,6 @@ To start with, we can see buttons for grouping, sorting, managing settings and r
 
 14. Edit Replicas will open up the edit dialog where you can add replicas using Add button. Click on Save to save your changes.
 
+<br>![](/exercises/ex_4/images_new/6.png)
+
 Continue to - [Exercise 5 - Excercise 5 ](../ex_5/README.md)
