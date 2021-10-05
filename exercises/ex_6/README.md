@@ -12,4 +12,6 @@ In this section, we will see how to Delete an instance that we have created and 
 
 3. On the overview page, we can see that the status is now Deleting for the instance we just deleted. Click on Deleting hyperlink to have a look at details. 
 
+<br>![](/exercises/ex_6/images_new/3.png)
 
+<br>![](/exercises/ex_6/images_new/4.png)
