@@ -64,4 +64,4 @@ To start with, we can see buttons for grouping, sorting, managing settings and r
 
 <br>![](/exercises/ex_4/images_new/16.png)
 
-Continue to - [Exercise 5 - Start, Stop, Upgrade an instance and other actions ](../ex_5/README.md)
+Continue to - [Exercise 5 - Start, Stop, Upgrade an Instance and Other Actions ](../ex_5/README.md)
