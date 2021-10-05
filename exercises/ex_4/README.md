@@ -1,4 +1,4 @@
-# Exercise 4 - Configure Storage
+# Exercise 4 - Grouping, Sorting, and Other Settings
 
 In this section, we will discuss about grouping, sorting, refreshing and other settings available for table of instances in SAP HANA Cloud Central.
  
