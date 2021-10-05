@@ -90,13 +90,17 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 <br>![](/exercises/ex_5/images/23.png)
 
+<br>![](/exercises/ex_5/images/24.png)
+
 17. Copy Files Rest API Endpoint- copies it to the clipboard.
 
-<br>![](/exercises/ex_5/images/24.png)
+<br>![](/exercises/ex_5/images/25.png)
+
+<br>![](/exercises/ex_5/images/26.png)
 
 18. Other Copy options help in directly copying the Landscape Id, Port ID, Coordinator Endpoint and Worker. You can find these options in the Actions list for a Data Lake instance. All the IDs are directly copied to the clipboard.
 
-<br>![](/exercises/ex_5/images/25.png)
+<br>![](/exercises/ex_5/images/27.png)
 
 
 Continue to - [Exercise 6 - Delete Instances ](../ex_6/README.md)
