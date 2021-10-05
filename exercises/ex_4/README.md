@@ -1,21 +1,27 @@
 # Exercise 4 - Configure Storage
 
-In this section, we will discuss about other actions and features that are common across all the instance types.
+In this section, we will discuss about grouping, sorting, refreshing and other settings available for table of instances in SAP HANA Cloud Central.
  
-To start with, we can see hyperlinks related to Memory and Storage under the Storage column, that gives us an overview of amount of Memory and Storage assigned to the instances. These values can be modified directly from this page.
+To start with, we can see buttons for grouping, sorting, managing settings and refreshing at the right top corner of the table of instances. These functions can be directly operated from this page.
 
+<br>![](/exercises/ex_4/images/1.png)
 
-1. Click on hyperlink 32GB Memory.
+1. Click on Group Instances. All the instances and their managed data lake instances get grouped under the respective description of the HANA database instance.
 
-<br>![](/exercises/ex2/images/02_01_0010.png)
+<br>![](/exercises/ex_4/images/2.png)
 
-2. Click on Configure Storage button. An Edit instance pop up opens up, where we can make modifications to the Memory and also the Storage of the instance. Basically, this is the same pop up that we have already discussed in the Editing Instances section of the guide. Though we have clicked on configuring the memory button, let us make change to the Storage of the instance.
+2. Click on Sort button. A Sort pop up opens up, where we can make modifications with respect to sort order and sort by properties.
 
+<br>![](/exercises/ex_4/images/3.png)
 
-3. Click on + button to increase the Storage capacity .
+3. Click on Settings button to modify which columns you would like to display and which columns you want to hide from the table.
 
-4. Click on Save button to save changes.
+<br>![](/exercises/ex_4/images/4.png)
 
-5. The Storage now has been increased to 160 GB.
+4. Click on Refresh button. If any change is not reflected immediately, this button would refresh the page and the most recent data appears on the screen.
+
+<br>![](/exercises/ex_4/images/5.png)
+
+<br>![](/exercises/ex_4/images/6.png)
 
 Continue to - [Exercise 5 - Excercise 5 ](../ex_5/README.md)
