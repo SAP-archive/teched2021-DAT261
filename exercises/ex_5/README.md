@@ -1,4 +1,4 @@
-# Exercise 5 - Start, Stop, Upgrade an Instance and Other Actions
+# Exercise 5 - Start, Stop, Upgrade Instances, and Other Actions
 
 In this section we will discuss about how to Start and Stop the databases from the SAP HANA Cloud Central Overview page. On clicking the More(...) button under the Actions column for any type of instance, we see a Stop option to stop the particular instance
 
