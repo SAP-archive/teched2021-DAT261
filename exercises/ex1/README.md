@@ -37,7 +37,13 @@ For example - If the user wants to see list of instances with the alert 'Error',
 
 <br>![](/exercises/ex1/images/8.png)
 
+9. Click on the drop down next to the All Instances title. You can see four options in the popover that opens up.
 
+<br>![](/exercises/ex1/images/9.png)
+
+10. There is one more search field beside Create button which could be used to search instances from all the spaces using Instance ID.
+
+<br>![](/exercises/ex1/images/10.png)
 
 Continue to - [Exercise 2 - Create Instances](../ex2/README.md)
 
