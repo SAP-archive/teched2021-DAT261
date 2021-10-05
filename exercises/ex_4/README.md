@@ -24,4 +24,42 @@ To start with, we can see buttons for grouping, sorting, managing settings and r
 
 <br>![](/exercises/ex_4/images_new/6.png)
 
+5. Instance Sharing: Click on the name of the SAP HANA Database instance which is a hyperlink. This will navigate you to the instance sharing page.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+6. Click on Create Mapping.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+7. A popup opens where you have to enter Organization and Space. Click on Add.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+8. You can delete the mapping that is created using the delete button.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+9. Confirm by typing DELETE in the popup that opens up.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+10. You can click on the Scale-Out node hyperlink and edit storage size.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+11. Click on Save to save you changes.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+12. Click on the hyperlink available in the Replicas column. A popover appears with two buttons: Manage Services and Edit Replicas.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+13. Manage Service button will navigate you to the SAP HANA Cockpit.
+
+<br>![](/exercises/ex_4/images_new/6.png)
+
+14. Edit Replicas will open up the edit dialog where you can add replicas using Add button. Click on Save to save your changes.
+
 Continue to - [Exercise 5 - Excercise 5 ](../ex_5/README.md)
