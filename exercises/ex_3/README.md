@@ -24,4 +24,4 @@ In this chapter, we will discuss about the Edit functionality across all the ins
 
 <br>![](/exercises/ex_3/images_new/6.png)
 
-Continue to - [Exercise 4 - Excercise 4 ](../ex_4/README.md)
+Continue to - [Exercise 4 - Grouping, Sorting, and Other Settings ](../ex_4/README.md)
