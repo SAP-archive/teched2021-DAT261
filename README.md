@@ -37,7 +37,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 2 - Create Instances](exercises/ex2/)
 - [Exercise 3 - Edit Instances](exercises/ex_3/)
 - [Exercise 4 - Grouping, Sorting, and Other Settings](exercises/ex_4/)
-- [Exercise 5 - Start, Stop, and Upgrade Instances](exercises/ex_5/)
+- [Exercise 5 - Start, Stop, Upgrade Instances, and Other Actions](exercises/ex_5/)
 - [Exercise 6 - Delete Instances](exercises/ex_6/)
 - [Exercise 7 - Giving Feedback](exercises/ex_7/)
 
