@@ -64,21 +64,39 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 <br>![](/exercises/ex_5/images/15_b.png)
 
-13. Let us now explore the actions for a Data lake instance. Click on More(...) button under the Actions column corresponding to a Data Lake instance. First is the Copy SQL Endpoint functionality - On clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint.
+13. Let us now explore the actions for a Data lake instance. Click on More(...) button under the Actions column corresponding to a Data Lake instance. First is the Manage File Container. Click on it. You can edit the configuarations and click on save.
 
 <br>![](/exercises/ex_5/images/16.png)
 
-14. We get a success message saying that the SQL endpoint is copied to the clipboard.
-
 <br>![](/exercises/ex_5/images/17.png)
-
-15. Next is the Copy Instance ID option - This will help us copy the instance id to the clipboard. This function is similar to the previous copy option we discussed. On clicking Copy Instance ID option, we get a success message.
 
 <br>![](/exercises/ex_5/images/18.png)
 
-16. Other Copy options help in directly copying the Landscape Id, Port ID, Coordinator Endpoint and Worker. You can find these options under the Copy option in the Actions list for a Data Lake instance. All the IDs are directly copied to the clipboard. Click on the Copy option.
+16. Copy SQL Endpoint functionality - On clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint.
 
 <br>![](/exercises/ex_5/images/19.png)
+
+14. We get a success message saying that the SQL endpoint is copied to the clipboard.
+
+<br>![](/exercises/ex_5/images/20.png)
+
+15. Next is the Copy Instance ID option - This will help us copy the instance id to the clipboard. This function is similar to the previous copy option we discussed. On clicking Copy Instance ID option, we get a success message.
+
+<br>![](/exercises/ex_5/images/21.png)
+
+<br>![](/exercises/ex_5/images/22.png)
+
+16. Click on Copy Configuration. A popup open with options to copy configuration to clipboard or download it as a JSON file.
+
+<br>![](/exercises/ex_5/images/23.png)
+
+17. Copy Files Rest API Endpoint- copies it to the clipboard.
+
+<br>![](/exercises/ex_5/images/24.png)
+
+18. Other Copy options help in directly copying the Landscape Id, Port ID, Coordinator Endpoint and Worker. You can find these options in the Actions list for a Data Lake instance. All the IDs are directly copied to the clipboard.
+
+<br>![](/exercises/ex_5/images/25.png)
 
 
 Continue to - [Exercise 6 - Delete Instances ](../ex_6/README.md)
