@@ -32,7 +32,7 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 <br>![](/exercises/ex_5/images/8.png)
 
-7. Click on Upgrade button under Actions column.
+7. Click on Upgrade button under Actions column if there is any upgrade available.
 
 <br>![](/exercises/ex_5/images/9.png)
 
