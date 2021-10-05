@@ -11,7 +11,7 @@ You can create instances from the BTP Cockpit page Create button or Create butto
 
 <br>![](/exercises/ex2/images/1_b.png)
 
-Click on SAP HANA Database option if you are creating from the BTP Cockpit page. Here is the screen you will see if you go ahead with the option of creating SAP HANA Cloud instance. On this screen, we see information corresponding to certain fields.
+Click on SAP HANA Database option if you are creating from the BTP Cockpit page. Create button in the SAP HANA Cloud Central application will directly naigate you to the Create Instance page. Here is the screen you will see if you go ahead with the option of creating SAP HANA Cloud instance. On this screen, we see information corresponding to certain fields.
 
 <br>![](/exercises/ex2/images/2.png)
 
