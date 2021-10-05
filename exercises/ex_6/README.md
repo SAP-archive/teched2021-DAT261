@@ -15,3 +15,5 @@ In this section, we will see how to Delete an instance that we have created and 
 <br>![](/exercises/ex_6/images_new/3.png)
 
 <br>![](/exercises/ex_6/images_new/4.png)
+
+Continue to - [Exercise 7 - Excercise 7 ](../ex_5/README.md)
