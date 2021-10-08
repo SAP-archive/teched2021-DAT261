@@ -20,7 +20,7 @@ For example - If the user wants to see list of instances that are still being cr
 
 <br>![](/exercises/ex1/images/4.png)
 
-5. The instances can be filtered based on their respective alerts. On clicking the dropdown button, we can see list of various alerts from which the user can choose one or many alerts based on which he needs his search results. The alerts on which filtering can be performed are: None, Information, Warning, Error, and Critical.
+5. The instances can be filtered based on their respective alerts. On clicking the dropdown button, we can see list of various alerts from which the users can choose one or many alerts based on which they need their search results. The alerts on which filtering can be performed are: None, Information, Warning, Error, and Critical.
 For example - If the user wants to see list of instances with the alert 'Error', he can choose the checkbox corresponding to the Error option in the dropdown.
 
 <br>![](/exercises/ex1/images/5.png)
@@ -37,7 +37,7 @@ For example - If the user wants to see list of instances with the alert 'Error',
 
 <br>![](/exercises/ex1/images/8.png)
 
-9. Click on the drop down next to the All Instances title. You can see four options in the popover that opens up.
+9. Click on the drop down next to the All Instances title. You can see four options in the popover that opens up which can be used for filtering.
 
 <br>![](/exercises/ex1/images/9.png)
 
