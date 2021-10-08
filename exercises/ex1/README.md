@@ -3,7 +3,7 @@
 In this exercise, we will filter the instances based on their properties.
 
 
-1. Click on the Instance ID or Name field.
+1. Click on the Instance ID or Name field. If you are already aware of the Instance ID or Name of the instance, then you can put it in here and you will see only the respective instance in the list. 
 
 <br>![](/exercises/ex1/images/1.png)
 
