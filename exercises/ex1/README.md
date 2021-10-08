@@ -15,7 +15,7 @@ In this exercise, we will filter the instances based on their properties.
 
 <br>![](/exercises/ex1/images/3.png)
 
-4. Instances can also be filtered based on the Status of the instance. On clicking the dropdown button, we can see list of various statuses from which the user can choose one or many statuses based on which he needs his search results. The various instance statuses are: Running, Starting, Creating, Stopping, Stopped, Error, Other.
+4. Instances can also be filtered based on the Status of the instance. On clicking the dropdown button, we can see list of various statuses from which the users can choose one or many statuses based on which they need their search results. The various instance statuses are: Running, Starting, Creating, Stopping, Stopped, Error, Other.
 For example - If the user wants to see list of instances that are still being created, he can choose the check box corresponding to 'Creating'. 
 
 <br>![](/exercises/ex1/images/4.png)
