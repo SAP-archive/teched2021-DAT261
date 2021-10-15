@@ -21,11 +21,11 @@ For example - If the user wants to see list of instances that are still being cr
 <br>![](./images/4.png)
 
 5. The instances can be filtered based on their respective alerts. On clicking the dropdown button, we can see list of various alerts from which the users can choose one or many alerts based on which they need their search results. The alerts on which filtering can be performed are: None, Information, Warning, Error, and Critical.
-For example - If the user wants to see list of instances with the alert 'Error', he can choose the checkbox corresponding to the Error option in the dropdown.
+For example - If the user wants to see list of instances with the alert 'None', he can choose the checkbox corresponding to the 'None' option in the dropdown.
 
 <br>![](./images/5.png)
 
-6. The instances can also be filtered based on type of the instances. From the Type dropdown field, you can either choose to see only 'SAP HANA' instances or 'Data Lake' instances or both.
+6. The instances can also be filtered based on type of the instances. From the "Type" dropdown field, you can either choose to see only 'SAP HANA' instances or 'Data Lake' instances or both.
 
 <br>![](./images/6.png)
 
