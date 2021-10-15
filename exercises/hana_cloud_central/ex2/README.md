@@ -41,19 +41,19 @@ The disk storage space is allocated according to the memory size of your SAP HAN
 
 <br>![](./images/5.png)
 
-5. Click on Next Step butto. Here, you have an option to make configurations related to allowed connections like IP address settings. Then there is an Additional Features sections to make configurations on Script Server and Document Store capabilities.
+5. Click on Next Step button. Here, you have an option to make configurations related to allowed connections like IP address settings. Then there is an Additional Features sections to make configurations on Script Server and Document Store capabilities.
 
 <br>![](./images/6.png)
 
-6. Click on Next Step to proceed to Data Lake related settings. In this step, you have the option to create a data lake instance along with creating an SAP HANA Cloud instance. To do so, you must just enable the Create Data Lake toggle button and fill in related details to it.
+6. Click on Next Step to proceed to Data Lake related settings. In this step, you have the option to create a data lake instance along with creating an SAP HANA Database instance. To do so, you must enable the Create Data Lake toggle button and fill in the related details.
 
 <br>![](./images/7.png)
 
-7. Click on Create Data Lake toggle button to create a Data Lake instance as well. Enter the Data Lake instance name, make configurations to the required Storage services. Click on Next Step.
+7. After clicking on Create Data Lake toggle button to create a Data Lake instance, enter the Data Lake instance name, make configurations to the required Storage services. Click on Next Step.
 
 <br>![](./images/8.png)
 
-8. Adjust the size if necessary and click on Next Step. This section will have enabled fields only if we choose to create a Data Lake IQ instance in the previous step. Here you have the liberty to make configurations on the IP address settings as per your requirements.
+8. Adjust the size if necessary and click on Next Step. This section will have enabled fields only if you choose to create a Data Lake IQ instance in the previous step. Here you have the liberty to make configurations on the IP address settings as per your requirements.
 
 <br>![](./images/9.png)
 
