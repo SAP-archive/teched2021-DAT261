@@ -2,7 +2,7 @@
 
 In this section, we will discuss about grouping, sorting, refreshing and other settings available for table of instances in SAP HANA Cloud Central.
  
-To start with, we can see buttons for grouping, sorting, managing settings and refreshing at the right top corner of the table of instances. These functions can be directly operated from this page.
+To start with, we can see buttons and icons for grouping, sorting, personalization settings and refreshing at the right top corner of the table of instances. These functions can be directly operated from this page.
 
 <br>![](./images_new/1.png)
 
@@ -10,15 +10,15 @@ To start with, we can see buttons for grouping, sorting, managing settings and r
 
 <br>![](./images_new/2.png)
 
-2. Click on Sort button. A Sort pop up opens up, where we can make modifications with respect to sort order and sort by properties.
+2. Click on Sort icon. A Sort pop up opens up, where we can make modifications with respect to sort order and sort by properties.
 
 <br>![](./images_new/3.png)
 
-3. Click on Settings button to modify which columns you would like to display and which columns you want to hide from the table.
+3. Click on Personalize Table icon to modify which columns you would like to display and which columns you want to hide from the table.
 
 <br>![](./images_new/4.png)
 
-4. Click on Refresh button. If any change is not reflected immediately, this button would refresh the page and the most recent data appears on the screen.
+4. Click on Refresh icon. If any change is not reflected immediately, this button would refresh the page and the most recent data appears on the screen.
 
 <br>![](./images_new/5.png)
 
