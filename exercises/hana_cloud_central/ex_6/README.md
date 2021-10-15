@@ -4,16 +4,16 @@ In this section, we will see how to Delete an instance that we have created and 
 
 1. Click on More(...) button under the Actions list.
 
-<br>![](/exercises/ex_6/images_new/1.png)
+<br>![](./images_new/1.png)
 
 2. Click on Delete. A Delete pop up comes up, asking to type ‘DELETE’ if we want to delete. 
 
-<br>![](/exercises/ex_6/images_new/2.png)
+<br>![](./images_new/2.png)
 
 3. On the overview page, we can see that the status is now Deleting for the instance we just deleted. Click on Deleting hyperlink to have a look at details. 
 
-<br>![](/exercises/ex_6/images_new/3.png)
+<br>![](./images_new/3.png)
 
-<br>![](/exercises/ex_6/images_new/4.png)
+<br>![](./images_new/4.png)
 
 Continue to - [Exercise 7 - Giving Feedback ](../ex_7/README.md)
