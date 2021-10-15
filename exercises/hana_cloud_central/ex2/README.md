@@ -19,16 +19,18 @@ Space - The Cloud Foundry space in which the instance is created.
 Instance Name - The name of the instance. The name must start and end with an alphanumeric character. The name can include the underscore character _.
 Description - A description of the instance.
 Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
-Memory - The size of your (compressed) in-memory data in your SAP HANA database
-Compute - The number of vCPUs of your SAP HANA database
-The number of vCPUs is allocated according to the size of memory of your instance.
-Storage - The disk storage space of your SAP HANA database.
-The disk storage space is allocated according to the memory size of your SAP HANA database.
+
 Click on Next Step once all the fields are rightly filled. 
  
 <br>![](./images/3.png)
 
 3. You can navigate to the SAP HANA Database Documentation by clicking on the hyperlink.
+
+Memory - The size of your (compressed) in-memory data in your SAP HANA database
+Compute - The number of vCPUs of your SAP HANA database
+The number of vCPUs is allocated according to the size of memory of your instance.
+Storage - The disk storage space of your SAP HANA database.
+The disk storage space is allocated according to the memory size of your SAP HANA database.
 
 <br>![](./images/4.png)
 
