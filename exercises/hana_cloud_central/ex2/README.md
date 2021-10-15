@@ -77,8 +77,6 @@ Here you have the liberty to make configurations on the IP address settings as p
 
 12. By clicking on this status (hyperlink) we get details on when the instance creation was initiated. Once the instance is created, status will be changed to Running.
 
-<br>![](./images/18.png)
-
 <br>![](./images/19.png)
 
 <br>![](./images/20.png)
