@@ -52,7 +52,7 @@ When there is no data lake associated, you can see Add Data Lake option in the A
 
 9. Now let us talk about the other Actions available for each of the instance. Click on More (...) button under the Actions column for an SAP HANA instance. Click on Open in SAP HANA Cockpit option in the Actions list. We can directly open the SAP HANA Cockpit to administer the SAP HANA instance from the SAP HANA Cloud Central page.
 
-<br>![](./images/12.png)
+<br>![](./images/32.png)
 
 10. SAP HANA Cockpit is opened in an adjacent new tab. Here enter the valid Username and Password for the instance. Click on Ok. Once the credentials are validated, we are at the SAP HANA Cockpit Database Overview page, where in we can perform various monitoring and administrating operations on our HANA instance.
 
@@ -62,13 +62,13 @@ When there is no data lake associated, you can see Add Data Lake option in the A
 
 11. We can also open the SAP HANA Database Explorer to create SQL scripts, run them and also administer the SAP HANA instance directly from the Cloud Central page. Click on Open in SAP HANA Database Explorer option in the Actions list for an SAP HANA instance. SAP HANA Database Explorer is opened in an adjacent new tab. 
 
-<br>![](./images/14_a.png)
+<br>![](./images/33.png)
 
 <br>![](./images/14_b.png)
 
 12. Get back to the Cloud Central Overview page and choose the Actions list for an SAP HANA instance again. Now click on Open SQL Console option. SAP HANA Database Explorer opens up in a new tab, but this time with an SQL Console already opened.
 
-<br>![](./images/15_a.png)
+<br>![](./images/34.png)
 
 <br>![](./images/15_b.png)
 
