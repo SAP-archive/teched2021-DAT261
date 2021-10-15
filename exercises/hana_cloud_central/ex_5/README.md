@@ -34,9 +34,13 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 <br>![](./images/28.png)
 
+You can also clcik on the notification icon to check for any upgrades.
+
+<br>![](./images/30.png)
+
 7. A pop up appears saying that a new revision for the instance is available and if we want to continue with the Update process. If you would like an update now, click on Update button else click on Cancel to quit from the pop up. Click on Cancel for now.
 
-<br>![](./images/7.png)
+<br>![](./images/31.png)
 
 8. Let us now have a look at an SAP HANA instance that already has a Data lake instance associated with it. When you see the Actions list for such an SAP HANA instance, you can notice that Add Data lake option is not available. When there is no data lake associated, you can see Add Data Lake option in the Action list.
 
