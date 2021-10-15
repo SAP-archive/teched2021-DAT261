@@ -32,7 +32,7 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 6. We also have another option that allows us to Upgrade the SAP HANA instance. We can find this option under the Actions list. Click on Upgrade button under Actions column if there is any upgrade available.
 
-<br>![](./images/6.png)
+<br>![](./images/28.png)
 
 7. A pop up appears saying that a new revision for the instance is available and if we want to continue with the Update process. If you would like an update now, click on Update button else click on Cancel to quit from the pop up. Click on Cancel for now.
 
