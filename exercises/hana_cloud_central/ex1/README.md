@@ -11,11 +11,11 @@ In this exercise, we will filter the instances based on their properties.
 
 <br>![](./images/2.png)
 
-3. Click on the dropdown button for the Space field to see list of all spaces you can access. We can filter out instances based on various Space under the Organization. Choosing any of the listed Space will then display only the instances under the respective Space chosen.
+3. Click on the "Space" dropdown button to see list of all the spaces you can access. We can filter out instances based on various "Space" under a selected "Organization". Choosing any of the listed Space will then display only the instances under the respective Space chosen.
 
 <br>![](./images/3.png)
 
-4. Instances can also be filtered based on the Status of the instance. On clicking the dropdown button, we can see list of various statuses from which the users can choose one or many statuses based on which they need their search results. The various instance statuses are: Running, Starting, Creating, Stopping, Stopped, Error, Other.
+4. Instances can also be filtered based on the Status of the instance. On clicking the "Status" dropdown button, we can see list of various statuses from which the users can choose one or many statuses based on which they need their search results. The various instance statuses are: Running, Starting, Creating, Stopping, Stopped, Error, Other.
 For example - If the user wants to see list of instances that are still being created, he can choose the check box corresponding to 'Creating'. 
 
 <br>![](./images/4.png)
