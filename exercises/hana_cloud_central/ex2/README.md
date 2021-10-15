@@ -53,13 +53,15 @@ The disk storage space is allocated according to the memory size of your SAP HAN
 
 <br>![](./images/8.png)
 
-8. Adjust the size if necessary and click on Next Step. Here you have the liberty to make configurations on the IP address settings as per your requirements.
+8. Adjust the size if necessary and click on Next Step.
 
 <br>![](./images/9.png)
 
+Here you have the liberty to make configurations on the IP address settings as per your requirements. Then, click on Review and Create Instance button.
+
 <br>![](./images/10.png)
 
-9. Click on Review and Create Instance button. You can noew review the instance details in this page.
+9. You can now review the instance details in this page.
 
 <br>![](./images/11.png)
 
