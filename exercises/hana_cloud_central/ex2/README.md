@@ -77,6 +77,6 @@ The disk storage space is allocated according to the memory size of your SAP HAN
 
 <br>![](./images/19.png)
 
-<br>![](./images/15.png)
+<br>![](./images/20.png)
 
 Continue to - [Exercise 3 - Edit Instances ](../ex_3/README.md)
