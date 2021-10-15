@@ -7,7 +7,7 @@ In this exercise, we will filter the instances based on their properties.
 
 <br>![](./images/1.png)
 
-2. Click on the dropdown to see various Organizations you are part of or the Organizations you have access to.
+2. Click on the "Organizations" dropdown to see various organizations you are part of or the organizations you have access to.
 
 <br>![](./images/2.png)
 
