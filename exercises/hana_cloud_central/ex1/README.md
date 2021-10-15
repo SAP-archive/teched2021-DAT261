@@ -29,19 +29,19 @@ For example - If the user wants to see list of instances with the alert 'None', 
 
 <br>![](./images/6.png)
 
-7. More of the modifications to the filtering of instances can be done by clicking on the 'Adapt Filters' option. A pop up opens with similar options to filtering that were earlier discussed.
+7. More of the modifications to the filtering of instances can be done by clicking on the "Adapt Filters" option. A pop up opens with similar options to filtering that were earlier discussed.
 
 <br>![](./images/7.png)
 
-8. Modifications to the filtering of instances can be restored by clicking on the ‘Restore’ option. 
+8. Modifications to the filtering of instances can be restored by clicking on the "Restore" option. 
 
 <br>![](./images/8.png)
 
-9. Click on the drop down next to the All Instances title. You can see four options in the popover that opens up which can be used for filtering.
+9. Click on the drop down next to the "All Instances" title. You can see four options in the popover that opens up which can also be used for filtering.
 
 <br>![](./images/9.png)
 
-10. There is one more search field beside Create button which could be used to search instances from all the spaces using Instance ID.
+10. There is one more search field beside "Create" button which could be used to search instances from all the spaces using Instance ID.
 
 <br>![](./images/10.png)
 
