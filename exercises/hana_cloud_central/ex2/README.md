@@ -69,9 +69,9 @@ Here you have the liberty to make configurations on the IP address settings as p
 
 <br>![](./images/12.png)
 
-11. On the Cloud Central overview page, we see a status CREATING next to the instance we just initiated to create. 
-
 <br>![](./images/13.png)
+
+11. On the Cloud Central overview page, we see a status CREATING next to the instance we just initiated to create. 
 
 <br>![](./images/14.png)
 
