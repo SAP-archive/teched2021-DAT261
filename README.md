@@ -8,7 +8,7 @@ In this guide, we will introduce you to the newest of our database management to
 
 The aim of the SAP HANA Cloud Central tool is to provide database administrators (DBAs) with a simple and centralized overview of their SAP HANA Cloud database and data lake instances. You can also perform management tasks such as creating new instances, checking their status, reviewing any notifications and alerts that might have been raised, examining memory and storage consumption, and start/stop/edit/delete your instances.
 This guide will introduce you to the SAP HANA Cloud Central tool and how you can use it to perform different operations.
-To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigated to the “SAP HANA Cloud” page (see steps 1-3 in previous section).
+To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigated to the “SAP HANA Cloud” page.
 
 
 ## Requirements
