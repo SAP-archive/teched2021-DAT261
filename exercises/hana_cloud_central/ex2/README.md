@@ -3,15 +3,15 @@
 We can create SAP HANA, Data Lake, Adaptive Server Enterprise, and Adaptive Server Enterprise Replication instances directly from the SAP BTP Cockpit page or from the SAP HANA Cloud Central Overview page.
 Note - You can see the options to create ASE and ASE Replication instances only if you have subscribed to use them.
 
-1. Click here on the Create button dropdown to see the list of type of instances that you can create. First let us create an SAP HANA Database Instance. 
+1. Click Create button in the BTP Cockpit page to see the list of instance types that you can create. First let us create an SAP HANA Database Instance. 
 
 <br>![](./images/1.png)
 
-You can create instances from the BTP Cockpit page Create button or Create button in the SAP HANA Cloud Central application. Both Create buttons will navigate you to the create instance page.
+You can also create instances from the SAP HANA Cloud Central application. You will see same options when you click Create Instance button in the SAP HANA Cloud Central application. Both Create buttons will navigate you to the create instance page.
 
 <br>![](./images/1_b.png)
 
-Click on SAP HANA Database option if you are creating from the BTP Cockpit page. Create button in the SAP HANA Cloud Central application will directly naigate you to the Create Instance page. Here is the screen you will see if you go ahead with the option of creating SAP HANA Cloud instance. On this screen, we see information corresponding to certain fields.
+Click on SAP HANA Database option. The below screen appears if you proceed with the option of creating SAP HANA Database instance. On this screen, we see information corresponding to certain fields.
 
 <br>![](./images/2.png)
 
