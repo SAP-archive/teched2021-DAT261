@@ -73,6 +73,10 @@ The disk storage space is allocated according to the memory size of your SAP HAN
 
 12. On clicking on this status (hyperlink) we get details on when the instance creation was initiated. Once the instance is created, status will be changed to Running.
 
+<br>![](./images/18.png)
+
+<br>![](./images/19.png)
+
 <br>![](./images/15.png)
 
 Continue to - [Exercise 3 - Edit Instances ](../ex_3/README.md)
