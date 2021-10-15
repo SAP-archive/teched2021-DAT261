@@ -73,7 +73,7 @@ Here you have the liberty to make configurations on the IP address settings as p
 
 <br>![](./images/13.png)
 
-<br>![](/exercises/ex2/images/14.png)
+<br>![](./images/14.png)
 
 12. By clicking on this status (hyperlink) we get details on when the instance creation was initiated. Once the instance is created, status will be changed to Running.
 
