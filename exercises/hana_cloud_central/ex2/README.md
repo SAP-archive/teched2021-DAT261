@@ -53,7 +53,7 @@ The disk storage space is allocated according to the memory size of your SAP HAN
 
 <br>![](./images/8.png)
 
-8. Adjust the size if necessary and click on Next Step. This section will have enabled fields only if you choose to create a Data Lake IQ instance in the previous step. Here you have the liberty to make configurations on the IP address settings as per your requirements.
+8. Adjust the size if necessary and click on Next Step. Here you have the liberty to make configurations on the IP address settings as per your requirements.
 
 <br>![](./images/9.png)
 
