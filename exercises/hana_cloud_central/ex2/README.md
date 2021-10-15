@@ -57,7 +57,7 @@ The disk storage space is allocated according to the memory size of your SAP HAN
 
 <br>![](./images/9.png)
 
-Here you have the liberty to make configurations on the IP address settings as per your requirements. Then, click on Review and Create Instance button.
+Here you have the liberty to make configurations on the IP address settings as per your requirements. Then, click on Review and Create button.
 
 <br>![](./images/10.png)
 
@@ -69,13 +69,13 @@ Here you have the liberty to make configurations on the IP address settings as p
 
 <br>![](./images/12.png)
 
-11. On the Cloud Central overview page, after the SAP HANA instance is created, we see a status CREATING next to the instance we just created. 
+11. On the Cloud Central overview page, we see a status CREATING next to the instance we just initiated to create. 
 
 <br>![](./images/13.png)
 
 <br>![](/exercises/ex2/images/14.png)
 
-12. On clicking on this status (hyperlink) we get details on when the instance creation was initiated. Once the instance is created, status will be changed to Running.
+12. By clicking on this status (hyperlink) we get details on when the instance creation was initiated. Once the instance is created, status will be changed to Running.
 
 <br>![](./images/18.png)
 
