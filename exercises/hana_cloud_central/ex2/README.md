@@ -26,8 +26,10 @@ Click on Next Step once all the fields are rightly filled.
 
 3. You can navigate to the SAP HANA Database Documentation by clicking on the hyperlink.
 
-Memory - The size of your (compressed) in-memory data in your SAP HANA database
-Compute - The number of vCPUs of your SAP HANA database
+<br>![](./images/21.png)
+
+Memory - The size of your (compressed) in-memory data in your SAP HANA database.
+Compute - The number of vCPUs of your SAP HANA database.
 The number of vCPUs is allocated according to the size of memory of your instance.
 Storage - The disk storage space of your SAP HANA database.
 The disk storage space is allocated according to the memory size of your SAP HANA database.
