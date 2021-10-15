@@ -10,7 +10,7 @@ In this chapter, we will discuss about the Edit functionality across all the ins
 
 <br>![](./images_new/2.png)
 
-3. As we scroll down the pop up, we see other fields that we can edit. Also, we can notice that, even the Edit pop up has help icons that will lead to more details about the field like what are the values that the filed can take, what settings are preferable etc.
+3. As we scroll down the pop up, we see other fields that we can edit. Also, we can notice that, there are help icons that will lead to more details like what values the fields can take, what settings are preferable etc.
 
 <br>![](./images_new/3.png)
 
