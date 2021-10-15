@@ -5,7 +5,7 @@
 <br>![](./images/1.png)
 
 
-2. SAP HANA Cloud central is launched in a new tab.
+2. SAP HANA Cloud Central is launched in a new tab.
 
 <br>![](./images/2.png)
 
