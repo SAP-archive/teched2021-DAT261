@@ -7,7 +7,7 @@ In this guide, we will introduce you to the newest of our database management to
 ## Overview
 
 The aim of the SAP HANA Cloud Central tool is to provide database administrators (DBAs) with a simple and centralized overview of their SAP HANA Cloud database and data lake instances. You can also perform management tasks such as creating new instances, checking their status, reviewing any notifications and alerts that might have been raised, examining memory and storage consumption, and start/stop/edit/delete your instances.
-This guide will introduce you to the SAP HANA Cloud Central tool and how you can use it perform the above-mentioned operations.
+This guide will introduce you to the SAP HANA Cloud Central tool and how you can use it to perform different operations.
 To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigated to the “SAP HANA Cloud” page (see steps 1-3 in previous section).
 
 
@@ -20,17 +20,15 @@ If you do not have an SAP HANA Cloud trial account, you can register for free at
 2.	Enter the "dev" space
 3.	Click "SAP HANA Cloud" from the left navigation bar
 4.	Click the button "Create Instance" in the top right to invoke the Create Instance wizard
-5.	Note - If you are a non-trial customer who has subscribed for ASE or Data Lake, then you have the liberty to choose from the dropdown to create an ASE, ASE Replication or Data Lake instances
+5.	Note - If you are a non-trial customer who has subscribed for ASE, then you have the liberty to choose from the dropdown to create an ASE or ASE Replication instance
 6.	Enter "XYZ" for the instance name
 7.	Enter and confirm your administrator password – please remember it!
 8.	Click the button "Create Instance" at the bottom
 A new SAP HANA Cloud instance will be created, and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").  Once that's done, proceed to the next chapter.
 
 
-
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
 - [Getting Started: Launch SAP HANA Cloud Central](exercises/ex0/)
 - [Exercise 1 - Apply Filters](exercises/ex1/)
