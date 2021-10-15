@@ -13,8 +13,8 @@ To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigate
 
 ## Requirements
 
-To complete this guide, you need access to an SAP Business Technology Platform (SAP BTP) account, formerly known as SAP Cloud Platform. You access SAP HANA Cloud from within SAP BTP and you can use a trial or non-trial version of SAP HANA Cloud.
-This guide assumes that you already have an SAP HANA Cloud account (trial or non-trial).  If that's the case, proceed to the next chapter.
+To complete this guide, you need access to an SAP Business Technology Platform (SAP BTP) account, formerly known as SAP Cloud Platform. You can access SAP HANA Cloud from within SAP BTP and you can use a trial or non-trial version of SAP HANA Cloud.
+This guide assumes that you already have an SAP HANA Cloud account (trial or non-trial).
 If you do not have an SAP HANA Cloud trial account, you can register for free at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html. Once you have successfully registered and your account is set up, perform the following steps:
 1.	Enter the "trial" subaccount
 2.	Enter the "dev" space
@@ -24,7 +24,7 @@ If you do not have an SAP HANA Cloud trial account, you can register for free at
 6.	Enter "DEMO_HANA_DB" for the instance name
 7.	Enter and confirm your administrator password – please remember it!
 8.	Click the button "Create Instance" at the bottom
-A new SAP HANA Cloud instance will be created, and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").  Once that's done, proceed to the next chapter.
+A new SAP HANA Cloud instance will be created, and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").
 
 
 ## Exercises
