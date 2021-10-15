@@ -42,7 +42,11 @@ You can also clcik on the notification icon to check for any upgrades.
 
 <br>![](./images/31.png)
 
-8. Let us now have a look at an SAP HANA instance that already has a Data lake instance associated with it. When you see the Actions list for such an SAP HANA instance, you can notice that Add Data lake option is not available. When there is no data lake associated, you can see Add Data Lake option in the Action list.
+8. Let us now have a look at an SAP HANA instance that already has a Data lake instance associated with it. When you see the Actions list for such an SAP HANA instance, you can notice that Add Data lake option is not available. 
+
+<br>![](./images/29.png)
+
+When there is no data lake associated, you can see Add Data Lake option in the Action list.
 
 <br>![](./images/8.png)
 
