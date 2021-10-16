@@ -24,4 +24,4 @@ To start with, we can see a button at the right top corner (next to the Logout b
 
 <br>![](./images/6.png)
 
-Thank you!!!
+Thank you!
