@@ -10,7 +10,7 @@ To start with, we can see a button at the right top corner (next to the Logout b
 
 <br>![](./images/2.png)
 
-2. Answer the second question and click on next arrow.
+2. Answer the second question relating to whether SAP HANA Cloud Central satisfies your business demands or not and click on the next arrow.
 
 <br>![](./images/3.png)
 
