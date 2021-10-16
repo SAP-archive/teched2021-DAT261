@@ -1,6 +1,6 @@
 # Exercise 5 - Start, Stop, Upgrade Instances, and Other Actions
 
-In this section we will discuss about how to Start and Stop the databases from the SAP HANA Cloud Central Overview page. On clicking the More(...) button under the Actions column for any type of instance, we see a Stop option to stop the particular instance
+In this section we will discuss about how to stat, stop, and upgrade database instances from SAP HANA Cloud Central. On clicking the More(...) button under the Actions column for any type of instance, we see a Stop option to stop the particular instance
 
 
 1. Click on "..." button.
@@ -17,12 +17,11 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 <br>![](./images/4.png)
 
-
-4. Now let us Start an instance that has been already Stopped. Click on More(...) button under the Actions column
+4. Now let us Start an instance that has been already Stopped. Click on More(...) button under the Actions column.
 
 <br>![](./images/5.png)
 
-5. Click on Start. We can see that the instance has moved to status Starting. And on clicking the Starting hyperlink we see details on the date and time when the instance was initiated and updated.
+5. Click on Start. We can see that the instance has moved to status 'Starting'. On clicking the 'Starting' hyperlink we see details on the date and time when the instance was initiated and updated.
 
 <br>![](./images/9.png)
 
@@ -34,7 +33,7 @@ In this section we will discuss about how to Start and Stop the databases from t
 
 <br>![](./images/28.png)
 
-You can also clcik on the notification icon to check for any upgrades.
+You can also click on the notification icon to check for any upgrades.
 
 <br>![](./images/30.png)
 
@@ -54,7 +53,7 @@ When there is no data lake associated, you can see Add Data Lake option in the A
 
 <br>![](./images/32.png)
 
-10. SAP HANA Cockpit is opened in an adjacent new tab. Here enter the valid Username and Password for the instance. Click on Ok. Once the credentials are validated, we are at the SAP HANA Cockpit Database Overview page, where in we can perform various monitoring and administrating operations on our HANA instance.
+10. SAP HANA Cockpit is opened in an adjacent new tab. Here enter the valid Username and Password for the instance. Click on Ok. Once the credentials are validated, we are at the SAP HANA Cockpit Database Overview page, where we can perform various monitoring and administrating operations on our HANA instances.
 
 <br>![](./images/13_a.png)
 
