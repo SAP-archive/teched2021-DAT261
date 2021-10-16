@@ -6,7 +6,7 @@ To start with, we can see a button at the right top corner (next to the Logout b
 
 <br>![](./images/1.png)
 
-1. Click on the Give Feedback button. A pop over opens up. Answer the first question and click on next arrow.
+1. Click on the Give Feedback button. A pop over opens up. Express the level of satisfaction for using SAP HANA Cloud Central in the first question and click on the next arrow.
 
 <br>![](./images/2.png)
 
