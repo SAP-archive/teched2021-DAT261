@@ -18,7 +18,7 @@ To start with, we can see buttons and icons for grouping, sorting, personalizati
 
 <br>![](./images_new/4.png)
 
-4. Click on Refresh icon. If any change is not reflected immediately, this button would refresh the page and the most recent data appears on the screen.
+4. Click on Refresh icon. This button refreshes the entire page and the most recent data appears on the screen.
 
 <br>![](./images_new/5.png)
 
@@ -48,7 +48,7 @@ To start with, we can see buttons and icons for grouping, sorting, personalizati
 
 <br>![](./images_new/12.png)
 
-11. Click on Save to save you changes.
+11. Click on Save button to save your changes.
 
 <br>![](./images_new/13.png)
 
@@ -60,7 +60,7 @@ To start with, we can see buttons and icons for grouping, sorting, personalizati
 
 <br>![](./images_new/15.png)
 
-14. Edit Replicas will open up the edit dialog where you can add replicas using Add button. Click on Save to save your changes.
+14. Edit Replicas will open up the edit dialog where you can add replicas using Add button. Click on Save button to save your changes.
 
 <br>![](./images_new/16.png)
 
