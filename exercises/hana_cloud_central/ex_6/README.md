@@ -1,6 +1,6 @@
 # Exercise 6 - Delete Instances
 
-In this section, we will see how to delete an instance that we have created and worked on so far. The Delete functionality is similar across all types of instances. If we delete the SAP HANA Database instance, then the associated managed data lake instance also gets deleted. Here is a look at deleting a data lake instance we created earlier.
+In this section, we will see how to delete an instance that we have created and worked on so far. The Delete functionality is similar across all types of instances. Here is a look at deleting a data lake instance we created earlier.
 
 1. Click on More(...) button under the Actions list.
 
@@ -15,5 +15,7 @@ In this section, we will see how to delete an instance that we have created and 
 <br>![](./images_new/3.png)
 
 <br>![](./images_new/4.png)
+
+Note: If we delete the SAP HANA Database instance, then the associated managed data lake instance also gets deleted.
 
 Continue to - [Exercise 7 - Giving Feedback ](../ex_7/README.md)
