@@ -33,7 +33,7 @@ The number of vCPUs is allocated according to the size of memory of your instanc
 Storage - The disk storage space of your SAP HANA database.
 The disk storage space is allocated according to the memory size of your SAP HANA database.
 
-Use the SAP HANA Cloud Capacity Unit Estimator to estimate the number of Capacity Units(CU) required for your particular use case. 
+You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the number of Capacity Units(CU) required for your particular use case. 
 
 <br>![](./images/4.png)
 
