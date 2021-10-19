@@ -6,7 +6,7 @@ To start with, we can see buttons and icons for grouping, sorting, personalizati
 
 <br>![](./images_new/1.png)
 
-1. Click on Group Instances. All the instances and their managed data lake instances get grouped under the respective description of the HANA database instance.
+1. Click on Group Instances. All the SAP HANA Database instances and their managed data lake instances get grouped under the respective description of the SAP HANA Database instance.
 
 <br>![](./images_new/2.png)
 
