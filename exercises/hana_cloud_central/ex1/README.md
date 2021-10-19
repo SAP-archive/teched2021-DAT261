@@ -25,7 +25,7 @@ For example - If the user wants to see list of instances with the alert 'None', 
 
 <br>![](./images/5.png)
 
-6. The instances can also be filtered based on type of the instances. From the "Type" dropdown field, you can either choose to see only 'SAP HANA' instances or 'Data Lake' instances or both.
+6. The instances can also be filtered based on type of the instances. From the "Type" dropdown field, you can either choose to see only 'SAP HANA Database' instances or 'Data Lake' instances or both.
 
 <br>![](./images/6.png)
 
