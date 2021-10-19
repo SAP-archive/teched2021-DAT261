@@ -1,6 +1,6 @@
 # Exercise 5 - Start, Stop, Upgrade Instances, and Other Actions
 
-In this section we will discuss about how to stat, stop, and upgrade database instances from SAP HANA Cloud Central. On clicking the More(...) button under the Actions column for any type of instance, we see a Stop option to stop the particular instance
+In this section we will discuss about how to stat, stop, and upgrade instances from SAP HANA Cloud Central. On clicking the More(...) button under the Actions column for any type of instance, we see a Stop option to stop the particular instance
 
 
 1. Click on "..." button.
@@ -53,7 +53,7 @@ When there is no data lake associated, you can see Add Data Lake option in the A
 
 <br>![](./images/32.png)
 
-10. SAP HANA Cockpit is opened in an adjacent new tab. Here enter the valid Username and Password for the instance. Click on Ok. Once the credentials are validated, we are at the SAP HANA Cockpit Database Overview page, where we can perform various monitoring and administrating operations on our HANA instances.
+10. SAP HANA Cockpit is opened in an adjacent new tab. Here enter the valid Username and Password for the instance. Click on Ok. Once the credentials are validated, we are at the SAP HANA Cockpit, Database Overview page, where we can perform various monitoring and administrating operations on our HANA instances.
 
 <br>![](./images/13_a.png)
 
