@@ -79,33 +79,33 @@ When there is no data lake associated, you can see Add Data Lake option in the A
 
 <br>![](./images/18.png)
 
-16. Copy SQL Endpoint functionality - On clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint.
+14. Copy SQL Endpoint functionality - On clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint.
 
 <br>![](./images/19.png)
 
-14. We get a success message saying that the SQL endpoint is copied to the clipboard.
+15. We get a success message saying that the SQL endpoint is copied to the clipboard.
 
 <br>![](./images/20.png)
 
-15. Next is the Copy Instance ID option - This will help us copy the instance id to the clipboard. This function is similar to the previous copy option we discussed. On clicking Copy Instance ID option, we get a success message.
+16. Next is the Copy Instance ID option - This will help us copy the instance id to the clipboard. This function is similar to the previous copy option we discussed. On clicking Copy Instance ID option, we get a success message.
 
 <br>![](./images/21.png)
 
 <br>![](./images/22.png)
 
-16. Click on Copy Configuration. A popup open with options to copy configuration to clipboard or download it as a JSON file.
+17. Click on Copy Configuration. A popup open with options to copy configuration to clipboard or download it as a JSON file. Depending on how often you will use your instance configuration, either copy or save the JSON-compliant string.
 
 <br>![](./images/23.png)
 
 <br>![](./images/24.png)
 
-17. Copy Files Rest API Endpoint- copies it to the clipboard.
+18. Copy Files Rest API Endpoint- copies it to the clipboard.
 
 <br>![](./images/25.png)
 
 <br>![](./images/26.png)
 
-18. Other Copy options help in directly copying the Landscape Id, Port ID, Coordinator Endpoint and Worker. You can find these options in the Actions list for a Data Lake instance. All the IDs are directly copied to the clipboard.
+19. Other Copy options help in directly copying the Landscape Id, Port ID, Coordinator Endpoint and Worker. You can find these options in the Actions list for a Data Lake instance. All the IDs are directly copied to the clipboard.
 
 <br>![](./images/27.png)
 
