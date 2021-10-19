@@ -1,6 +1,6 @@
 # Exercise 5 - Start, Stop, Upgrade Instances, and Other Actions
 
-In this section we will discuss about how to stat, stop, and upgrade instances from SAP HANA Cloud Central. On clicking the More(...) button under the Actions column for any type of instance, we see a Stop option to stop the particular instance
+In this section we will discuss about how to start, stop, and upgrade instances from the SAP HANA Cloud Central application.
 
 
 1. Click on "..." button.
