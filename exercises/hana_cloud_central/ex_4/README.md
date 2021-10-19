@@ -24,7 +24,7 @@ To start with, we can see buttons and icons for grouping, sorting, personalizati
 
 <br>![](./images_new/6.png)
 
-5. Instance Sharing: Click on the name of the SAP HANA Database instance which is a hyperlink. This will navigate you to the instance sharing page.
+5. Instance Sharing: Click on the name of the SAP HANA Database instance which is a hyperlink. This will navigate you to the instance sharing page. When an SAP HANA Cloud instance is created, only the space it is located in can access it and use it for service bindings. However, you can change this, and grant other spaces controlled access to the database instance. The space can be part of the same or a different organization. You can share an instance with multiple spaces in different organizations by creating a mapping.
 
 <br>![](./images_new/7.png)
 
