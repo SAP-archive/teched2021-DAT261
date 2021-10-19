@@ -39,7 +39,7 @@ You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the numb
 
 <br>![](./images/21.png)
 
-4. Click on Next Step button, once the memory and storage configurations are done. In this step, you have an option to choose availability zones.
+4. Click on Next Step button, once the memory and storage configurations are done. In this step, you have an option to choose availability zones. You cannot change the availability zone of an instance once it is created. If you want to change the availability zone for an instance, delete the instance and re-create it with the preferred availability zone.
 
 <br>![](./images/5.png)
 
