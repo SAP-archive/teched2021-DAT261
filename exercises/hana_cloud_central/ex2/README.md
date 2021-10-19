@@ -59,7 +59,7 @@ You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the numb
 
 <br>![](./images/9.png)
 
-Here you have the liberty to make configurations on the IP address settings as per your requirements. Then, click on Review and Create button.
+Here you have the liberty to make configurations on the IP address settings as per your requirements. You can choose to only allow access to the instance from SAP Business Technology Platform (default) or only from trusted IP addresses by specifying IP address filter ranges. Up to 45 entries can be specified. Click on Review and Create button.
 
 <br>![](./images/10.png)
 
