@@ -75,14 +75,12 @@ In this section we will discuss about how to start, stop, and upgrade instances 
     ![](./images/13_b.png)
     </kbd>
       
-11. We can also open the SAP HANA Database Explorer to create SQL scripts, run them and also administer the SAP HANA instance directly from the Cloud Central page.  
+11. We can also open the SAP HANA Database Explorer to create SQL scripts, run them and also administer the SAP HANA instance directly from the Cloud Central page. Click on Open in SAP HANA Database Explorer option in the Actions list for an SAP HANA instance. SAP HANA Database Explorer is opened in an adjacent new tab.
     <kbd>
     ![](./images/33.png)
     </kbd>
-    
-    Click on Open in SAP HANA Database Explorer option in the Actions list for an SAP HANA instance. SAP HANA Database Explorer is opened in an adjacent new tab.
     <kbd>
-    ![](./images/14_b.png)
+    ![](./images/14_a.png)
     </kbd>
     
 12. Get back to the Cloud Central Overview page and choose the Actions list for an SAP HANA instance again. Now click on Open SQL Console option. SAP HANA Database Explorer opens up in a new tab, but this time with an SQL Console already opened.
