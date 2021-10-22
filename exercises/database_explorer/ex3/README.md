@@ -1,16 +1,16 @@
 # Exercise 3 - Catalog Browser and Object Search
 
-In this exercise, we will use the catalog browser and the object search to find and view objects.
+In this exercise, we will explore some of the functionality the catalog browser and object search provide when working with database objects. 
 
-1. Database objects such as a table can be located in the catalog browser by navigating to **Tables** and specifying a schema such as HOTEL.
+1. Database objects such as a table can be located in the catalog browser by navigating to **Tables** and specifying a schema such as **HOTEL**.
 
     ![](images/TablesInCatalogBrowser.png)
 
-    Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables**.  Filters can be applied such as specifying HOTEL for the schema name.
+    Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables**.  Additional filters can be applied in this view by clicking on the column header.  A schema filter with a value of HOTEL was applied in the screenshot below.
     
     ![](images/TablesInCatalogBrowser2.png)
 
-2. The properties of a selected object such as the RESERVATION table can be viewed. 
+2. The properties of a selected object such as the RESERVATION table can be viewed by choosing **Open** from a selected table's context menu
 
     ![](images/TableColumns.png)
 
@@ -22,16 +22,24 @@ In this exercise, we will use the catalog browser and the object search to find 
 
     ![](images/GenerateCreate.png)
 
-4. The dependecies of an object can be listed.  
+4. The dependencies of an object can be listed.  
 
     ![](images/FindDepencies.png)
 
-5. Database objects can also be found using the object search.
+5. Database objects can also be found using the object search.  The below search looks for any functions, procedures, tables, or views in the schema HOTEL in the database DEMO_HANA_DB. 
 
     ![](images/ObjectSearch.png)
 
     An object search can be performed across a selected database or across all databases.
 
-6. Additional functionality is available from the catalog browser such as analyze SQL Script, debugging, and ... 
+    ![](images/SearchAcrossAllDatabases.png)
+
+6. An object such as the view RESERVATION_VIEW can opened by clicking on it.  Once it is open, it can be located in the catalog browser by selecting **Display in Database Browser** from the context menu of the tab.
+
+    ![](images/RevealInCatalogBrowser.png)
+
+7. Additional functionality is available from the catalog browser such as analyze SQLScript and debugging for stored procedures. 
 
     ![](images/AnalyzeSQLScriptCode.png)
+
+Continue to - [Exercise 4 - Statement Library ](../ex4/README.md)
