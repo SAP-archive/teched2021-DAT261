@@ -1,11 +1,13 @@
 # Exercise 7 - Giving Feedback
 
-In this section, we will discuss about giving feedback using SAP HANA Cloud Central. Please consider this opportunity to provide your valuabe feeedback on what do you think could be improved in SAP HANA Cloud Central.To start with, we can see a button at the right top corner (next to the Logout button) of the SAP HANA Cloud Central page.
+In this section, we will discuss about giving feedback using SAP HANA Cloud Central. Please consider this opportunity to provide your valuabe feeedback on what do you think could be improved in SAP HANA Cloud Central.
+    
+1. To start with, we can see a button at the right top corner (next to the Logout button) of the SAP HANA Cloud Central page.
     <kbd>
     ![](./images/1.png)
     </kbd>
     
-1. Click on the Give Feedback button. A pop over opens up. Express the level of satisfaction for using SAP HANA Cloud Central in the first question and click on the next arrow.
+    Click on the Give Feedback button. A pop over opens up. Express the level of satisfaction for using SAP HANA Cloud Central in the first question and click on the next arrow.
     <kbd>
     ![](./images/2.png)
     </kbd>
