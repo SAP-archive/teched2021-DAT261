@@ -32,12 +32,12 @@ Administrator Password - The password of the database 'superuser' DBADMIN. The p
     
 3. You can navigate to the SAP HANA Database Documentation by clicking on the hyperlink.
 
-Details of the fields that you see on this screen:
-Memory - The size of your (compressed) in-memory data in your SAP HANA database.
-Compute - The number of vCPUs of your SAP HANA database.
-The number of vCPUs is allocated according to the size of memory of your instance.
-Storage - The disk storage space of your SAP HANA database.
-The disk storage space is allocated according to the memory size of your SAP HANA database.
+    Details of the fields that you see on this screen:
+    Memory - The size of your (compressed) in-memory data in your SAP HANA database.
+    Compute - The number of vCPUs of your SAP HANA database.
+    The number of vCPUs is allocated according to the size of memory of your instance.
+    Storage - The disk storage space of your SAP HANA database.
+    The disk storage space is allocated according to the memory size of your SAP HANA database.
 
     You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the number of Capacity Units(CU) required for your particular use case. 
     
