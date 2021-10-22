@@ -7,17 +7,17 @@ In this section we will discuss about how to start, stop, and upgrade instances 
 
 <br>![](./images/1.png)
 
-2. Click on Stop. A pop up shows up, confirming if you want to continue with stopping the instance. If yes, click on Stop button.
+2. Click on Stop. A pop up shows up, confirming if you want to continue with stopping the instance. For now, please do not stop the instance. Click on 'Cancel'.
 
 <br>![](./images/2.png)
 
-3. On the Overview page, you can see that the status for instance you just stopped has changed to 'Stopping'. Click on the hyperlink status to see more details on the status.
+3. If you confirm to stop the instance, you see the status getting changed to 'Stopping' and you can see more details by clicking on the hyperlink.
 
 <br>![](./images/3.png)
 
 <br>![](./images/4.png)
 
-4. Now let us Start an instance that has been already Stopped. Click on More(...) button under the Actions column.
+4. Now let us start an instance that has been already stopped. Click on More(...) button under the Actions column.
 
 <br>![](./images/5.png)
 
