@@ -2,7 +2,7 @@
 
 In this section, we will discuss about grouping, sorting, refreshing and other settings available for table of instances in SAP HANA Cloud Central.
  
-To start with, we can see buttons and icons for grouping, sorting, personalization settings and refreshing at the right top corner of the table of instances. These functions can be directly operated from this page.
+    To start with, we can see buttons and icons for grouping, sorting, personalization settings and refreshing at the right top corner of the table of instances. These functions can be directly operated from this page.
     <kbd>
     ![](./images_new/1.png)
     </kbd>
