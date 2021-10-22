@@ -45,12 +45,6 @@ Administrator Password - The password of the database 'superuser' DBADMIN. The p
     ![](./images/4.png)
     </kbd>
     
-    and
-    
-    <kbd>
-    ![](./images/21.png)
-    </kbd>
-    
 4. Click on Next Step button, once the memory and storage configurations are done. In this step, you have an option to choose availability zones. You cannot change the availability zone of an instance once it is created. If you want to change the availability zone for an instance, delete the instance and re-create it with the preferred availability zone.
     <kbd>
     ![](./images/5.png)
