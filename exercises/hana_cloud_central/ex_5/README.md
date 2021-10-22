@@ -91,7 +91,7 @@ In this section we will discuss about how to start, stop, and upgrade instances 
     ![](./images/15_b.png)
     </kbd>
 
-13. Let us now explore the actions for a Data lake instance. Click on More(...) button under the Actions column corresponding to a Data Lake instance. First is the Manage File Container. Click on it. You can edit the configuarations and click on save. You can find more information related to [this](https://blogs.sap.com/2021/08/05/setting-up-initial-access-to-hana-cloud-data-lake-files/) option in this blog.
+13. Let us now explore the actions for a Data lake instance. Click on More(...) button under the Actions column corresponding to a Data Lake instance. First is the Manage File Container. Click on it. You can edit the configuarations and click on save. You can find more information related to this option in [here](https://blogs.sap.com/2021/08/05/setting-up-initial-access-to-hana-cloud-data-lake-files/).
     <kbd>
     ![](./images/16.png)
     </kbd>
