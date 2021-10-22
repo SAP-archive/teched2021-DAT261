@@ -11,7 +11,7 @@ You can also create instances from the SAP HANA Cloud Central application. Both 
 
 <br>![](./images/1_b.png)
 
-In this page, you can see four options: [1] SAP HANA Cloud, SAP HANA Database [2] SAP HANA Cloud, Data Lake [3] SAP HANA Cloud, Adaptive Server Enterprise [4] SAP HANA Cloud, Adaptive Server Enterprise Replication. You can choose the type of instance and click 'Next Step'. Let us create SAP HANA Cloud, SAP HANA Database Instance in this exercise. 
+In this page, you can see four options: [1] SAP HANA Cloud, SAP HANA Database [2] SAP HANA Cloud, Data Lake [3] SAP HANA Cloud, Adaptive Server Enterprise [4] SAP HANA Cloud, Adaptive Server Enterprise Replication. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. 
 
 <br>![](./images/2.png)
 
