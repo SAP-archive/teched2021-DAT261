@@ -44,7 +44,9 @@ Administrator Password - The password of the database 'superuser' DBADMIN. The p
     <kbd>
     ![](./images/4.png)
     </kbd>
+    
     and
+    
     <kbd>
     ![](./images/21.png)
     </kbd>
