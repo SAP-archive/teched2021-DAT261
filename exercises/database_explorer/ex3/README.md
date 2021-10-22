@@ -42,4 +42,6 @@ In this exercise, we will explore some of the functionality the catalog browser 
 
     ![](images/AnalyzeSQLScriptCode.png)
 
+    For additional details on SQLScript analysis and debugging, see [Troubleshoot SQL with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-troubleshooting.html).
+
 Continue to - [Exercise 4 - Statement Library ](../ex4/README.md)
