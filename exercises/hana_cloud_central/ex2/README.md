@@ -19,11 +19,12 @@ Note - You can see the options to create ASE and ASE Replication instances only 
     </kbd>
     
 2. Below are the details on the fields that you see on this Create Instance screen, what are the values they take and the details on steps to successfully create an SAP HANA Cloud instance.
-Organization - The Cloud Foundry organization in which the instance is created.
-Space - The Cloud Foundry space in which the instance is created.
-Instance Name - The name of the instance. The name must start and end with an alphanumeric character. The name can include the underscore character _.
-Description - A description of the instance.
-Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
+
+    Organization - The Cloud Foundry organization in which the instance is created.
+    Space - The Cloud Foundry space in which the instance is created.
+    Instance Name - The name of the instance. The name must start and end with an alphanumeric character. The name can include the underscore character _.
+    Description - A description of the instance.
+    Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
 
     Click on Next Step once all the fields are rightly filled. 
     <kbd>
@@ -86,7 +87,6 @@ Administrator Password - The password of the database 'superuser' DBADMIN. The p
     <kbd>
     ![](./images/12.png)
     </kbd>
-    
     <kbd>
     ![](./images/13.png)
     </kbd>
@@ -100,7 +100,6 @@ Administrator Password - The password of the database 'superuser' DBADMIN. The p
     <kbd>
     ![](./images/19.png)
     </kbd>
-    
     <kbd>
     ![](./images/20.png)
     </kbd>
