@@ -22,6 +22,7 @@ For example - If the user wants to see a list of instances that are still being 
 
 5. The instances can be filtered based on their respective alerts. On clicking the dropdown button, we can see list of various alerts from which the users can choose one or many alerts based on which they need their search results. The alerts on which filtering can be performed are: None, Information, Warning, Error, and Critical.
 For example - If the user wants to see list of instances with the alert 'None', he can choose the checkbox corresponding to the 'None' option in the dropdown.
+Note: These alerts are specific to SAP HANA Cloud Central and correspond to 'Notifications' column in the instance table. These are not the alerts that are coming from the HANA Statistics server.
 
 <br>![](./images/5.png)
 
