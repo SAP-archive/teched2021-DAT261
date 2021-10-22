@@ -8,12 +8,12 @@ Note - You can see the options to create ASE and ASE Replication instances only 
     ![](./images/1.png)
     </kbd>
     
-You can also create instances from the SAP HANA Cloud Central application. Both Create buttons will navigate you to the create instance page.
+    You can also create instances from the SAP HANA Cloud Central application. Both Create buttons will navigate you to the create instance page.
     <kbd>
     ![](./images/1_b.png)
     </kbd>
     
-In this page, you can see four options: [1] SAP HANA Cloud, SAP HANA Database [2] SAP HANA Cloud, Data Lake [3] SAP HANA Cloud, Adaptive Server Enterprise [4] SAP HANA Cloud, Adaptive Server Enterprise Replication. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. 
+    In this page, you can see four options: [1] SAP HANA Cloud, SAP HANA Database [2] SAP HANA Cloud, Data Lake [3] SAP HANA Cloud, Adaptive Server Enterprise [4] SAP HANA    Cloud, Adaptive Server Enterprise Replication. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. 
     <kbd>
     ![](./images/2.png)
     </kbd>
@@ -25,7 +25,7 @@ Instance Name - The name of the instance. The name must start and end with an al
 Description - A description of the instance.
 Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
 
-Click on Next Step once all the fields are rightly filled. 
+    Click on Next Step once all the fields are rightly filled. 
     <kbd>
     ![](./images/3.png)
     </kbd>
@@ -39,7 +39,7 @@ The number of vCPUs is allocated according to the size of memory of your instanc
 Storage - The disk storage space of your SAP HANA database.
 The disk storage space is allocated according to the memory size of your SAP HANA database.
 
-You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the number of Capacity Units(CU) required for your particular use case. 
+    You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the number of Capacity Units(CU) required for your particular use case. 
     <kbd>
     ![](./images/4.png)
     </kbd>
@@ -73,7 +73,7 @@ You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the numb
     ![](./images/9.png)
     </kbd>
     
-Here you have the liberty to make configurations on the IP address settings as per your requirements. You can choose to only allow access to the instance from SAP Business Technology Platform (default) or only from trusted IP addresses by specifying IP address filter ranges. Up to 45 entries can be specified. Click on Review and Create button.
+    Here you have the liberty to make configurations on the IP address settings as per your requirements. You can choose to only allow access to the instance from SAP Business Technology Platform (default) or only from trusted IP addresses by specifying IP address filter ranges. Up to 45 entries can be specified. Click on Review and Create button.
     <kbd>
     ![](./images/10.png)
     </kbd>
