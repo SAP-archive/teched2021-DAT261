@@ -6,6 +6,7 @@ In this section, we will discuss about grouping, sorting, refreshing and other s
     <kbd>
     ![](./images_new/1.png)
     </kbd>
+    
 1. Click on Group Instances. All the SAP HANA Database instances and their managed data lake instances get grouped under the respective description of the SAP HANA Database instance.
     <kbd>
     ![](./images_new/2.png)
