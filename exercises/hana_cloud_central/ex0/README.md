@@ -1,7 +1,7 @@
 # Getting Started: Launching SAP HANA Cloud Central
 
 1. Open SAP BTP Cockpit -> Go to any SAP HANA instance -> Click the “Actions” button from an instance tile -> Click on "Open in SAP HANA Cloud Central"
-    <kbd background-color: lightblue>
+    <kbd background-color: black>
     ![](./images/1.png)
     </kbd>
 
