@@ -80,7 +80,7 @@ In this section we will discuss about how to start, stop, and upgrade instances 
     ![](./images/33.png)
     </kbd>
     <kbd>
-    ![](./images/14_a.png)
+    ![](./images/14_b.png)
     </kbd>
     
 12. Get back to the Cloud Central Overview page and choose the Actions list for an SAP HANA instance again. Now click on Open SQL Console option. SAP HANA Database Explorer opens up in a new tab, but this time with an SQL Console already opened.
