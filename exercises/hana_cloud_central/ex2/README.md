@@ -40,7 +40,6 @@ Administrator Password - The password of the database 'superuser' DBADMIN. The p
     The disk storage space is allocated according to the memory size of your SAP HANA database.
 
     You can also use the SAP HANA Cloud Capacity Unit Estimator to estimate the number of Capacity Units(CU) required for your particular use case. 
-    
     <kbd>
     ![](./images/4.png)
     </kbd>
