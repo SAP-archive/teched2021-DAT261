@@ -1,6 +1,6 @@
 # Exercise 4 - Statement Library
 
-In this exercise, we will explore the Statement Library and how to import statements from the SQL Statement Collection for SAP HANA. 
+In this exercise, we will explore the statement library and demonsrate how to import and run statements from the SQL Statement Collection for SAP HANA. 
 
 1. The statement library can be accessed by the context menu on the database.
 
@@ -16,10 +16,19 @@ In this exercise, we will explore the Statement Library and how to import statem
 
     ![](images/SystemStatementsConnections.png)
 
+    ```sql
+    CONNECT USER1 PASSWORD Password1;
+    CONNECT USER1 PASSWORD WrongPwd;
+    ```
 
 3. User statements can be added from the SQL Console.
 
     ![](images/AddUserStatement.png)
+
+    ```sql
+    SELECT * FROM HOTEL.RESERVATION
+        WHERE ARRIVAL >= CURRENT_DATE ORDER BY ARRIVAL ASC;
+    ```
 
     Alternatively, they can be imported from a file or from a zip file.
 
@@ -31,7 +40,7 @@ In this exercise, we will explore the Statement Library and how to import statem
 
     The following steps import statements that apply to SAP HANA Cloud.
 
-    * Create a zip of statemnts that contain _SHC.
+    * Create a zip of statements that contain _SHC.
         
         ![](images/CreateZip.png)
 
@@ -47,6 +56,6 @@ In this exercise, we will explore the Statement Library and how to import statem
 
         ![](images/HANAConfigurationMiniChecksResult.png)
 
-
+This concludes the exercises on the statement library.
     
 Continue to - [Exercise 5 - Further Steps with the SAP HANA Database Explorer](../ex5/README.md)

@@ -1,16 +1,16 @@
 # Exercise 3 - Catalog Browser and Object Search
 
-In this exercise, we will explore some of the functionality the catalog browser and object search provide when working with database objects. 
+In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects. 
 
 1. Database objects such as a table can be located in the catalog browser by navigating to **Tables** and specifying a schema such as **HOTEL**.
 
     ![](images/TablesInCatalogBrowser.png)
 
-    Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables**.  Additional filters can be applied in this view by clicking on the column header.  A schema filter with a value of HOTEL was applied in the screenshot below.
+    Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables** from the context menu.  Additional filters can be applied in this view by clicking on the column header.  A schema filter with a value of HOTEL was applied in the screenshot below.
     
     ![](images/TablesInCatalogBrowser2.png)
 
-2. The properties of a selected object such as the RESERVATION table can be viewed by choosing **Open** from a selected table's context menu
+2. The properties of a selected object such as the RESERVATION table can be viewed by choosing **Open** from a selected table's context menu.
 
     ![](images/TableColumns.png)
 
@@ -38,10 +38,12 @@ In this exercise, we will explore some of the functionality the catalog browser 
 
     ![](images/RevealInCatalogBrowser.png)
 
-7. Additional functionality is available from the catalog browser such as analyze SQLScript and debugging for stored procedures. 
+7. Additional functionality is available from the catalog browser such as analyze SQLScript and debugging stored procedures. 
 
     ![](images/AnalyzeSQLScriptCode.png)
 
     For additional details on SQLScript analysis and debugging, see [Troubleshoot SQL with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-troubleshooting.html).
+
+This concludes the exercices on the catalog browser and object search.
 
 Continue to - [Exercise 4 - Statement Library ](../ex4/README.md)

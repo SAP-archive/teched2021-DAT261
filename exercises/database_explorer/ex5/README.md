@@ -35,10 +35,12 @@ In this exercise, we will mention some additional areas of functionality and whe
 
     ![](images/AddRemoteSource.png)
 
-    Once a remote source is created, virtual table can be created that enable access to data that is stored in the remote system.
+    Once a remote source is created, virtual tables can be created that enable access to data that is stored in the remote system.
 
     ![](images/VirtualTables.png)
 
     Step by step instructions on connecting between SAP HANA on-premise and SAP HANA Cloud, SAP HANA databases and from an SAP HANA Cloud database to an SAP HANA Cloud, data lake can be found in the tutorial [Access Remote Sources with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-remote-sources.html).
+
+This concludes the exercises on the SAP HANA database explorer.
 
 Return to - [Get Hands-On Experience with Administering and Operating SAP HANA Cloud [DAT261]](../../README.md)
