@@ -1,5 +1,5 @@
 # Exercise 2 - Using SQL Console
-In this excercise, we will use SAP HANA Database Explorer's SQL Console.
+In this exercise, we will use SAP HANA Database Explorer's SQL Console.
 
 For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
 
@@ -26,7 +26,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
    ![](images/CreateSchema.png)
 
-    Create a second hotel user and assign a role with privledges to this user. Run the following commands in SQL console.
+    Create a second hotel user and assign a role with privileges to this user. Run the following commands in SQL console.
 
     ```SQL
     CREATE ROLE HOTEL_ADMIN;
@@ -89,7 +89,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     );
     ```
 
-5. Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a backgound activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. 
+5. Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. 
 
     ```SQL
     INSERT INTO HOTEL.HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -185,7 +185,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
 
-6. A list of keyboard shortcuts can be found by left clicking within a SQL console window with some existing text within it. Keybpard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
+6. A list of keyboard shortcuts can be found by left clicking within a SQL console window with some existing text within it. Keyboard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
 
    ![](images/KeyboardShortcuts.png)
    

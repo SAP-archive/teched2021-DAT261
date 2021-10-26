@@ -1,5 +1,5 @@
 # Exercise 2 - Using SQL Console
-In this excercise, we will use SAP HANA Database Explorer's SQL Console.
+In this exercise, we will use SAP HANA Database Explorer's SQL Console.
 
 For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
 
@@ -182,7 +182,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 There are a number of tools available within SAP HANA Database Explorer SQL Console. This section will walk through some of those features.
 
 1.  A list of keyboard shortcuts can be found by left clicking within a SQL
-console window with some existing text within it. Keybpard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
+console window with some existing text within it. Keyboard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
 
    ![](images/KeyboardShortcuts.png)
    
@@ -201,7 +201,7 @@ console window with some existing text within it. Keybpard shortcuts must be ena
     on r.hno = h.hno;
     ```
 
-2. If we anticipate a block of commands will take some time to execute, we can choose to run it as a backgound activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. 
+2. If we anticipate a block of commands will take some time to execute, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. 
 
   ![](images/BackgroundActivity.png)
 
