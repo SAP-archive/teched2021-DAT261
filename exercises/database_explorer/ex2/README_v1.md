@@ -185,7 +185,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
 
-6. A list of keyboard shortcuts can be found by left clicking within a SQL console window with some existing text within it. Keyboard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
+6. A list of keyboard shortcuts can be found by right-clicking within a SQL console window with some existing text within it. Keyboard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
 
    ![](images/KeyboardShortcuts.png)
    
