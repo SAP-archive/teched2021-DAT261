@@ -164,8 +164,8 @@ For the rest of this workshop, we will be creating and working with a sample sch
         PARTITION '2000-01-01' <= VALUES < '2019-01-01',
         PARTITION OTHERS
         ));
-
-  ```
+    ```
+  
    After running this command with the SQL console, you may notice that performance metrics are provided in the console output of database explorer. A history tab provides previously run statements.
 
    To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table. 
