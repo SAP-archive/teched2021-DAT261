@@ -20,10 +20,9 @@ If you do not have an SAP HANA Cloud trial account, you can register for free at
 2.	Enter the "dev" space
 3.	Click "SAP HANA Cloud" from the left navigation bar
 4.	Click the button "Create Instance" in the top right to invoke the Create Instance wizard
-5.	Note - If you are a non-trial customer who has subscribed for ASE, then you have the liberty to choose from the dropdown to create an ASE or ASE Replication instance
-6.	Enter "DEMO_HANA_DB" for the instance name
-7.	Enter and confirm your administrator password – please remember it!
-8.	Click the button "Create Instance" at the bottom
+5.	Enter "DEMO_HANA_DB" for the instance name
+6.	Enter and confirm your administrator password – please remember it!
+7.	Click the button "Create Instance" at the bottom
 A new SAP HANA Cloud instance will be created, and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").
 
 
