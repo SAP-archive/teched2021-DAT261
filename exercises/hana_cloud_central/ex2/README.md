@@ -12,7 +12,7 @@ We can create SAP HANA Database and Data Lake instances directly from the SAP BT
     ![](./images/1_b.png)
     </kbd>
     
-    In this page, you can see four options: [1] SAP HANA Cloud, SAP HANA Database [2] SAP HANA Cloud, Data Lake [3] SAP HANA Cloud, Adaptive Server Enterprise [4] SAP HANA    Cloud, Adaptive Server Enterprise Replication. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. 
+    In this page, you can see options to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. 
     <kbd>
     ![](./images/2.png)
     </kbd>
