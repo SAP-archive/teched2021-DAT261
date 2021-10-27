@@ -16,7 +16,7 @@ In this excercise, we will launch an instance of SAP HANA Database Explorer and 
 
     ![](images/dbsummary.png)
     
-     Right-click on the database name and select **Show Overview**. The release your database belongs to can be identified by looking at the last section of the Version field. The year 
+     Right-click on the database name and select **Show Overview**. The release your database belongs to can be identified by looking at the last section of the Version field.
 
     ![](images/showoverview.png)
 
@@ -24,7 +24,7 @@ In this excercise, we will launch an instance of SAP HANA Database Explorer and 
 
 3. At the top of the left pane, click the arrow next to the database icon, to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files).
 
-    Expand **Catalog** then **schemas**, this will present a list of the schemas available for this database. Directly above the list is a search bar, you can search for the **System** schema, and right-click and select **Open** to view details.
+    Expand **Catalog** then **Schemas**, this will present a list of the schemas available for this database. Directly above the list is a search bar, you can search for the **System** schema, and right-click and select **Open** to view details.
 
     ![](images/schemamenu.png)
 
