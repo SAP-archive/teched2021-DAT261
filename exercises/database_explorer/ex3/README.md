@@ -48,6 +48,6 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     For additional details on SQLScript analysis and debugging, see [Troubleshoot SQL with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-troubleshooting.html).
 
-This concludes the exercices on the catalog browser and object search.
+This concludes the exercises on the catalog browser and object search.
 
 Continue to - [Exercise 4 - Statement Library ](../ex4/README.md)
