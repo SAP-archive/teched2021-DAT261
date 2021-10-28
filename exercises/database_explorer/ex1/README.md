@@ -9,13 +9,13 @@ In this exercise, we will launch an instance of SAP HANA Database Explorer and w
     Note: Trial instances are shut down overnight. Instances can be restarted by clicking the **Manage SAP HANA Cloud** button, and selecting **Start** on the dropdown menu for your instance.
 
     You may be prompted to enter database login credentials at this point. Enter the DBADMIN user credentials which were set during the SAP HANA instance creation process.
-    
-    Credentials for a cockpit database can be saved within BTP Cockpit, removing the need for users to log in each time they wish to access their database. For credentials to be saved, users must log in using BTP Cockpit and select the option to save their credentials. 
+
+    Credentials for a cockpit database can be saved within BTP Cockpit, removing the need for users to log in each time they wish to access their database. For credentials to be saved, users must log in using BTP Cockpit and select the option to save their credentials.
 
 2. Hover over your database in the databases menu. A summary should appear that identifies the type as a cockpit database.
 
     ![](images/DBSummary.png)
-    
+
      Right-click on the database name and select **Show Overview**. The release your database belongs to can be identified by looking at the last section of the Version field.
 
     ![](images/ShowOverview.png)
@@ -34,13 +34,7 @@ In this exercise, we will launch an instance of SAP HANA Database Explorer and w
     SELECT * FROM M_INIFILE_CONTENTS WHERE KEY = 'usage';
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'production' WITH RECONFIGURE;
     ```
-
-
-This concludes the exercise on launching database explorer.
     
+This concludes the exercise on launching database explorer.
+
 Continue to - [Exercise 2 - Using SQL Console](../ex2/README.md)
-
-
-
-
-
