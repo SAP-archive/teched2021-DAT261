@@ -1,6 +1,6 @@
 # Exercise 4 - Statement Library
 
-In this exercise, we will explore the statement library and demonsrate how to import and run statements from the SQL Statement Collection for SAP HANA. 
+In this exercise, we will explore the statement library and demonstrate how to import and run statements from the SQL Statement Collection for SAP HANA. 
 
 1. The statement library can be accessed by the context menu on the database.
 

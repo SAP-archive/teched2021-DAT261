@@ -3,20 +3,26 @@ In this exercise, we will use SAP HANA Database Explorer's SQL Console.
 
 For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
 
-1. First, we will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the "Add Database with Different User" option. Define the User as *hotelUser1* and the Password as *Password1*. 
+1. First, lets add new users we will use in the proceeding steps by running the following commands in SQL Console.
+   
+   ```SQL
+   CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
+   CREATE USER USER2 PASSWORD Password2 no force_first_password_change;
+   ```
 
+2. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the "Add Database with Different User" option. Use the credentials User1 and Password1. 
 
-    Organize your database connections by creating database groups. Select the folder icon at the top of your databases panel, and name your new group *System Admins*, create a second new group named *Hotel*. Click and drag the DBAdmin connection into the System Admins group, and the hotelUser1 connection to the Hotel group.
+    Organize your database connections by creating database groups. Select the folder icon at the top of your databases panel, and name your new group *System Admins*, create a second new group named *Hotel*. Click and drag the DBAdmin connection into the System Admins group, and the User1 connection to the Hotel group.
 
       ![](images/NewDBUser.png)
 
-2. Next, right-click on your desired database and select **Open SQL Console**. 
+3. Next, right-click on your desired database connection and select **Open SQL Console**. An instance of SQL Console is associated with the selected database connection only.
 
     ![](images/SqlConsole.png)
 
     We can open SQL console in full-screen by double tapping on the tab name. We can rename a tab by right-clicking and selecting **Rename**.
 
-3. We will be creating a new schema by running the SQL command below. Type this into the SQL Console and click the green arrow at the top of your screen.
+4. We will be creating a new schema by running the SQL command below. Type this into the SQL Console and click the green arrow at the top of your screen.
 
     ```SQL
     CREATE SCHEMA HOTEL;
@@ -26,70 +32,75 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
    ![](images/CreateSchema.png)
 
-    Create a second hotel user and assign a role with privileges to this user. Run the following commands in SQL console.
+    Create a role with privileges and assign to your user. Run the following commands in SQL console.
 
     ```SQL
     CREATE ROLE HOTEL_ADMIN;
+    CREATE ROLE HOTEL_READER;
+
     GRANT ALL PRIVILEGES ON SCHEMA HOTEL TO HOTEL_ADMIN;
-    GRANT HOTEL_ADMIN TO hotelUser1;
+    GRANT SELECT ON SCHEMA HOTEL TO HOTEL_READER;
+
+    GRANT HOTEL_ADMIN TO USER1;
+    GRANT HOTEL_READER TO USER2;
     ```
     Beside the Messages tab, is another tab labelled **History**, click this tab to view previously run queries from SQL console.
 
     ![](images/ViewHistory.png)
 
 
-4. Populate your hotel schema with some tables. Run the following code to create a series of tables for your hotel schema.
+5.  Populate your Hotel schema with some tables. Run the following code to create a series of tables for your Hotel schema.
 
     ```SQL
     CREATE COLUMN TABLE HOTEL.HOTEL(
-    hno INTEGER PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
-    address VARCHAR(40) NOT NULL,
-    city VARCHAR(30) NOT NULL,
-    state VARCHAR(2) NOT NULL,
-    zip VARCHAR(6),
-    location ST_Point(4326)
+        hno INTEGER PRIMARY KEY,
+        name VARCHAR(50) NOT NULL,
+        address VARCHAR(40) NOT NULL,
+        city VARCHAR(30) NOT NULL,
+        state VARCHAR(2) NOT NULL,
+        zip VARCHAR(6),
+        location ST_Point(4326)
     );
     CREATE COLUMN TABLE HOTEL.ROOM(
-    hno INTEGER,
-    type VARCHAR(6),
-    free NUMERIC(3),
-    price NUMERIC(6, 2),
-    PRIMARY KEY (hno, type),
-    FOREIGN KEY (hno) REFERENCES HOTEL.HOTEL
+        hno INTEGER,
+        type VARCHAR(6),
+        free NUMERIC(3),
+        price NUMERIC(6, 2),
+        PRIMARY KEY (hno, type),
+        FOREIGN KEY (hno) REFERENCES HOTEL.HOTEL
     );
     CREATE COLUMN TABLE HOTEL.CUSTOMER(
-    cno INTEGER PRIMARY KEY,
-    title VARCHAR(7),
-    firstname VARCHAR(20),
-    name VARCHAR(40) NOT NULL,
-    address VARCHAR(40) NOT NULL,
-    zip VARCHAR(6)
+        cno INTEGER PRIMARY KEY,
+        title VARCHAR(7),
+        firstname VARCHAR(20),
+        name VARCHAR(40) NOT NULL,
+        address VARCHAR(40) NOT NULL,
+        zip VARCHAR(6)
     );
     CREATE COLUMN TABLE HOTEL.RESERVATION(
-    resno INTEGER NOT NULL GENERATED BY DEFAULT AS IDENTITY,
-    rno INTEGER NOT NULL,
-    cno INTEGER,
-    hno INTEGER,
-    type VARCHAR(6),
-    arrival DATE NOT NULL,
-    departure DATE NOT NULL,
-    PRIMARY KEY (
-        "RESNO", "ARRIVAL"
-    ),
-    FOREIGN KEY(hno) REFERENCES HOTEL.HOTEL,
-    FOREIGN KEY(cno) REFERENCES HOTEL.CUSTOMER
+        resno INTEGER NOT NULL GENERATED BY DEFAULT AS IDENTITY,
+        rno INTEGER NOT NULL,
+        cno INTEGER,
+        hno INTEGER,
+        type VARCHAR(6),
+        arrival DATE NOT NULL,
+        departure DATE NOT NULL,
+        PRIMARY KEY (
+            "RESNO", "ARRIVAL"
+     ),
+        FOREIGN KEY(hno) REFERENCES HOTEL.HOTEL,
+        FOREIGN KEY(cno) REFERENCES HOTEL.CUSTOMER
     );
     CREATE COLUMN TABLE HOTEL.MAINTENANCE(
-    mno INTEGER PRIMARY KEY,
-    hno INTEGER,
-    description VARCHAR(100),
-    date_performed DATE,
-    performed_by VARCHAR(40)
+        mno INTEGER PRIMARY KEY,
+        hno INTEGER,
+        description VARCHAR(100),
+        date_performed DATE,
+        performed_by VARCHAR(40)
     );
     ```
 
-5. Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. 
+6.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. 
 
     ```SQL
     INSERT INTO HOTEL.HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -185,7 +196,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
 
-6. A list of keyboard shortcuts can be found by right-clicking within a SQL console window with some existing text within it. Keyboard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
+7.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window with some existing text within it. Keyboard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
 
    ![](images/KeyboardShortcuts.png)
    
@@ -199,8 +210,11 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ));
     ```
 
-   
-7. To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table. 
+8.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
+
+    ![](images/CodeCompletion.png)
+
+9.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table. 
 
     ![](images/OpenData.png)
 
@@ -210,15 +224,14 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/Analysis.png)
 
-8. Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
-    ![](images/CodeCompletion.png)
 
-9.  A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
+12. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
 
     ![](images/Drag_Drop.png)
 
-10. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+Alt+K. Highlight the text you wish to update and use the shortcut to update all instances of this text.
+13. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+Alt+K. Highlight the text you wish to update and use the shortcut to update all instances of this text.
 
+This concludes the exercise on the using SQL Console.
 
 Continue to - [Exercise 3 - Catalog Browser and Object Search](../ex3/README.md)
