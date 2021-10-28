@@ -200,15 +200,15 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
    ![](images/KeyboardShortcuts.png)
    
-    Navigate back to SQL console and copy the below command in all lowercase, then type Ctrl+ to select the current line. Type Ctrl+Alt+U to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2019 or later.
+   Navigate back to SQL console and copy the below command in all lowercase, then type Ctrl+ to select the current line. Type Ctrl+Alt+U to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2019 or later.
 
-    ```SQL
-    alter table hotel.reservation partition by range(arrival)
-    ((
-    partition '2000-01-01' <= values < '2019-01-01',
-    partition others
-    ));
-    ```
+   ```SQL
+   alter table hotel.reservation partition by range(arrival)
+   ((
+   partition '2000-01-01' <= values < '2019-01-01',
+   partition others
+   ));
+   ```
 
 8.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
@@ -216,16 +216,14 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
 9.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table. 
 
-    ![](images/OpenData.png)
+   ![](images/OpenData.png)
 
    Once found, right-click on Reservations and select **Open Data**.
 
    At the top of your screen, select the **Analysis** tab. Drag and drop the Type attribute into the Label Axis section. Next drag and drop the RESNO field into the Value Axis section. Wait a few seconds and a chart should be formed. Alternate chart types can be selected at the top of the screen.
-
-    ![](images/Analysis.png)
-
-
-
+   
+   ![](images/Analysis.png)
+    
 12. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
 
     ![](images/Drag_Drop.png)
