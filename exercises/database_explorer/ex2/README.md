@@ -3,7 +3,7 @@ In this exercise, we will use SAP HANA Database Explorer's SQL Console. Steps fr
 
 For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
 
-1. First, lets add new users we will use in the proceeding steps by running the following commands in SQL Console. To open SQL Console, right-click on your desired database connection and select **Open SQL Console**. An instance of SQL Console is associated with the selected database connection only.
+1. First, lets add new users we will use in the following steps by running the following commands in SQL Console. To open SQL Console, right-click on your desired database connection and select **Open SQL Console**. An instance of SQL Console is associated with the selected database connection only.
 
    ```SQL
    CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
