@@ -4,13 +4,13 @@ In this exercise, we will use SAP HANA Database Explorer's SQL Console. Steps fr
 For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
 
 1. First, lets add new users we will use in the proceeding steps by running the following commands in SQL Console. To open SQL Console, right-click on your desired database connection and select **Open SQL Console**. An instance of SQL Console is associated with the selected database connection only.
-   
+
    ```SQL
    CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
    CREATE USER USER2 PASSWORD Password2 no force_first_password_change;
    ```
 
-2. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the "Add Database with Different User" option. Use the credentials User1 and Password1. 
+2. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the "Add Database with Different User" option. Use the credentials User1 and Password1.
 
     Organize your database connections by creating database groups. Select the folder icon at the top of your databases panel, and name your new group *System Admins*, create a second new group named *Hotel*. Click and drag the DBAdmin connection into the System Admins group, and the User1 connection to the Hotel group.
 
@@ -27,8 +27,8 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ```SQL
     CREATE SCHEMA HOTEL;
     ```
-   
-   After running this command with the SQL console, you may notice that performance metrics are provided in the console output of database explorer under **Messages**. 
+
+   After running this command with the SQL console, you may notice that performance metrics are provided in the console output of database explorer under **Messages**.
 
    ![](images/CreateSchema.png)
 
@@ -100,7 +100,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     );
     ```
 
-6.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. 
+6.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
 
     ```SQL
     INSERT INTO HOTEL.HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -193,13 +193,13 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ```
 
     ![](images/BackgroundActivity.png)
-    
+
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
 
-7.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window. 
+7.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window.
 
     ![](images/KeyboardShortcuts.png)
-    
+
     Navigate back to SQL console and copy the below command in all lowercase, then type Ctrl+ to select the current line. Type Ctrl+Alt+U to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2019 or later.
 
      ```SQL
@@ -223,22 +223,20 @@ For the rest of this workshop, we will be creating and working with a sample sch
     Increase/Decrease Font Size | Ctrl+Shift+Up  or Ctrl+Shift+Down
     Go to Next Error | Alt+E
     Go to Previous Error | Alt+Shift+E
-  
+
 8.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
     ![](images/CodeCompletion.png)
 
-9.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table. 
+9.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table.
 
-    ![](images/OpenData.png)
+   ![](images/OpenData.png)
 
    Once found, right-click on Reservations and select **Open Data**.
 
    At the top of your screen, select the **Analysis** tab. Drag and drop the Type attribute into the Label Axis section. Next drag and drop the RESNO field into the Value Axis section. Wait a few seconds and a chart should be formed. Alternate chart types can be selected at the top of the screen.
 
-    ![](images/Analysis.png)
-
-
+   ![](images/Analysis.png)
 
 12. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
 
