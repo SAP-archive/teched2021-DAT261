@@ -1,9 +1,9 @@
 # Exercise 2 - Using SQL Console
-In this exercise, we will use SAP HANA Database Explorer's SQL Console.
+In this exercise, we will use SAP HANA Database Explorer's SQL Console. Steps from this exercise are based on content from the SAP Tutorial Group [Getting Started with the SAP HANA Database Explorer](https://developers.sap.com/group.hana-cloud-get-started.html).
 
 For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
 
-1. First, lets add new users we will use in the proceeding steps by running the following commands in SQL Console.
+1. First, lets add new users we will use in the proceeding steps by running the following commands in SQL Console. To open SQL Console, right-click on your desired database connection and select **Open SQL Console**. An instance of SQL Console is associated with the selected database connection only.
    
    ```SQL
    CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
@@ -16,7 +16,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
       ![](images/NewDBUser.png)
 
-3. Next, right-click on your desired database connection and select **Open SQL Console**. An instance of SQL Console is associated with the selected database connection only.
+3. Open a new SQL Console tab using the User1 connection you just created.
 
     ![](images/SqlConsole.png)
 
@@ -196,13 +196,13 @@ For the rest of this workshop, we will be creating and working with a sample sch
     
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
 
-7.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window with some existing text within it. Keyboard shortcuts must be enabled by clicking the Settings icon on the left of the Database Explorer screen and navigating to Keyboard Shortcuts. Ensure Shortcuts to Use is set to Default, and click Save.
+7.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window. 
 
-   ![](images/KeyboardShortcuts.png)
-   
+    ![](images/KeyboardShortcuts.png)
+    
     Navigate back to SQL console and copy the below command in all lowercase, then type Ctrl+ to select the current line. Type Ctrl+Alt+U to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2019 or later.
 
-    ```SQL
+     ```SQL
     alter table hotel.reservation partition by range(arrival)
     ((
     partition '2000-01-01' <= values < '2019-01-01',
@@ -210,6 +210,20 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ));
     ```
 
+    Here is a list of popular keyboard shortcuts for future reference:
+    Action | Shortcut
+    ------ | ------
+    Comment/Uncomment Line | Ctrl+/
+    Add Comment Block | Ctrl+Shift+/
+    Format Code	|Ctrl+B
+    Switch tabs	|Ctrl+Alt+Pageup  or Ctrl+Alt+Pagedown
+    Close Window  |	Ctrl+W
+    Run All | F8
+    Run Statement |	F9
+    Increase/Decrease Font Size | Ctrl+Shift+Up  or Ctrl+Shift+Down
+    Go to Next Error | Alt+E
+    Go to Previous Error | Alt+Shift+E
+  
 8.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
     ![](images/CodeCompletion.png)
@@ -231,6 +245,25 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ![](images/Drag_Drop.png)
 
 13. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+Alt+K. Highlight the text you wish to update and use the shortcut to update all instances of this text.
+
+14. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
+
+    Expand the Statement/Syntax or Tables and Views sections of the Statement Help panel, and copy the following SQL into the SQL console to populate the Statement/Syntax section of the help panel:
+
+    ```SQL
+    SELECT
+    H.NAME AS HOTEL_NAME,
+    R.TYPE,
+    R.FREE,
+    R.PRICE
+    FROM
+    HOTEL.ROOM AS R
+    LEFT OUTER JOIN
+    HOTEL.HOTEL AS H
+    ON R.HNO = H.HNO;
+    ```
+    [](images/StatementHelp.png)
+
 
 This concludes the exercise on the using SQL Console.
 
