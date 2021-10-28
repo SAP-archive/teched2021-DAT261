@@ -40,7 +40,7 @@ In this exercise, we will explore the statement library and demonsrate how to im
 
     The following steps import statements that apply to SAP HANA Cloud.
 
-    * Create a zip of statements that contain _SHC.
+    * Create a zip of statements that contain **SHC**.
         
         ![](images/CreateZip.png)
 

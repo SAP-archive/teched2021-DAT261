@@ -6,11 +6,15 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/TablesInCatalogBrowser.png)
 
-    Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables** from the context menu.  Additional filters can be applied in this view by clicking on the column header.  A schema filter with a value of HOTEL was applied in the screenshot below.
+    Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables** from the context menu.
     
     ![](images/TablesInCatalogBrowser2.png)
 
+    Additional filters can be applied in this view by clicking on the column header.  A schema filter with a value of HOTEL was applied in the screenshot above.
+
 2. The properties of a selected object such as the RESERVATION table can be viewed by choosing **Open** from a selected table's context menu.
+
+    ![](images/OpenTable.png)
 
     ![](images/TableColumns.png)
 
@@ -38,7 +42,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/RevealInCatalogBrowser.png)
 
-7. Additional functionality is available from the catalog browser such as analyze SQLScript and debugging stored procedures. 
+7. Additional functionality is available from the catalog browser such as **Analyze SQLScript Code** which can provide suggestions for code quality, security, or performance and **Open for Debugging** which enables stored procedures, functions or anonymous blocks to be debugged. 
 
     ![](images/AnalyzeSQLScriptCode.png)
 
