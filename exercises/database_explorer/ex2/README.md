@@ -1,28 +1,10 @@
 # Exercise 2 - Using SQL Console
-In this exercise, we will use SAP HANA Database Explorer's SQL Console. Steps from this exercise are based on content from the SAP Tutorial Group [Getting Started with the SAP HANA Database Explorer](https://developers.sap.com/group.hana-cloud-get-started.html).
+In this exercise, we will use SAP HANA database explorer's SQL Console. Steps from this exercise are based on content from the SAP Tutorial Group [Getting Started with the SAP HANA Database Explorer](https://developers.sap.com/group.hana-cloud-get-started.html).
 
 For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
 
-1. First, lets add new users we will use in the following steps by running the following commands in SQL Console. To open SQL Console, right-click on your desired database connection and select **Open SQL Console**. An instance of SQL Console is associated with the selected database connection only.
 
-   ```SQL
-   CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
-   CREATE USER USER2 PASSWORD Password2 no force_first_password_change;
-   ```
-
-2. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the "Add Database with Different User" option. Use the credentials User1 and Password1.
-
-    Organize your database connections by creating database groups. Select the folder icon at the top of your databases panel, and name your new group *System Admins*, create a second new group named *Hotel*. Click and drag the DBAdmin connection into the System Admins group, and the User1 connection to the Hotel group.
-
-      ![](images/NewDBUser.png)
-
-3. Open a new SQL Console tab using the User1 connection you just created.
-
-    ![](images/SqlConsole.png)
-
-    We can open SQL console in full-screen by double tapping on the tab name. We can rename a tab by right-clicking and selecting **Rename**.
-
-4. We will be creating a new schema by running the SQL command below. Type this into the SQL Console and click the green arrow at the top of your screen.
+1. We will be creating a new schema by running the SQL command below. Type the following into the SQL Console and click the green arrow at the top of your screen.
 
     ```SQL
     CREATE SCHEMA HOTEL;
@@ -49,7 +31,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ![](images/ViewHistory.png)
 
 
-5.  Populate your Hotel schema with some tables. Run the following code to create a series of tables for your Hotel schema.
+2.  Populate your Hotel schema with some tables. Run the following code to create a series of tables for your Hotel schema.
 
     ```SQL
     CREATE COLUMN TABLE HOTEL.HOTEL(
@@ -100,7 +82,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     );
     ```
 
-6.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
+3.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
 
     ```SQL
     INSERT INTO HOTEL.HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -196,7 +178,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
 
-7.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window.
+4.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window.
 
     ![](images/KeyboardShortcuts.png)
 
@@ -238,13 +220,15 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
    ![](images/Analysis.png)
 
-12. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
+10. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
 
     ![](images/Drag_Drop.png)
 
-13. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+Alt+K. Highlight the text you wish to update and use the shortcut to update all instances of this text.
+11. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+F for Google Chrome and Internet explorer. Once the Find tool appears on your screen, click the + sign to expand the Replace option.
 
-14. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
+    ![](images/FindReplace.png)
+
+12. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
 
     Expand the Statement/Syntax or Tables and Views sections of the Statement Help panel, and copy the following SQL into the SQL console to populate the Statement/Syntax section of the help panel:
 
