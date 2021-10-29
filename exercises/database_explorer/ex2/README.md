@@ -206,11 +206,11 @@ For the rest of this workshop, we will be creating and working with a sample sch
     Go to Next Error | Alt+E
     Go to Previous Error | Alt+Shift+E
 
-8.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
+5.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
    ![](images/CodeCompletion.png)
 
-9.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table.
+6.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table.
 
     ![](images/OpenData.png)
 
@@ -218,17 +218,17 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
    At the top of your screen, select the **Analysis** tab. Drag and drop the Type attribute into the Label Axis section. Next drag and drop the RESNO field into the Value Axis section. Wait a few seconds and a chart should be formed. Alternate chart types can be selected at the top of the screen.
 
-   ![](images/Analysis.png)
+    ![](images/Analysis.png)
 
-10. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
+7. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
 
     ![](images/Drag_Drop.png)
 
-11. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+F for Google Chrome and Internet explorer. Once the Find tool appears on your screen, click the + sign to expand the Replace option.
+8. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+F for Google Chrome and Internet explorer. Once the Find tool appears on your screen, click the + sign to expand the Replace option.
 
     ![](images/FindReplace.png)
 
-12. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
+9. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
 
     Expand the Statement/Syntax or Tables and Views sections of the Statement Help panel, and copy the following SQL into the SQL console to populate the Statement/Syntax section of the help panel:
 
