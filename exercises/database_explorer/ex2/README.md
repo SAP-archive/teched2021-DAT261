@@ -208,11 +208,11 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
 8.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
-    ![](images/CodeCompletion.png)
+   ![](images/CodeCompletion.png)
 
 9.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table.
 
-   ![](images/OpenData.png)
+    ![](images/OpenData.png)
 
    Once found, right-click on Reservations and select **Open Data**.
 
