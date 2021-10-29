@@ -30,6 +30,10 @@ In this exercise, we will explore the statement library and demonstrate how to i
         WHERE ARRIVAL >= CURRENT_DATE ORDER BY ARRIVAL ASC;
     ```
 
+    >Note that the SQL Console tab name is used for the name in the statement library.
+
+    ![](images/UserStatementAdded.png)
+
     Alternatively, they can be imported from a file or from a zip file.
 
 4. A commonly used set of diagnostic SQL statements can be downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).

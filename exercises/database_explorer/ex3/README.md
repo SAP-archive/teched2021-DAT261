@@ -38,9 +38,15 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/SearchAcrossAllDatabases.png)
 
-6. An object such as the view RESERVATION_VIEW can opened by clicking on it.  Once it is open, it can be located in the catalog browser by selecting **Display in Database Browser** from the context menu of the tab.
+6. An object such as the stored procedure RESERVATION_GENERATOR can opened by clicking on it.  Once it is open, it can be located in the catalog browser by selecting **Display in Database Browser** from the context menu of the tab.
 
     ![](images/RevealInCatalogBrowser.png)
+
+    Right-click on the stored **RESERVATION_GENERATOR** and choose **Generate CALL Statement with UI**.
+
+    Notice that a UI is provided to easily call the stored procedure.
+
+    ![](images/CallStoredProcedure.png)
 
 7. Additional functionality is available from the catalog browser such as **Analyze SQLScript Code** which can provide suggestions for code quality, security, or performance and **Open for Debugging** which enables stored procedures, functions or anonymous blocks to be debugged. 
 
