@@ -24,7 +24,7 @@ In this exercise, we will launch an instance of SAP HANA database explorer and w
 
 3. At the top of the left pane, click the arrow next to the database icon, to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files).
 
-    Expand **Catalog** then **Views**, this will present a list of the schemas available for this database. Directly above the list are search bars for schema and objects, you can search for the **Sys** schema and views that begin with **m_data**. Once you right-click and select **Open** to access those views. The search results for **m_data** contain a number of monitoring views for your database.
+    Expand **Catalog** then **Views**, this will present a list of the schemas available for this database. Directly above the list are search bars for schema and objects, you can search for the **SYS** schema and views that begin with **M_DATA**. Once you right-click and select **Open** to access those views. The search results for **M_DATA** contain a number of monitoring views for your database.
 
     ![](images/SchemaMenu.png)
 
