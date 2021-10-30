@@ -14,7 +14,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
    ![](images/CreateSchema.png)
 
-    Create a role with privileges and assign to your user. Run the following commands in SQL console.
+    Let's assign the users we created in the last exercise some roles and permissions for the Hotel schema.
 
     ```SQL
     CREATE ROLE HOTEL_ADMIN;
@@ -31,7 +31,12 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ![](images/ViewHistory.png)
 
 
-2.  Populate your Hotel schema with some tables. Run the following code to create a series of tables for your Hotel schema.
+2. For the rest of the exercise, we will use SQL console associated with the User connection we created in the last exercise. Open a new SQL Console tab using the User1.
+    ![](images/SqlConsole.png)
+
+    We can open SQL console in full-screen by double tapping on the tab name. We can rename a tab by right-clicking and selecting **Rename**.
+
+3.  Populate your Hotel schema with some tables. Run the following code to create a series of tables for your Hotel schema.
 
     ```SQL
     CREATE COLUMN TABLE HOTEL.HOTEL(
@@ -82,7 +87,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     );
     ```
 
-3.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
+4.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
 
     ```SQL
     INSERT INTO HOTEL.HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -178,7 +183,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
 
-4.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window.
+5.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window.
 
     ![](images/KeyboardShortcuts.png)
 

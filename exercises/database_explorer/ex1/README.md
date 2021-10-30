@@ -43,14 +43,7 @@ In this exercise, we will launch an instance of SAP HANA database explorer and w
 
       ![](images/NewDBUser.png)
 
-6. Open a new SQL Console tab using the User1 connection you just created.
-
-    ![](images/SqlConsole.png)
-
-    We can open SQL console in full-screen by double tapping on the tab name. We can rename a tab by right-clicking and selecting **Rename**.
-
-
-7.  Users may benefit from identifying the difference between production and non-production databases. To do this run the command below.
+6.  Users may benefit from identifying the difference between production and non-production databases. To do this run the command below.
     ```SQL
     SELECT * FROM M_INIFILE_CONTENTS WHERE KEY = 'usage';
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'production' WITH RECONFIGURE;
