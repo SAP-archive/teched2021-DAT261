@@ -1,20 +1,22 @@
-# Exercise 2 - Using SQL Console
+# Exercise 2 - Using the SQL Console
 In this exercise, we will use SAP HANA database explorer's SQL Console. Steps from this exercise are based on content from the SAP Tutorial Group [Getting Started with the SAP HANA Database Explorer](https://developers.sap.com/group.hana-cloud-get-started.html).
 
-For the rest of this workshop, we will be creating and working with a sample schema titled **Hotel**. This will represent a basic hotel administration system.
+For the rest of this workshop, we will be creating and working with a sample schema named **HOTEL**. This will represent a basic hotel administration system.
 
 
-1. We will be creating a new schema by running the SQL command below. Type the following into the SQL Console and click the green arrow at the top of your screen.
+1. Create a new schema by running the SQL command below. 
 
     ```SQL
     CREATE SCHEMA HOTEL;
     ```
 
-   After running this command with the SQL console, you may notice that performance metrics are provided in the console output of database explorer under **Messages**.
+    >Note: The SQL Console must be connected with the DBADMIN connection as USER1 has not yet been assigned privileges.
+
+   After running this command with the SQL console, you may notice that resource metrics are provided in the console output of database explorer under **Messages**.
 
    ![](images/CreateSchema.png)
 
-    Let's assign the users we created in the last exercise some roles and permissions for the Hotel schema.
+    Let's assign the users we created in the last exercise to some roles with privileges on the HOTEL schema.
 
     ```SQL
     CREATE ROLE HOTEL_ADMIN;
@@ -30,13 +32,16 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/ViewHistory.png)
 
+    Notice that items from the history can be dragged into the SQL Console.
 
-2. For the rest of the exercise, we will use SQL console associated with the User connection we created in the last exercise. Open a new SQL Console tab using the User1.
+
+2. For the rest of the exercise, we will use SQL Console associated with the USER1 connection.  Change the connection to use **DEMO_HANA_DB (USER1)** instead as shown below.
+
     ![](images/SqlConsole.png)
 
-    We can open SQL console in full-screen by double tapping on the tab name. We can rename a tab by right-clicking and selecting **Rename**.
+    >Note: A SQL console can be opened in full-screen by double tapping on the tab name. There is also an option to rename tabs by right-clicking and selecting **Rename**.
 
-3.  Populate your Hotel schema with some tables. Run the following code to create a series of tables for your Hotel schema.
+3. Populate the HOTEL schema with some tables. Run the following SQL statements.
 
     ```SQL
     CREATE COLUMN TABLE HOTEL.HOTEL(
@@ -181,18 +186,18 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/BackgroundActivity.png)
 
-    Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run a single command on multiple databases.
+    Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statemetns on multiple databases.
 
 5.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window.
 
     ![](images/KeyboardShortcuts.png)
 
-    Navigate back to SQL console and copy the below command in all lowercase, then type Ctrl+ to select the current line. Type Ctrl+Alt+U to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2019 or later.
+    Navigate back to SQL console and copy the below command.  Highlight the statement using the mouse.  Type **Ctrl+Alt+U** to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2020 or later.
 
      ```SQL
     alter table hotel.reservation partition by range(arrival)
     ((
-    partition '2000-01-01' <= values < '2019-01-01',
+    partition '2000-01-01' <= values < '2020-01-01',
     partition others
     ));
     ```
@@ -203,37 +208,40 @@ For the rest of this workshop, we will be creating and working with a sample sch
     Comment/Uncomment Line | Ctrl+/
     Add Comment Block | Ctrl+Shift+/
     Format Code	|Ctrl+B
-    Switch tabs	|Ctrl+Alt+Pageup  or Ctrl+Alt+Pagedown
-    Close Window  |	Ctrl+W
-    Run All | F8
-    Run Statement |	F9
-    Increase/Decrease Font Size | Ctrl+Shift+Up  or Ctrl+Shift+Down
     Go to Next Error | Alt+E
     Go to Previous Error | Alt+Shift+E
+    Increase/Decrease Font Size | Ctrl+Shift+Up  or Ctrl+Shift+Down
+    Jump to Matching Brackets | Ctrl+Shift+M
+    Run All | F8
+    Run Statement |	F9
+    Switch tabs	|Ctrl+Alt+Pageup  or Ctrl+Alt+Pagedown
+    Text Completion | Ctrl+Space (requires two characters to be entered)
 
-5.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
+    >Note: The shortcut keys may vary depending on the browser used.
 
-   ![](images/CodeCompletion.png)
+6.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
-6.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table.
+    ![](images/CodeCompletion.png)
+
+7.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table.
 
     ![](images/OpenData.png)
 
-   Once found, right-click on Reservations and select **Open Data**.
+    Once found, right-click on Reservations and select **Open Data**.
 
-   At the top of your screen, select the **Analysis** tab. Drag and drop the Type attribute into the Label Axis section. Next drag and drop the RESNO field into the Value Axis section. Wait a few seconds and a chart should be formed. Alternate chart types can be selected at the top of the screen.
+    At the top of your screen, select the **Analysis** tab. Drag and drop the Type attribute into the Label Axis section. Next drag and drop the RESNO field into the Value Axis section. Change the operation on RESNO from SUM to **COUNT**.  Wait a few seconds and a chart should be formed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
 
     ![](images/Analysis.png)
 
-7. A user can drag and drop database objects from the menu on the left to complete SQL queries. From the database menu, select Catalog, then Tables. Search "Hotel" in the Schema field below. Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
+8. Objects from the catalog or database browser can be dragged onto the SQL Console.  Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
 
     ![](images/Drag_Drop.png)
 
-8. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+F for Google Chrome and Internet explorer. Once the Find tool appears on your screen, click the + sign to expand the Replace option.
+9. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+F.  Once the Find tool appears on your screen, click the + sign to expand the Replace option.
 
     ![](images/FindReplace.png)
 
-9. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
+10. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
 
     Expand the Statement/Syntax or Tables and Views sections of the Statement Help panel, and copy the following SQL into the SQL console to populate the Statement/Syntax section of the help panel:
 
@@ -249,7 +257,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     HOTEL.HOTEL AS H
     ON R.HNO = H.HNO;
     ```
-    [](images/StatementHelp.png)
+    ![](images/StatementHelp.png)
 
 
 This concludes the exercise on the using SQL Console.
