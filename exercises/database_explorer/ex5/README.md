@@ -8,7 +8,6 @@ In this exercise, we will mention some additional areas of functionality and whe
 
     ![](images/ExportDataWizard.png)
 
-    
 
 2. Multiple objects can be exported or imported at one time using the catalog export and import wizards.  A catalog export also includes the SQL to create the exported objects.
 
@@ -23,8 +22,6 @@ In this exercise, we will mention some additional areas of functionality and whe
 
     ![](images/TraceFilesWthSQL.png)
 
-    > Note: The values for HOST and FILE_NAME used in the second select statement below can be obtained from the results of the first select statement.
-
     ```SQL
     SELECT * FROM M_TRACEFILES;
 
@@ -32,6 +29,10 @@ In this exercise, we will mention some additional areas of functionality and whe
 
     SELECT DB_USER, SCHEMA_NAME, START_TIME, STATEMENT_STRING, OBJECT_NAME FROM M_EXECUTED_STATEMENTS;
     ```
+
+    > Note: The values for HOST and FILE_NAME used in the second select statement above can be obtained from the results of the first select statement.
+
+    Trace files can also be located and browsed under *Database Diagnostic Files*.
 
     ![](images/ExecutedStatementsTrace.png) 
 
