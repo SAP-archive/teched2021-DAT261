@@ -10,7 +10,7 @@ In this exercise, we will mention some additional areas of functionality and whe
 
     
 
-2. Multiple objects can be exported or imported at one time using the catalog export and import wizards.  A catalog export also includes the SQL create the exported objects.s
+2. Multiple objects can be exported or imported at one time using the catalog export and import wizards.  A catalog export also includes the SQL to create the exported objects.
 
     ![](images/ExportDataCatalog.png)
 
@@ -22,6 +22,8 @@ In this exercise, we will mention some additional areas of functionality and whe
 3. Trace file information can be found using either SQL queries or using the Database Diagnostic Files.  
 
     ![](images/TraceFilesWthSQL.png)
+
+    > Note: The values for HOST and FILE_NAME used in the second select statement below can be obtained from the results of the first select statement.
 
     ```SQL
     SELECT * FROM M_TRACEFILES;
@@ -48,8 +50,6 @@ In this exercise, we will mention some additional areas of functionality and whe
     ![](images/Spatial.png) 
 
     ```SQL
-    RENAME TABLE "HOTEL"."Points_of_Interest" TO HOTEL.POI_LONGVIEW;
-
     SELECT
         P.NAME,
         P.FCODE,
@@ -77,4 +77,4 @@ In this exercise, we will mention some additional areas of functionality and whe
 
 This concludes the exercises on the SAP HANA database explorer.
 
-Return to - [Get Hands-On Experience with Administering and Operating SAP HANA Cloud [DAT261]](../../README.md)
+Return to - [Get Hands-On Experience with Administering and Operating SAP HANA Cloud [DAT261]](../../../README.md)

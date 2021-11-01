@@ -1,5 +1,5 @@
 # Exercise 2 - Using the SQL Console
-In this exercise, we will use SAP HANA database explorer's SQL Console. Steps from this exercise are based on content from the SAP Tutorial Group [Getting Started with the SAP HANA Database Explorer](https://developers.sap.com/group.hana-cloud-get-started.html).
+In this exercise, we will use SAP HANA database explorer's SQL console. Steps from this exercise are based on content from the SAP Tutorial Group [Getting Started with the SAP HANA Database Explorer](https://developers.sap.com/group.hana-cloud-get-started.html).
 
 For the rest of this workshop, we will be creating and working with a sample schema named **HOTEL**. This will represent a basic hotel administration system.
 
@@ -10,7 +10,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     CREATE SCHEMA HOTEL;
     ```
 
-    >Note: The SQL Console must be connected with the DBADMIN connection as USER1 has not yet been assigned privileges.
+    >Note: The SQL console must be connected with the DBADMIN connection as USER1 has not yet been assigned privileges.
 
    After running this command with the SQL console, you may notice that resource metrics are provided in the console output of database explorer under **Messages**.
 
@@ -32,14 +32,13 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/ViewHistory.png)
 
-    Notice that items from the history can be dragged into the SQL Console.
+    > Note:  Items from the history can be dragged into the SQL console.  
 
-
-2. For the rest of the exercise, we will use SQL Console associated with the USER1 connection.  Change the connection to use **DEMO_HANA_DB (USER1)** instead as shown below.
+2. For the rest of the exercise, we will use SQL console associated with the USER1 connection.  Change the connection to use **DEMO_HANA_DB (USER1)** instead as shown below.
 
     ![](images/SqlConsole.png)
 
-    >Note: A SQL console can be opened in full-screen by double tapping on the tab name. There is also an option to rename tabs by right-clicking and selecting **Rename**.
+    >Note: The SQL console can be opened in full-screen mode by double tapping on the tab name. There is also an option to rename tabs in the right-click context menu.
 
 3. Populate the HOTEL schema with some tables. Run the following SQL statements.
 
@@ -186,13 +185,13 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/BackgroundActivity.png)
 
-    Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statemetns on multiple databases.
+    Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
 
-5.  A list of keyboard shortcuts can be found by right-clicking within a SQL console window.
+5.  A list of keyboard shortcuts can be found by right-clicking within the SQL console window.
 
     ![](images/KeyboardShortcuts.png)
 
-    Navigate back to SQL console and copy the below command.  Highlight the statement using the mouse.  Type **Ctrl+Alt+U** to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2020 or later.
+    Navigate back to the SQL console and copy the below command.  Highlight the statement using the mouse.  Type **Ctrl+Alt+U** to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2020 or later.
 
      ```SQL
     alter table hotel.reservation partition by range(arrival)
@@ -219,7 +218,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-6.  Code completion is a tool available within SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
+6.  Code completion is a tool available within the SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
 
     ![](images/CodeCompletion.png)
 
@@ -233,11 +232,11 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/Analysis.png)
 
-8. Objects from the catalog or database browser can be dragged onto the SQL Console.  Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
+8. Objects from the catalog or database browser can be dragged onto a SQL console.  Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
 
     ![](images/Drag_Drop.png)
 
-9. Find and Replace is available within SQL console. The keyboard shortcut for this tool is Ctrl+F.  Once the Find tool appears on your screen, click the + sign to expand the Replace option.
+9. Find and Replace is available within a SQL console. The keyboard shortcut for this tool is Ctrl+F.  Once the Find tool appears on your screen, click the + sign to expand the Replace option.
 
     ![](images/FindReplace.png)
 
@@ -259,7 +258,102 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ```
     ![](images/StatementHelp.png)
 
+    > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
 
-This concludes the exercise on the using SQL Console.
+11. Execute the following SQL Statements to create a few some views, functions and stored procedures to futher populate the HOTEL schema.  
+
+    ```SQL
+    CREATE OR REPLACE VIEW HOTEL.RESERVATION_VIEW AS
+	SELECT
+		R.RESNO,
+		H.NAME AS HOTEL_NAME,
+    R.ARRIVAL,
+    R.DEPARTURE,
+		CUS.TITLE,
+		CUS.FIRSTNAME,
+		CUS.NAME AS CUSTOMER_NAME,
+		CUS.ADDRESS AS CUSTOMER_ADDRESS
+	FROM HOTEL.RESERVATION R
+		LEFT JOIN HOTEL.HOTEL H ON H.HNO = R.HNO
+		LEFT JOIN HOTEL.CUSTOMER CUS ON CUS.CNO = R.CNO
+    ORDER BY H.NAME, R.ARRIVAL DESC;
+
+    CREATE OR REPLACE VIEW HOTEL.HOTEL_ROOMS_VIEW AS
+	SELECT
+		H.NAME AS HOTEL_NAME,
+		R.TYPE,
+		R.FREE,
+		R.PRICE
+	FROM HOTEL.ROOM R
+		LEFT JOIN HOTEL.HOTEL H ON R.HNO = H.HNO
+        ORDER BY H.NAME;
+
+    CREATE OR REPLACE FUNCTION HOTEL.AVERAGE_PRICE(room_type CHAR(6))
+    RETURNS avg_price NUMERIC(6, 2)
+    AS
+    BEGIN
+        DECLARE EXIT HANDLER FOR SQLEXCEPTION avg_price := '-1';
+        SELECT TO_DECIMAL(ROUND(sum(PRICE)/COUNT(*), 2, ROUND_HALF_UP)) INTO avg_price FROM HOTEL.ROOM WHERE TYPE = :room_type GROUP BY TYPE;
+    END;        
+
+    CREATE OR REPLACE PROCEDURE HOTEL.RESERVATION_GENERATOR(
+    IN numToGenerate INTEGER
+    )
+        LANGUAGE SQLSCRIPT AS
+    BEGIN
+        USING SQLSCRIPT_PRINT AS PRTLIB;
+        DECLARE val INT :=0;
+        DECLARE stmt VARCHAR(256) := '';
+        DECLARE rno INT :=0;
+        DECLARE cno INT :=0;
+        DECLARE hno INT :=0;
+        DECLARE roomType STRING := '';
+        DECLARE arriveDate DATE := null;
+        DECLARE arriveDateString STRING := '';
+        DECLARE departDate DATE := null;
+        DECLARE departDateString STRING := '';
+        DECLARE randomDaysFromCurrent INT :=0;
+        DECLARE randomLengthOfStay INT :=0;
+        DECLARE rType INT :=0;
+        DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 301
+        SELECT ::SQL_ERROR_CODE, ::SQL_ERROR_MESSAGE FROM DUMMY;
+        WHILE (val < numToGenerate) DO
+            -- generate random room number from 100-300
+            rno := FLOOR(RAND_SECURE() * 201) + 100;
+            -- generate random customer number from 1000-1014
+            cno := FLOOR(RAND_SECURE() * 15) + 1000;
+            -- generate random hotel number from 10-26
+            hno := FLOOR(RAND_SECURE() * 17) + 10;
+            -- generate random number from 1-3 to determine room type
+            rType := FLOOR(RAND_SECURE() * 3) + 1;
+            IF (rType = 1) THEN
+                roomType := '''single''';
+            ELSEIF (rType = 2) THEN
+                roomType := '''double''';
+            ELSEIF (rType = 3) THEN
+                roomType := '''suite''';
+            END IF;
+
+            -- generate random number of days to be used for arrival date.  
+            -- date range is one year in the past to one year in the future
+            randomDaysFromCurrent := FLOOR(RAND_SECURE() * 730) + 1 - 365;
+            arriveDate := ADD_DAYS( TO_DATE( CURRENT_DATE, 'YYYY-MM-DD' ), randomDaysFromCurrent );
+            arriveDateString := '''' || TO_VARCHAR( arriveDate, 'YYYY-MM-DD' ) || '''';
+            -- generate a random number of days to stay
+            randomLengthOfStay := FLOOR(RAND_SECURE() * 7) + 1;
+            departDate := ADD_DAYS( arriveDate, randomLengthOfStay );
+            departDateString := '''' || TO_VARCHAR( departDate, 'YYYY-MM-DD' ) || '''';
+
+            -- Reservations Columns: RNO, CNO, HNO, Type, Arrival, Departure
+            stmt := 'INSERT INTO HOTEL.RESERVATION (RNO, CNO, HNO, TYPE, ARRIVAL, DEPARTURE) VALUES(' || rno || ',' || cno || ',' || hno || ',' || roomType || ',' || arriveDateString || ',' || departDateString || ');';
+            PRTLIB:PRINT_LINE(stmt);
+            EXEC(stmt);
+            val := val + 1;
+        END WHILE;
+    PRTLIB:PRINT_LINE('Rows inserted: ' || val);
+    END;
+    ```
+
+This concludes the exercise on the using SQL console.
 
 Continue to - [Exercise 3 - Catalog Browser and Object Search](../ex3/README.md)

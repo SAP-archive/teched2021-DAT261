@@ -14,27 +14,33 @@ In this exercise, we will explore the statement library and demonstrate how to i
 
     The following is an example result of running the **Connection Attempts and Status** system statement after a successful and then failed connect attempt.
 
-    ![](images/SystemStatementsConnections.png)
+    ![](images/SystemStatementsConnections.png)Future
 
     ```sql
     CONNECT USER1 PASSWORD Password1;
     CONNECT USER1 PASSWORD WrongPwd;
     ```
 
-3. User statements can be added from the SQL Console.
+3. User statements can be added from the SQL console.
 
     ![](images/AddUserStatement.png)
 
     ```sql
+    /* 
+
+    [DESCRIPTION]
+
+    - All check-ins today or in the future
+
+    */
+
     SELECT * FROM HOTEL.RESERVATION
         WHERE ARRIVAL >= CURRENT_DATE ORDER BY ARRIVAL ASC;
     ```
 
-    >Note that the SQL Console tab name is used for the name in the statement library.
+    >Note that the SQL console tab name is used for the name in the statement library.
 
     ![](images/UserStatementAdded.png)
-
-    Alternatively, they can be imported from a file or from a zip file.
 
 4. A commonly used set of diagnostic SQL statements can be downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).
 
@@ -42,7 +48,7 @@ In this exercise, we will explore the statement library and demonstrate how to i
 
     Once unzipped, it can be seen that there are statements for different versions of SAP HANA. 
 
-    The following steps import statements that apply to SAP HANA Cloud.
+    The following steps import statements that apply specifically to SAP HANA Cloud.
 
     * Create a zip of statements that contain **SHC**.
         
@@ -57,6 +63,8 @@ In this exercise, we will explore the statement library and demonstrate how to i
     * Execute a statement such as the **HANA_Configuration_MiniChecks_SHC**.
     
         ![](images/HANAConfigurationMiniChecks.png)
+
+        Notice below that the results shows the value for a check, what the expected range of values is for each check, an X if the value is outside the expected range, and an SAP Note to reference for further information. 
 
         ![](images/HANAConfigurationMiniChecksResult.png)
 

@@ -1,16 +1,16 @@
 # Exercise 1 - Launch and Connect with the SAP HANA Database Explorer
 
-In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to connections.
+In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to databases.
 
 1. From the SAP BTP Cockpit, you can choose to open the SAP HANA database explorer by clicking the Actions dropdown on your instance and selecting **Open in SAP HANA Database Explorer**.
 
     ![](images/BTPCockpit.png)
 
-    >Note: Trial instances are shut down overnight. Instances can be restarted by clicking the **Manage SAP HANA Cloud** button and selecting **Start** on the dropdown menu for your instance.
-
     You may be prompted to enter database login credentials at this point. Enter the DBADMIN user credentials which were set during the SAP HANA instance creation process.
 
-    Credentials for a cockpit database can be saved within the SAP HANA cockpit, removing the need for users to log in each time they wish to access their database. For credentials to be saved, users must navigate to SAP HANA cockpit to save or manage their credentials.
+    >Note: Trial instances are shut down overnight. Instances can be restarted by clicking the **Manage SAP HANA Cloud** button and selecting **Start** on the dropdown menu for your instance.
+
+    >Note: Credentials for a cockpit database can be saved within the SAP HANA cockpit, removing the need for users to log in each time they wish to access their database. For credentials to be saved, users must navigate to SAP HANA cockpit to save or manage their credentials.
 
 2. Hover over your database in the database context menu. A summary should appear that identifies the type as a cockpit database.
 
@@ -26,13 +26,15 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/Catalog.png)
 
-    Expand **Catalog** then **Views**, this will present a list of the schemas available for this database. Directly above the list are search bars for schema and objects, you can search for the **SYS** schema and views that begin with **M_DATA**. Once you right-click and select **Open** to access those views. The search results for **M_DATA** contain a number of monitoring views for your database.
+    Expand **Catalog** then **Views**, this will present a list of the schemas available for this database. Directly above the list are search bars for schema and objects, you can search for the **SYS** schema and views that begin with **M_DATA**. Right-click and select **Open** to access those views. The search results for **M_DATA** contain a number of monitoring views for your database.
 
     ![](images/SchemaMenu.png)
 
 
 4. Users may benefit from visual clues identifying  production databases. To enable this, run the SQL statements below and refresh the browser.  
-    >To open the SQL Console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  An instance of a SQL Console is associated with the selected database.
+    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  
+    
+    >An instance of a SQL console is associated with the selected database.
 
     >To execute SQL commands, click on the green run arrow.
 
@@ -49,7 +51,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
-5. Let's create two new database users by running the following commands in the SQL Console.
+5. Let's create two new database users by running the following commands in the SQL console.
 
    ```SQL
    CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
@@ -58,7 +60,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
    ![](images/CreateUsers.png)
 
-6. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the **Add Database with Different User**. Use the credentials User1 and Password1.
+6. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the **Add Database with Different User**. Use the credentials USER1 and Password1.
 
     ![](images/NewDBUser.png)
 
@@ -68,7 +70,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/Groups.png)
 
-    Click and drag the DBAdmin connection into the System Admins group, and the User1 connection to the Hotel Users group.
+    Click and drag the DBAdmin connection into the System Admins group, and the USER1 connection to the Hotel Users group.
 
     ![](images/DatabasesInGroups.png)
 
@@ -76,6 +78,6 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     
     ![](images/Filter.png)
     
-This concludes the exercise on launching and exploring connections in the SAP HANA database explorer.
+This concludes the exercise on launching and exploring database connections in the SAP HANA database explorer.
 
 Continue to - [Exercise 2 - Using the SQL Console](../ex2/README.md)

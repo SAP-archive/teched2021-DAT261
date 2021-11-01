@@ -26,7 +26,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/GenerateCreate.png)
 
-4. The dependencies of an object can be listed.  
+4. The dependencies of an object can be shown.  
 
     ![](images/FindDepencies.png)
 
