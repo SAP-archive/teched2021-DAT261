@@ -1,3 +1,4 @@
+ # Exercise - Add a Data Lake to an Existing SAP HANA Database Instance
 In this exercise, let's see how to add an SAP HANA Cloud, Data Lake instance to an SAP HANA Cloud, SAP HANA Database instance.
 
 1. Click on '...' (More) button in the Actions column of your database instance "DEMO_HANA_DB".
