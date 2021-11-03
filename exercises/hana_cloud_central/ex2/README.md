@@ -1,4 +1,4 @@
- # Exercise 2 - Creating Instances
+ # Exercise 1 - Creating Instances
 
 As a prerequisite, we have already created SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Trial account allows creation of only one database instance. If you've already created the instance from SAP BTP Cockpit, you may not be able to create one more database instance in this exercise. However, if you are a not-trial user, please proceed with the following steps. Make sure you provide a different name for the instance as the application does not allow creation of instances with the same names. 
 
