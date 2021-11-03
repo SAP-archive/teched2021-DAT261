@@ -1,4 +1,4 @@
-# Exercise 1 - Apply Filters
+# Exercise 2 - Apply Filters
 
 In this exercise, we will filter the instances based on their properties.
 
