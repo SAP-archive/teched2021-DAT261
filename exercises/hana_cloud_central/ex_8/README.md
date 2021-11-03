@@ -11,17 +11,23 @@ In this exercise, let's see how to add an SAP HANA Cloud, Data Lake instance to 
     ![](./images/2.png)
     </kbd>
     
-3. Specify the SAP HANA Cloud, Data Lake parameters.
+3. Specify the SAP HANA Cloud, Data Lake parameters. Enter the instance name as "DEMO_HANA_DL".
     <kbd>
     ![](./images/3.png)
     </kbd>
-    
-4. Select Create Instance to add a data lake with the above specifications to your existing SAP HANA instance.
     <kbd>
     ![](./images/4.png)
     </kbd>
     <kbd>
     ![](./images/5.png)
+    </kbd>
+    
+4. Select Create Instance to add a data lake with the above specifications to your existing SAP HANA instance.
+    <kbd>
+    ![](./images/6.png)
+    </kbd>
+    <kbd>
+    ![](./images/7.png)
     </kbd>
     
 Continue to - [Exercise 2 - Apply Filters](../ex1/README.md)
