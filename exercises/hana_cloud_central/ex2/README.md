@@ -1,6 +1,6 @@
  # Exercise 2 - Creating Instances
 
-We can create SAP HANA Database and Data Lake instances directly from SAP HANA Cloud Central Overview page. Trial account allows creation of only one instance. If you've already created the instance from SAP BTP Cockpit, you may not be able to create one more instance in this exercise.
+We can create SAP HANA Database and Data Lake instances directly from SAP HANA Cloud Central Overview page. Trial account allows creation of only one database instance. If you've already created the instance from SAP BTP Cockpit, you may not be able to create one more database instance in this exercise.
 
 1. Click Create button in the BTP Cockpit page to see the list of instance types that you can create. 
     <kbd>
