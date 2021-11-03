@@ -4,7 +4,7 @@ As a prerequisite, we have already created SAP HANA Cloud, SAP HANA Database ins
 
 If you are a trial user, you may not be able to successfully perform the steps in this exercise. Click here to add an SAP HANA Cloud, Data Lake instance to your SAP HANA Cloud, SAP HANA Database instance before you proceed to the next exercise. 
 
-We can create SAP HANA Database and Data Lake instances directly from SAP HANA Cloud Central Overview page. 
+Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances directly from SAP HANA Cloud Central Overview page. 
 
 1. Click Create button. This will navigate you to the create instance page.
     <kbd>
