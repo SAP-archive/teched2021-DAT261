@@ -1,15 +1,14 @@
-# Exercise 2 - Creating Instances
+ # Exercise 1 - Creating Instances
 
-We can create SAP HANA Database and Data Lake instances directly from the SAP BTP Cockpit page or from the SAP HANA Cloud Central Overview page.
+As a prerequisite, we have already created SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Trial account allows creation of only one database instance. If you've already created the instance from SAP BTP Cockpit, you may not be able to create one more database instance in this exercise. However, if you are a not-trial user, please proceed with the following steps. Make sure you provide a different name for the instance as the application does not allow creation of instances with the same names. 
 
-1. Click Create button in the BTP Cockpit page to see the list of instance types that you can create. 
+If you are a trial user, you may not be able to successfully perform the steps in this exercise. Click here to add an SAP HANA Cloud, Data Lake instance to your SAP HANA Cloud, SAP HANA Database instance before you proceed to the next exercise. 
+
+Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances directly from SAP HANA Cloud Central Overview page. 
+
+1. Click Create button. This will navigate you to the create instance page.
     <kbd>
-    ![](./images/1.png)
-    </kbd>
-    
-    You can also create instances from the SAP HANA Cloud Central application. Both Create buttons will navigate you to the create instance page.
-    <kbd>
-    ![](./images/1_b.png)
+    ![](./images/22.png)
     </kbd>
     
     In this page, you can see options to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. 
@@ -103,4 +102,4 @@ We can create SAP HANA Database and Data Lake instances directly from the SAP BT
     ![](./images/20.png)
     </kbd>
     
-Continue to - [Exercise 3 - Edit Instances ](../ex_3/README.md)
+Continue to - [Exercise 2 - Apply Filters](../ex1/README.md)

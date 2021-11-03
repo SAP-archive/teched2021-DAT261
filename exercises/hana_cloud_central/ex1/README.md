@@ -1,4 +1,4 @@
-# Exercise 1 - Apply Filters
+# Exercise 2 - Apply Filters
 
 In this exercise, we will filter the instances based on their properties.
 
@@ -54,5 +54,5 @@ For example - If the user wants to see a list of instances that are still being 
     ![](./images/10.png)
     </kbd>
     
-Continue to - [Exercise 2 - Create Instances](../ex2/README.md)
+Continue to - [Exercise 3 - Edit Instances ](../ex_3/README.md)
 
