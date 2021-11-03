@@ -14,5 +14,19 @@ In this exercise, you will change a few properties using the "Database Configura
 
     ![Database Administration Card](./images/2-01_DBAdminCard.png)
 
+2. This application provides a visual way to edit properties by selecting a configuration file and its section.
 
-Continue to [Exercise 3: Managing Services](../ex_3/README.md)
+    The Database Configuration page allows for the user to manage and edit many different properties of their system databases. Properties can also be changed at the HOST layer, if the SAP HANA system is configured as multi-host. In this app, you can perform the following operations:
+    
+    - Search globally for a configuration file, section, specific value or layer type
+    - Add a section to a configuration file
+    - Compare parameters
+    - Take a parameter snapshot with optional notes
+    - View your change history to keep track of your configuration edits
+    - Add a parameter to a section
+
+    ![Database Configuration App](./images/2-02_DBConfigApp.png)
+
+3. Enter **indexserver.ini** in the *Configuration File* text field. You can use the drop-down list box to select the configuration file, or you can begin typing its name and the text box will auto-fill.
+
+Continue to [Exercise 3: Managing Services](../ex_3)
