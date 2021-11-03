@@ -40,6 +40,6 @@ This exercise will teach you the basics of navigating the Database Overview page
 
 7. Click the on/off switches to turn some cards off and then click **Cancel** to dismiss the dialog.
 
-    ![Manage Cards](./images/1-07_ManageCards)
+    ![Manage Cards](./images/1-07_ManageCards.png)
 
 Continue to [Exercise 2: Configuring Database Properties](../ex_2/README.md)
