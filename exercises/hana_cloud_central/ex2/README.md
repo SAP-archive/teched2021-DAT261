@@ -102,4 +102,4 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/20.png)
     </kbd>
     
-Continue to - [Exercise 3 - Edit Instances ](../ex_3/README.md)
+Continue to - [Exercise 2 - Apply Filters](../ex1/README.md)
