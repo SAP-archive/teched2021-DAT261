@@ -2,7 +2,7 @@
 
 1. Open SAP BTP Cockpit -> Go to any SAP HANA instance -> Click the “Actions” button from an instance tile -> Click on "Open in SAP HANA Cloud Central"
     <kbd>
-    ![](./images/1.png)
+    ![](./images/4.png)
     </kbd>
 
 2. SAP HANA Cloud Central is launched in a new tab.
