@@ -26,6 +26,8 @@ In this exercise, let's see how to add an SAP HANA Cloud, Data Lake instance to 
     <kbd>
     ![](./images/6.png)
     </kbd>
+    
+    Refresh the instance table and you will find a data lake instance getting created.
     <kbd>
     ![](./images/7.png)
     </kbd>
