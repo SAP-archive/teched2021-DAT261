@@ -27,6 +27,18 @@ In this exercise, you will change a few properties using the "Database Configura
 
     ![Database Configuration App](./images/2-02_DBConfigApp.png)
 
-3. Enter **indexserver.ini** in the *Configuration File* text field. You can use the drop-down list box to select the configuration file, or you can begin typing its name and the text box will auto-fill.
+3. Let's change a parameter. Enter **indexserver.ini** in the *Configuration File* text field. You can use the drop-down list box to select the configuration file, or you can begin typing its name and the text box will auto-fill. Enter **password policy** in the *Section* text field. Click **Go**.
+
+    ![View Section Config](./images/2-03_ViewSectionConfig.png)
+
+4. Click the **+** button to add a new parameter.
+
+    Click on the **Search** button to bring up a pop up with all possible parameters that can be added for this section and select **last_used_passwords** from the list. Notice the description of the parameter appears beneath the text field.
+    
+    Enter **3** in the *Value* text field. Notice the value is automatically validated and an error message appears if the value is not valid (e.g. not an integer or a negative number).
+
+    Click on **Save**.
+
+    ![Add Parameters](./images/2-04_AddParams.png)
 
 Continue to [Exercise 3: Managing Services](../ex_3)
