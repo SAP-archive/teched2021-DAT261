@@ -6,12 +6,7 @@ If you are a trial user, you may not be able to successfully perform the steps i
 
 We can create SAP HANA Database and Data Lake instances directly from SAP HANA Cloud Central Overview page. 
 
-1. Click Create button in the BTP Cockpit page to see the list of instance types that you can create. 
-    <kbd>
-    ![](./images/1.png)
-    </kbd>
-    
-    You can also create instances from the SAP HANA Cloud Central application. Both Create buttons will navigate you to the create instance page.
+1. Click Create button. This will navigate you to the create instance page.
     <kbd>
     ![](./images/1_b.png)
     </kbd>
