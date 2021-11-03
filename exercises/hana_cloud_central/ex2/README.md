@@ -8,7 +8,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
 
 1. Click Create button. This will navigate you to the create instance page.
     <kbd>
-    ![](./images/1_b.png)
+    ![](./images/22.png)
     </kbd>
     
     In this page, you can see options to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. 
