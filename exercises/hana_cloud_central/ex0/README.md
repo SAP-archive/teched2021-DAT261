@@ -10,4 +10,4 @@
     ![](./images/3.png)
     </kbd>
     
-Continue to - [Exercise 1 - Apply Filters](../ex1/README.md)
+Continue to - [Exercise 1 - Create Instances](../ex2/README.md)
