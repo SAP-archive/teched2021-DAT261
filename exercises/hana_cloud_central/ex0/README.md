@@ -7,7 +7,7 @@
 
 2. SAP HANA Cloud Central is launched in a new tab.
     <kbd>
-    ![](./images/2.png)
+    ![](./images/3.png)
     </kbd>
     
 Continue to - [Exercise 1 - Apply Filters](../ex1/README.md)
