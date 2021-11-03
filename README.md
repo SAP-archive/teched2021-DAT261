@@ -30,8 +30,8 @@ A new SAP HANA Cloud instance will be created, and this process will take approx
 
 
 - [Getting Started: Launch SAP HANA Cloud Central](exercises/hana_cloud_central/ex0/)
-- [Exercise 1 - Apply Filters](exercises/hana_cloud_central/ex1/)
-- [Exercise 2 - Create Instances](exercises/hana_cloud_central/ex2/)
+- [Exercise 1 - Create Instances](exercises/hana_cloud_central/ex2/)
+- [Exercise 2 - Apply Filters](exercises/hana_cloud_central/ex1/)
 - [Exercise 3 - Edit Instances](exercises/hana_cloud_central/ex_3/)
 - [Exercise 4 - Grouping, Sorting, and Other Settings](exercises/hana_cloud_central/ex_4/)
 - [Exercise 5 - Start, Stop, Upgrade Instances, and Other Actions](exercises/hana_cloud_central/ex_5/)
