@@ -20,4 +20,26 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     ![Open Other Databases](./images/1-03_OpenOtherDBs.png)
 
-    Click on Close to close the pop up.
+    Click on **Close** to dismiss the pop up.
+
+4. Below the toolbar you see the cockpit's collapsable header, where you'll find the status of the database, the database user you're connecting as, the host name, and a search bar. From the header, you can also change the database user (via the Choose Authentication button), enable single sign-on (via the Enble JWT SSO button) and open the SQL Console. You also change or filter the cards that appear on this page and save that as a new view.
+
+    ![Header](./images/1-04_Header.png)
+
+    By default, when you first access the Database Overview page you see a quick synopsis of the database status and its alerts, as well as the utilization of memory, CPU and disk.
+    
+    As you scroll down, you see high-level performance metrics in the form of the number of threads, sessions and long-running statements. You also see general information about your SAP HANA database.
+    
+    Down further, you see security settings, such as data volume encryption, auditing status, authentication status, as well as security-related hyperlinks. There are also a number of hyperlinks to launch additional administration and Smart Data Integration applications.
+
+5. The organization of the cards in the Database Overview page is completely customizable. Click and hold any card and drag it across the screen to change its location.
+
+6. Another personalization feature is the ability to hide cards that you do not wish to see on your Database Overview page. Click the **User** button in the top right and select **Manage Cards** from the popup menu.
+
+    ![User Menu](./images/1-06_UserMenu.png)
+
+7. Click the on/off switches to turn some cards off and then click **Cancel** to dismiss the dialog.
+
+    ![Manage Cards](./images/1-07_ManageCards)
+
+Continue to [Exercise 2: Configuring Database Properties](../ex_2/README.md)
