@@ -42,4 +42,4 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     ![Manage Cards](./images/1-07_ManageCards.png)
 
-Continue to [Exercise 2: Configuring Database Properties](../ex_2/README.md)
+Continue to [Exercise 2: Configuring Database Properties](../ex_2)
