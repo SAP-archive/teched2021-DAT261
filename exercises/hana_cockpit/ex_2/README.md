@@ -8,8 +8,11 @@ Properties can be configured at different layers, depending on the configuration
 - DEFAULT: The default value for the property
 - DATABASE: The database-specific value for the property
 
-In this exercise, you will change a few properties using the "Configuration of System Properties" GUI application
+In this exercise, you will change a few properties using the "Database Configuration" application.
 
+1. Locate the **Database Administration** card and click the link **Manage database configuration** (HINT: use the search bar to find it faster).
+
+    ![Database Administration Card](./images/2-01_DBAdminCard.png)
 
 
 Continue to [Exercise 3: Managing Services](../ex_3/README.md)
