@@ -2,6 +2,8 @@
 
 As a prerequisite, we have already created SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Trial account allows creation of only one database instance. If you've already created the instance from SAP BTP Cockpit, you may not be able to create one more database instance in this exercise. However, if you are a not-trial user, please proceed with the following steps. Make sure you provide a different name for the instance as the application does not allow creation of instances with the same names. 
 
+If you are a trial user, you may not be able to successfully perform the steps in this exercise. Click here to add an SAP HANA Cloud, Data Lake instance to your SAP HANA Cloud, SAP HANA Database instance before you proceed to the next exercise. 
+
 We can create SAP HANA Database and Data Lake instances directly from SAP HANA Cloud Central Overview page. 
 
 1. Click Create button in the BTP Cockpit page to see the list of instance types that you can create. 
