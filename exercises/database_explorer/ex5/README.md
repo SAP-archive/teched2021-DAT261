@@ -1,6 +1,6 @@
 # Exercise 5 - Further Steps with the SAP HANA Database Explorer
 
-In this exercise, we will mention some additional areas of functionality and where further exercises can be found.   
+In this exercise, we will mention some additional areas of functionality and provide links to where further exercises can be found around the topics of import/export, diagnostic files, graph and spatial, data lake connections, and remote sources. 
 
 1. The SAP HANA database explorer provides wizards that can be used to export or import data from a table or view.    When using a SAP HANA Cloud, SAP HANA database, the data can be stored on cloud storage providers in CSV or parquet formats.  
 
@@ -38,21 +38,58 @@ In this exercise, we will mention some additional areas of functionality and whe
 
     Additional instructions showing how to enable a SQL and expensive statement trace are available in the tutorial [Troubleshoot SQL with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).  For more on executed statement tracing see [SAP Note: 2366291 - FAQ: SAP HANA Executed Statements Trace](https://launchpad.support.sap.com/#/notes/2366291).
 
-4. The SAP HANA database explorer can also work with graph and spatial data.  Step by step instructions on exploring multi-model functionality is available in the tutorial [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
+4. The SAP HANA database explorer can also work with graph and spatial data.  
 
     * A graph workspace can be used to visualize vertices and edges such as hotels and the distances between them in a given state.  Various filters and algorithms can be applied to a graph.
 
     ![](images/Graph.png)
+ 
+    Execute the following SQL to create the graph workspace shown above.
 
-    * The import data wizard can be used to import spatial data from an ESRI shapefile.  
+    ```SQL
+    CREATE COLUMN TABLE HOTEL.DISTANCES(
+        DKEY INTEGER UNIQUE NOT NULL,
+        HSOURCE INTEGER NOT NULL
+        REFERENCES HOTEL.HOTEL(HNO),
+        HTARGET INTEGER NOT NULL
+        REFERENCES HOTEL.HOTEL(HNO),
+        DIST_KM DOUBLE
+    );
+
+    --New York
+    INSERT INTO HOTEL.DISTANCES VALUES (3, 12, 13, 217.3);
+    INSERT INTO HOTEL.DISTANCES VALUES (4, 13, 12, 217.3);
+    INSERT INTO HOTEL.DISTANCES VALUES (5, 12, 14, 71.9);
+    INSERT INTO HOTEL.DISTANCES VALUES (6, 14, 12, 71.9);
+    INSERT INTO HOTEL.DISTANCES VALUES (7, 12, 15, 71.5);
+    INSERT INTO HOTEL.DISTANCES VALUES (8, 15, 12, 71.5);
+    INSERT INTO HOTEL.DISTANCES VALUES (9, 13, 14, 212.2);
+    INSERT INTO HOTEL.DISTANCES VALUES (10, 14, 13, 212.2);
+    INSERT INTO HOTEL.DISTANCES VALUES (11, 13, 15, 212.1);
+    INSERT INTO HOTEL.DISTANCES VALUES (12, 15, 13, 212.1);
+    INSERT INTO HOTEL.DISTANCES VALUES (13, 14, 15, 0.4);
+    INSERT INTO HOTEL.DISTANCES VALUES (14, 15, 14, 0.4);
+
+    CREATE GRAPH WORKSPACE HOTEL.DISTANCEGRAPH
+    EDGE TABLE HOTEL.DISTANCES
+        SOURCE COLUMN HSOURCE
+        TARGET COLUMN HTARGET
+        KEY COLUMN DKEY
+    VERTEX TABLE HOTEL.HOTEL
+        KEY COLUMN HNO;
+    ```
+
+    * The import data wizard can be used to import spatial data from an ESRI shapefile such as the [points of interest for the city of Longview Texas](https://hub.arcgis.com/datasets/longviewtexas::points-of-interest/explore?location=32.489161%2C-94.771600%2C12.10).
 
     ![](images/ImportESRIShapefile.png)
 
-    Data such as the distance between two points can calculated using spatial functions.
+    Data such as the distance between two points can calculated using spatial methods such [ST_WithinDistance](https://help.sap.com/viewer/bc9e455fe75541b8a248b4c09b086cf5/latest/en-US/7a1cc028787c1014b4afe2c72ff94316.html).
 
     ![](images/Spatial.png) 
 
     ```SQL
+    RENAME TABLE "HOTEL"."Points_of_Interest" TO HOTEL.POI_LONGVIEW;
+
     SELECT
         P.NAME,
         P.FCODE,
@@ -66,13 +103,51 @@ In this exercise, we will mention some additional areas of functionality and whe
     ORDER BY DISTANCE ASC;
     ```
 
-5. Finally, remote sources can be defined to connect to other data sources such as an on-premise SAP HANA database.  
+    Step by step instructions on exploring multi-model functionality is available in the tutorial [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
-    ![](images/AddRemoteSource.png)
+5. The database explorer can be used to connect to, browse and execute SQL queries against a data lake.  
 
-    Once a remote source is created, virtual tables can be created that enable access to data that is stored in the remote system.
+    ![](images/DataLake.png)
 
-    ![](images/VirtualTables.png)
+    ```SQL
+    CREATE TABLE TOURIST_REVIEWS (
+        REVIEW_ID INTEGER PRIMARY KEY,
+        REVIEW_DATE DATE NOT NULL,
+        DESTINATION_ID INTEGER,
+        DESTINATION_RATING INTEGER,
+        REVIEW VARCHAR(500) NOT NULL
+    );
+
+    INSERT INTO TOURIST_REVIEWS(REVIEW_ID, REVIEW_DATE, DESTINATION_ID, DESTINATION_RATING, REVIEW) VALUES(1, '2019-03-15', 1, 5, 'We had a great day swimming at the beach and exploring the beach front shops.  We will for sure be back next summer.');
+
+    INSERT INTO TOURIST_REVIEWS(REVIEW_ID, REVIEW_DATE, DESTINATION_ID, DESTINATION_RATING, REVIEW) VALUES(2, '2019-02-02', 1, 4, 'We had an enjoyable meal.  The service and food was outstanding.  Would have liked to have slightly larger portions');
+    ```
+
+6. Remote sources can be defined to connect to other data sources such as a data lake or an on-premise SAP HANA database from an SAP HANA Cloud database.  
+
+    The following SQL statement creates a remote source.
+
+    ```SQL
+    CREATE REMOTE SOURCE HC_DL_Trial
+	ADAPTER "IQODBC"
+		CONFIGURATION 'Driver=libdbodbc17_r.so;host=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.iq.hdl.trial-XXXX.hanacloud.ondemand.com:443;ENC=TLS(tls_type=rsa;direct=yes)'
+			WITH CREDENTIAL TYPE 'PASSWORD'
+				USING 'user=HDLADMIN;password=myPassword1';
+    ```
+
+    ![](images/CreateRemoteSource.png)
+
+    Once a remote source is created, virtual tables can be created that enable access to data that is stored in the remote system from the SAP HANA Cloud database.
+
+    ![](images/CreateVirtualObjects.png)
+
+    ![](images/CreateVirtualTable.png)
+
+    ![](images/AccessVirtualTable.png)
+
+    ```SQL
+    SELECT * FROM HOTEL.VT_TOURIST_REVIEWS;
+    ```
 
     Step by step instructions on connecting between SAP HANA on-premise and SAP HANA Cloud, SAP HANA databases and from an SAP HANA Cloud database to an SAP HANA Cloud, data lake can be found in the tutorial [Access Remote Sources with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-remote-sources.html).
 

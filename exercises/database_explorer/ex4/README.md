@@ -14,7 +14,7 @@ In this exercise, we will explore the statement library and demonstrate how to i
 
     The following is an example result of running the **Connection Attempts and Status** system statement after a successful and then failed connect attempt.
 
-    ![](images/SystemStatementsConnections.png)Future
+    ![](images/SystemStatementsConnections.png)
 
     ```sql
     CONNECT USER1 PASSWORD Password1;
