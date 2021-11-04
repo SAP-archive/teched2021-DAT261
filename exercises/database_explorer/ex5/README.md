@@ -38,15 +38,17 @@ In this exercise, we will mention some additional areas of functionality and whe
 
     Additional instructions showing how to enable a SQL and expensive statement trace are available in the tutorial [Troubleshoot SQL with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).  For more on executed statement tracing see [SAP Note: 2366291 - FAQ: SAP HANA Executed Statements Trace](https://launchpad.support.sap.com/#/notes/2366291).
 
-4. The SAP HANA database explorer can also work with graph and spatial data.
+4. The SAP HANA database explorer can also work with graph and spatial data.  Step by step instructions on exploring multi-model functionality is available in the tutorial [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
     * A graph workspace can be used to visualize vertices and edges such as hotels and the distances between them in a given state.  Various filters and algorithms can be applied to a graph.
 
     ![](images/Graph.png)
 
-    * The import data wizard can be used to import spatial data from an ESRI shapefile.  The data can be queried using spatial functions.
+    * The import data wizard can be used to import spatial data from an ESRI shapefile.  
 
     ![](images/ImportESRIShapefile.png)
+
+    Data such as the distance between two points can calculated using spatial functions.
 
     ![](images/Spatial.png) 
 
@@ -63,8 +65,6 @@ In this exercise, we will mention some additional areas of functionality and whe
         TO_BOOLEAN(H.LOCATION.ST_WithinDistance(NEW ST_Point(SHAPE.ST_AsWKT(), 4326), 3, 'kilometer')) = TRUE
     ORDER BY DISTANCE ASC;
     ```
-
-    Step by step instructions on exploring multi-model functionality is available in the tutorial [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
 5. Finally, remote sources can be defined to connect to other data sources such as an on-premise SAP HANA database.  
 

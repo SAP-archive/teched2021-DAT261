@@ -12,7 +12,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     >Note: The SQL console must be connected with the DBADMIN connection as USER1 has not yet been assigned privileges.
 
-   After running this command with the SQL console, you may notice that resource metrics are provided in the console output of database explorer under **Messages**.
+   After running this command with the SQL console, you may notice that resource consumption metrics are provided under **Messages**.
 
    ![](images/CreateSchema.png)
 
@@ -92,6 +92,8 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ```
 
 4.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
+
+    ![](images/BackgroundActivity.png)
 
     ```SQL
     INSERT INTO HOTEL.HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -183,7 +185,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     INSERT INTO HOTEL.MAINTENANCE VALUES(12, 26, 'Roof repair due to storm', null, null);
     ```
 
-    ![](images/BackgroundActivity.png)
+    ![](images/BackgroundActivity2.png)
 
     Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
 

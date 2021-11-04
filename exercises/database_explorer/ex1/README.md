@@ -2,7 +2,7 @@
 
 In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to databases.
 
-1. From the SAP BTP Cockpit, you can choose to open the SAP HANA database explorer by clicking the Actions dropdown on your instance and selecting **Open in SAP HANA Database Explorer**.
+1. From the SAP BTP Cockpit, you can choose to open the SAP HANA database explorer by clicking the **Actions** dropdown on your instance and selecting **Open in SAP HANA Database Explorer**.
 
     ![](images/BTPCockpit.png)
 
@@ -11,6 +11,8 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     >Note: Trial instances are shut down overnight. Instances can be restarted by clicking the **Manage SAP HANA Cloud** button and selecting **Start** on the dropdown menu for your instance.
 
     >Note: Credentials for a cockpit database can be saved within the SAP HANA cockpit, removing the need for users to log in each time they wish to access their database. For credentials to be saved, users must navigate to SAP HANA cockpit to save or manage their credentials.
+    >
+    >![](images/Authentication.png)
 
 2. Hover over your database in the database context menu. A summary should appear that identifies the type as a cockpit database.
 
