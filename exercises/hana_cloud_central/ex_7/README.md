@@ -30,4 +30,8 @@ In this section, we will discuss about giving feedback using SAP HANA Cloud Cent
     ![](./images/6.png)
     </kbd>
 
+This concludes the exercises on the SAP HANA Cloud Central.
+
+Return to - Get Hands-On Experience with Administering and Operating SAP HANA Cloud [DAT261]
+
 Thank you!
