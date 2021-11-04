@@ -31,14 +31,20 @@ In this exercise, you will change a few properties using the "Database Configura
 
     ![View Section Config](./images/2-03_ViewSectionConfig.png)
 
-4. Click the **+** button to add a new parameter.
+4. Click the **+** button to bring up the dialog to add a new parameter.
 
     Click on the **Search** button to bring up a pop up with all possible parameters that can be added for this section and select **last_used_passwords** from the list. Notice the description of the parameter appears beneath the text field.
     
     Enter **3** in the *Value* text field. Notice the value is automatically validated and an error message appears if the value is not valid (e.g. not an integer or a negative number).
 
-    Click on **Save**.
+    Click on **Save**. You may receive a message about overwriting an existing parameter, so simply proceed by clicking on **OK**.
 
     ![Add Parameters](./images/2-04_AddParams.png)
+
+5. We've edited this password policy parameter so that the user cannot change their password to be one of the last 3 passwords used (instead of the default last 5 passwords used).
+
+    ![Password Policy](./images/2-05_PasswordPolicy.png)
+
+6. Click the **Back** button at the top left to return to the Database Overview page.
 
 Continue to [Exercise 3: Managing Services](../ex_3)
