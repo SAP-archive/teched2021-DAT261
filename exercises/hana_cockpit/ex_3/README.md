@@ -57,4 +57,4 @@ In this exercise, you review the information displayed in the Services card, exa
 
     ![Lateral Navigation](./images/3-08_MemoryAnalysisApp-LateralNavigation.png)
 
-Continue to [Exercise 4: ](../ex_4)
+Continue to [Exercise 4: Managing Alerts](../ex_4)
