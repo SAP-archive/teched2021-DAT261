@@ -4,7 +4,7 @@ To monitor the health of your SAP HANA database in more detail, for example to t
 
 In this exercise, you review the information displayed in the Services card, examine the different database service management operations you have access to, and perform a basic analysis of memory usage.
 
-1. Locate the *Services* card.  It displays metrics regarding the operational status of the SAP HANA database. Here you see the status of the database, "Running" in this case. Other possible values include "Running with issues", "Stopped", "Error" or "No SQL Access". Click the button **Manage Services**.
+1. Locate the *Services* card. It displays metrics regarding the operational status of the SAP HANA database. Here you see the status of the database, "Running" in this case. Other possible values include "Running with issues", "Stopped", "Error" or "No SQL Access". Click the button **Manage Services**.
 
     ![Services Card](./images/3-01_ServicesCard.png)
 
