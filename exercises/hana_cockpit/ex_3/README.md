@@ -47,14 +47,14 @@ In this exercise, you review the information displayed in the Services card, exa
 
 9. Let's investigate a couple of components in more detail. Check the components **System** and **Statement Execution & Intermediate Results**.  Scroll to the bottom of the page and click the arrow to expand the **used memory history** chart. The history chart shows the memory usage over time for the components you selected.
 
-    ![Used Memory by Components](./images/3-08_MemoryAnalysisApp-ComponentsUsedMemory.png)
+    ![Used Memory by Components](./images/3-09_MemoryAnalysisApp-ComponentsUsedMemory.png)
 
 10. You can deepen your analysis by looking at the statistics about the memory used by data tables. Click the **Tables** tab. The top chart shows the breakdown of memory usage of the top 10 highest consuming tables for the specific time you're investigating. The bottom chart shows the memory usage of the top 10 tables with the largest change in consumption for the selected time period.
 
-    ![Tables](./images/3-08_MemoryAnalysisApp-Tables.png)
+    ![Tables](./images/3-10_MemoryAnalysisApp-Tables.png)
 
 11. On the drop-down menu from the cockpit's toolbar (top right), click on **Memory Analysis** and select **Database Overview** from the menu to return to the Database Overview page.
 
-    ![Lateral Navigation](./images/3-08_MemoryAnalysisApp-LateralNavigation.png)
+    ![Lateral Navigation](./images/3-11_MemoryAnalysisApp-LateralNavigation.png)
 
 Continue to [Exercise 4: Managing Alerts](../ex_4)
