@@ -16,6 +16,8 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/OpenTable.png)
 
+    The table information is displayed.
+
     ![](images/TableColumns.png)
 
     The runtime information of a table can also be viewed.

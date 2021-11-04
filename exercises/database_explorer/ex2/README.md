@@ -91,7 +91,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     );
     ```
 
-4.  Add data into your tables by running the following SQL statements. If we anticipate this block of commands taking some time, we can choose to run it as a background activity while completing other tasks. To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
+4.  Add data into your tables by running the following SQL statements. If we anticipate a command to take some time, we can choose to run it as a background activity while completing other tasks.  To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
 
     ![](images/BackgroundActivity.png)
 
@@ -185,9 +185,13 @@ For the rest of this workshop, we will be creating and working with a sample sch
     INSERT INTO HOTEL.MAINTENANCE VALUES(12, 26, 'Roof repair due to storm', null, null);
     ```
 
-    ![](images/BackgroundActivity2.png)
+    The Background Activities Monitor can be used to view the status.
 
-    Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
+    ![](images/ViewBackgroundActivity.png)
+
+    >Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
+    >
+    >![](images/RunOnMultiple.png)
 
 5.  A list of keyboard shortcuts can be found by right-clicking within the SQL console window.
 
@@ -206,8 +210,8 @@ For the rest of this workshop, we will be creating and working with a sample sch
     Here is a list of popular keyboard shortcuts for future reference:
     Action | Shortcut
     ------ | ------
-    Comment/Uncomment Line | Ctrl+/
     Add Comment Block | Ctrl+Shift+/
+    Comment/Uncomment Line | Ctrl+/
     Format Code	|Ctrl+B
     Go to Next Error | Alt+E
     Go to Previous Error | Alt+Shift+E
@@ -220,7 +224,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-6.  Code completion is a tool available within the SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of recommended tables.
+6.  Text completion is a tool available within the SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of available tables.
 
     ![](images/CodeCompletion.png)
 
@@ -230,7 +234,12 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     Once found, right-click on Reservations and select **Open Data**.
 
-    At the top of your screen, select the **Analysis** tab. Drag and drop the Type attribute into the Label Axis section. Next drag and drop the RESNO field into the Value Axis section. Change the operation on RESNO from SUM to **COUNT**.  Wait a few seconds and a chart should be formed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
+    1. At the top of your screen, select the **Analysis** tab. 
+    2. Drag and drop the Type attribute into the Label Axis section. 
+    3. Drag and drop the RESNO field into the Value Axis section. 
+    4. Change the operation on RESNO from SUM to **COUNT**.  
+    
+    A chart will be displayed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
 
     ![](images/Analysis.png)
 
@@ -244,7 +253,9 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
 10. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
 
-    Expand the Statement/Syntax or Tables and Views sections of the Statement Help panel, and copy the following SQL into the SQL console to populate the Statement/Syntax section of the help panel:
+    ![](images/StatementHelp.png)
+
+    Copy the following SQL into the SQL console to try out the Statement Help panel.
 
     ```SQL
     SELECT
@@ -258,7 +269,6 @@ For the rest of this workshop, we will be creating and working with a sample sch
     HOTEL.HOTEL AS H
     ON R.HNO = H.HNO;
     ```
-    ![](images/StatementHelp.png)
 
     > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
 

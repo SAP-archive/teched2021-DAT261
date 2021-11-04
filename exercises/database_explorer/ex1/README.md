@@ -28,17 +28,12 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/Catalog.png)
 
-    Expand **Catalog** then **Views**, this will present a list of the schemas available for this database. Directly above the list are search bars for schema and objects, you can search for the **SYS** schema and views that begin with **M_DATA**. Right-click and select **Open** to access those views. The search results for **M_DATA** contain a number of monitoring views for your database.
+    Expand **Catalog** then **Views**.  Directly above the list of views are search bars for schema and objects.  Search for the **SYS** schema and views that begin with **M_HOST**. Right-click and select **Open Data** to access those views. More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html).
 
     ![](images/SchemaMenu.png)
 
 
 4. Users may benefit from visual clues identifying  production databases. To enable this, run the SQL statements below and refresh the browser.  
-    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  
-    
-    >An instance of a SQL console is associated with the selected database.
-
-    >To execute SQL commands, click on the green run arrow.
 
     ```SQL
     SELECT * FROM M_INIFILE_CONTENTS WHERE KEY = 'usage';
@@ -46,6 +41,12 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ```
 
     ![](images/ProductionLabel.png)
+
+    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  
+    
+    >An instance of a SQL console is associated with the selected database.
+
+    >To execute SQL commands, click on the green run arrow.
 
     As this database is not a production database, we can turn off this setting by executing the below SQL statement.
 
