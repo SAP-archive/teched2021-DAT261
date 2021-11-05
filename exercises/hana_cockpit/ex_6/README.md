@@ -58,7 +58,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
     ![Create User Dialog](./images/6-09_CreateUserDialog.png)
 
-10. On the drop-down menu from the cockpit's toolbar (top left), click on **User Management** and select **Role Management** from the menu to return to navigate to that app.
+10. On the drop-down menu from the cockpit's toolbar (top left), click on **User Management** and select **Role Management** from the menu to navigate to that app.
 
     ![Create User Dialog](./images/6-10_UserMgmtLateralNavigation.png)
 
@@ -67,5 +67,17 @@ In this exercise, you'll create a new user, a new role and a new user group.
     - Role: TECHNICAL_USER_ROLE
 
     ![Create Role](./images/6-11_CreateRole.png)
+
+12. You can now add privileges to this user role. Click the **System Privileges** tab and click the **Edit** button.
+
+    ![Edit System Privileges](./images/6-12_Role-EditSysPrivileges.png)
+
+13. Click the **Add** button and select the **CATALOG_READ** system privilege.  Click the **SELECT** button to dismiss the dialog.
+
+    ![Add CATALOG_READ](./images/6-13_Role-AddCatalogRead.png)
+
+14. Click the **Save** button. Notice the number in the parentheses besides "System Privileges" is now one. The parentheses beside the privilege type shows the number privileges granted to this role.
+
+    ![System Privileges](./images/6-14_Role-SysPrivileges.png)
 
 Continue to [Exercise 7: ](../ex_7)
