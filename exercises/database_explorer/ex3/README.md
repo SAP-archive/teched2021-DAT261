@@ -1,6 +1,10 @@
 # Exercise 3 - Catalog Browser and Object Search
 
-In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects. 
+In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  
+
+>For this exercise and the remaining exercises please use the DBADMIN user.  
+>
+> ![](images/ConnectedToDBADMIN.png)
 
 1. Database objects such as a table can be located in the catalog browser by navigating to **Tables** and specifying a schema such as **HOTEL**.
 
@@ -32,7 +36,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/FindDepencies.png)
 
-5. Database objects can also be found using the object search.  The below search looks for any functions, procedures, tables, or views in the schema HOTEL in the database DEMO_HANA_DB. 
+5. Database objects can also be found using the object search.  The below search looks for any functions or procedures in the schema HOTEL in the database DEMO_HANA_DB (DBADMIN). 
 
     ![](images/ObjectSearch.png)
 
@@ -40,15 +44,15 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/SearchAcrossAllDatabases.png)
 
-6. An object such as the stored procedure RESERVATION_GENERATOR can opened by clicking on it.  Once it is open, it can be located in the catalog browser by selecting **Display in Database Browser** from the context menu of the tab.
+6. An object such as the stored procedure RESERVATION_GENERATOR can opened by clicking on it.  
 
-    ![](images/RevealInCatalogBrowser.png)
+    ![](images/ClickOnStoredProcedure.png)
 
-    Right-click on the stored **RESERVATION_GENERATOR** and choose **Generate CALL Statement with UI**.
+    Notice that there is an option to call the stored procedure.
 
-    Notice that a UI is provided to easily call the stored procedure.
-
-    ![](images/CallStoredProcedure.png)
+    ![](images/CallStoredProcedure1.png)
+ 
+    ![](images/CallStoredProcedure2.png)
 
 7. Additional functionality is available from the catalog browser such as **Analyze SQLScript Code** which can provide suggestions for code quality, security, or performance and **Open for Debugging** which enables stored procedures, functions, or anonymous blocks to be debugged. 
 
@@ -58,4 +62,4 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 This concludes the exercises on the catalog browser and object search.
 
-Continue to - [Exercise 4 - Statement Library ](../ex4/README.md)
+Continue to - [Exercise 4 - Working with the Statement Library ](../ex4/README.md)
