@@ -1,4 +1,4 @@
-# Exercise 4 - Statement Library
+# Exercise 4 - Working with the Statement Library
 
 In this exercise, we will explore the statement library and demonstrate how to import and run statements from the SQL Statement Collection for SAP HANA. 
 
@@ -64,7 +64,7 @@ In this exercise, we will explore the statement library and demonstrate how to i
     
         ![](images/HANAConfigurationMiniChecks.png)
 
-        Notice below that the results shows the value for a check, what the expected range of values is for each check, an X if the value is outside the expected range, and an SAP Note to reference for further information. 
+        Notice below that the results show the value for a check, what the expected range of values is for each check, an X if the value is outside the expected range, and an SAP Note to reference for further information. 
 
         ![](images/HANAConfigurationMiniChecksResult.png)
 

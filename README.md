@@ -38,6 +38,30 @@ A new SAP HANA Cloud instance will be created, and this process will take approx
 - [Exercise 6 - Delete Instances](exercises/hana_cloud_central/ex_6/)
 - [Exercise 7 - Giving Feedback](exercises/hana_cloud_central/ex_7/)
 
+# SAP HANA Database Explorer
+
+## Description
+
+In this section, we will walk through functionality in the SAP HANA database explorer.  
+
+## Overview
+
+The SAP HANA database explorer is a web-based tool for browsing and working with SAP HANA database objects such as tables, views, functions, stored procedures, executing SQL statements, importing and exporting data, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  As of March 2021, it also offers support for Data Lake IQ connections.
+
+
+## Requirements
+
+Completed [Exercise 1 - Create Instances](exercises/hana_cloud_central/ex2/) or have access to a SAP HANA Cloud instance.
+
+
+## Exercises
+
+
+- [Exercise 1 - Launch and Connect with the SAP HANA Database Explorer](exercises/database_explorer/ex1/)
+- [Exercise 2 - Using the SQL Console](exercises/database_explorer/ex2/)
+- [Exercise 3 - Catalog Browser and Object Search](exercises/database_explorer/ex3/)
+- [Exercise 4 - Working with the Statement Library](exercises/database_explorer/ex4/)
+- [Exercise 5 - Further Steps with the SAP HANA Database Explorer](exercises/database_explorer/ex5/)
  
 
 ## How to obtain support
