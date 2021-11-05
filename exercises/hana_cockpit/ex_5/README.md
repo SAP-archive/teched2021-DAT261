@@ -12,4 +12,16 @@ In this exercise, you'll examine the memory utilization of an SAP HANA database 
 
     ![Performance Monitor](./images/5-02_PerformanceMonitor.png)
 
-Continue to [Exercise 6: ](../ex_6)
+3. Let's examine a few KPIs in more detail. Ensure the following KPIs are checked: **Physical Memory Size**, **Memory Used** and **Memory Allocation Limit**.
+
+    The colored lines representing the selected KPIs are highlighted and you can now make a few observations: this host has 32 GB of RAM and the Memory Allocation Limit for this service (indexserver) is slightly below, so there's a bit of memory left in reserve for other processes. The Memory Used for this service is much lower so there's plenty of room to allocate more memory.
+
+    What you're looking for are situations that may trigger out of memory events and negatively affect performance. For example, when the memory consumption stays constant near the limits for a prolonged period of time and sudden spike of memory usage happens.
+
+    You can obtain details for a specific point in time by simply hovering the mouse cursor over the line. Mouse over any point along the **Memory Allocation Limit** line (in Purple).
+
+    ![Examine KPIs](./images/5-03_ExamineKPIs.png)
+
+4. Click the **Back** button at the top left to return to the Database Overview page.
+
+Continue to [Exercise 6: Security Basics](../ex_6)
