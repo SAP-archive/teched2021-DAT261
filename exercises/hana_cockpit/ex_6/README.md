@@ -86,11 +86,11 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
 16. Click the **Add Object** button and search for the **_SYS_STATISTICS** object. Notice you can also filter by object type and schema. Select the object **_SYS_STATISTICS** and Click the **SELECT** button to dismiss the dialog.
 
-    ![Select Object Privileges](./images/6-16_Role-SelectObject.png)
+    ![Select Object Privileges](./images/6-16_Role-SelectObjects.png)
 
 17. Now from the Add *Objects with Privileges* dialog, scroll down until you see **SELECT** and check it. Click **OK** to return to the *Role Management* app.
 
-    ![Add Object with Privileges](./images/6-17_Role-AddObject.png)
+    ![Add Object with Privileges](./images/6-17_Role-AddObjects.png)
 
 18. Click the **Save** button to complete the operation of adding the object privilege.
 
