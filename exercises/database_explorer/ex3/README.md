@@ -50,7 +50,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/CallStoredProcedure.png)
 
-7. Additional functionality is available from the catalog browser such as **Analyze SQLScript Code** which can provide suggestions for code quality, security, or performance and **Open for Debugging** which enables stored procedures, functions or anonymous blocks to be debugged. 
+7. Additional functionality is available from the catalog browser such as **Analyze SQLScript Code** which can provide suggestions for code quality, security, or performance and **Open for Debugging** which enables stored procedures, functions, or anonymous blocks to be debugged. 
 
     ![](images/AnalyzeSQLScriptCode.png)
 

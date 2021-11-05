@@ -2,7 +2,7 @@
 
 In this exercise, we will mention some additional areas of functionality and provide links to where further exercises can be found around the topics of import/export, diagnostic files, graph and spatial, data lake connections, and remote sources. 
 
-1. The SAP HANA database explorer provides wizards that can be used to export or import data from a table or view.    When using a SAP HANA Cloud, SAP HANA database, the data can be stored on cloud storage providers in CSV or parquet formats.  
+1. The SAP HANA database explorer provides wizards that can be used to export or import data from a single table or view.  When using a SAP HANA Cloud, SAP HANA database, the data can be stored on cloud storage providers in CSV or parquet formats.  
 
     ![](images/ExportData.png)
 
@@ -18,7 +18,7 @@ In this exercise, we will mention some additional areas of functionality and pro
     Step by step instructions on performing data and catalog export and imports is available in the tutorial [Export and Import Data and Schema with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-export-import.html).
 
 
-3. Trace file information can be found using either SQL queries or using the Database Diagnostic Files.  
+3. Trace file information can be examined using either SQL queries or using the Database Diagnostic Files.  
 
     ![](images/TraceFilesWthSQL.png)
 
@@ -40,7 +40,7 @@ In this exercise, we will mention some additional areas of functionality and pro
 
 4. The SAP HANA database explorer can also work with graph and spatial data.  
 
-    * A graph workspace can be used to visualize vertices and edges such as hotels and the distances between them in a given state.  Various filters and algorithms can be applied to a graph.
+    * A graph workspace can be used to visualize vertices and edges such as hotels and the distances between them.  Various filters and algorithms can be applied to a graph.
 
     ![](images/Graph.png)
  
@@ -105,7 +105,7 @@ In this exercise, we will mention some additional areas of functionality and pro
 
     Step by step instructions on exploring multi-model functionality is available in the tutorial [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
-5. The database explorer can be used to connect to, browse and execute SQL queries against a data lake.  
+5. The database explorer can be used to connect to, browse the database catalog, and execute SQL queries against a data lake.  
 
     ![](images/DataLake.png)
 
@@ -149,7 +149,7 @@ In this exercise, we will mention some additional areas of functionality and pro
     SELECT * FROM HOTEL.VT_TOURIST_REVIEWS;
     ```
 
-    Step by step instructions on connecting between SAP HANA on-premise and SAP HANA Cloud, SAP HANA databases and from an SAP HANA Cloud database to an SAP HANA Cloud, data lake can be found in the tutorial [Access Remote Sources with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-remote-sources.html).
+    Further details on this topic can be found in the tutorial [Access Remote Sources with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-remote-sources.html).
 
 This concludes the exercises on the SAP HANA database explorer.
 
