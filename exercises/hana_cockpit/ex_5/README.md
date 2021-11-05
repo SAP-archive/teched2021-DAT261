@@ -10,6 +10,6 @@ In this exercise, you'll examine the memory utilization of an SAP HANA database 
 
 2. The Performance Monitor appears, allowing you to see KPIs for memory usage. You can change the time range to display. You can export a complete snapshot of the performance monitor data into a ZIP file that you can download and send to SAP Support to analyze and diagnose problems with the SAP HANA database. Similarly, you can import performance monitor data from a ZIP file into the SAP HANA cockpit.
 
-    ![Performance Monitor](./images/5-01_PerformanceMonitor.png)
+    ![Performance Monitor](./images/5-02_PerformanceMonitor.png)
 
 Continue to [Exercise 6: ](../ex_6)
