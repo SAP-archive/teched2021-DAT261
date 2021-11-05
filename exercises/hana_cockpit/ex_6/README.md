@@ -60,9 +60,9 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
 10. On the drop-down menu from the cockpit's toolbar (top left), click on **User Management** and select **Role Management** from the menu to navigate to that app.
 
-    ![Create User Dialog](./images/6-10_UserMgmtLateralNavigation.png)
+    ![User Management App Lateral Navigation](./images/6-10_UserMgmtLateralNavigation.png)
 
-11. You are now in the** Role Management** app. Click the **plus sign (+)** and create a new role with the following attributes:
+11. You are now in the **Role Management** app. Click the **plus sign (+)** and create a new role with the following attributes:
 
     - Role: TECHNICAL_USER_ROLE
 
@@ -72,7 +72,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
     ![Edit System Privileges](./images/6-12_Role-EditSysPrivileges.png)
 
-13. Click the **Add** button and select the **CATALOG_READ** system privilege.  Click the **SELECT** button to dismiss the dialog.
+13. Click the **Add** button and select the **CATALOG_READ** system privilege. Click the **SELECT** button to dismiss the dialog.
 
     ![Add CATALOG_READ](./images/6-13_Role-AddCatalogRead.png)
 
@@ -80,4 +80,41 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
     ![System Privileges](./images/6-14_Role-SysPrivileges.png)
 
-Continue to [Exercise 7: ](../ex_7)
+15. Click the **Object Privileges** tab and click the **Edit** button.
+
+    ![Edit Object Privileges](./images/6-15_Role-EditObjectPrivileges.png)
+
+16. Click the **Add Object** button and search for the **_SYS_STATISTICS** object. Notice you can also filter by object type and schema. Select the object **_SYS_STATISTICS** and Click the **SELECT** button to dismiss the dialog.
+
+    ![Select Object Privileges](./images/6-16_Role-SelectObject.png)
+
+17. Now from the Add *Objects with Privileges* dialog, scroll down until you see **SELECT** and check it. Click **OK** to return to the *Role Management* app.
+
+    ![Add Object with Privileges](./images/6-17_Role-AddObject.png)
+
+18. Click the **Save** button to complete the operation of adding the object privilege.
+
+    ![Object Privileges](./images/6-18_Role-ObjectPrivileges.png)
+
+19. Let's now assign the newly created *TECHNICAL_USER_ROLE* to our user *TECHNICAL_USER*. On the drop-down menu from the cockpit's toolbar (top left), click on **Role Management** and select **Assign Roles** from the menu to navigate to that app.
+
+    ![Role Management App Lateral Navigation](./images/6-19_RoleMgmtLateralNavigation.png)
+
+20. You are now in the **Role Assignment** app, where you can search based on either users or roles. Search for and select the user *TECHNICAL_USER* and click the **Edit** button.
+
+    ![Role Assignment App](./images/6-20_RoleAssignment.png)
+
+21. Click the **Add** button and search for the role **TECHNICAL_USER_ROLE** that we created earlier. Select that role and click the **Select** button.
+
+    ![Select Roles](./images/6-21_RoleAssignment-SelectRoles.png)
+
+22. Click the **Save** button to complete the operation of assigning the role to the user.
+
+    ![Assign Role](./images/6-22_RoleAssignment-SaveAssignRole.png)
+
+23. On the drop-down menu from the cockpit's toolbar (top left), click on **Role Assignment** and select **Database Overview** from the menu to return to the Database Overview page.
+
+24. There is one more link in the *User & Role Management* card and that is *Privilege Assignment*. This application allows you to assign the same privileges that you saw in the Role Assignment application, but this time without having to create a role for the user. This is useful for unique users that require a different combination of privileges than the main reusable roles.
+
+
+Continue to [Exercise 7: Performance Management](../ex_7)
