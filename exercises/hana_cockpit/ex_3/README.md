@@ -53,7 +53,7 @@ In this exercise, you review the information displayed in the Services card, exa
 
     ![Tables](./images/3-10_MemoryAnalysisApp-Tables.png)
 
-11. On the drop-down menu from the cockpit's toolbar (top right), click on **Memory Analysis** and select **Database Overview** from the menu to return to the Database Overview page.
+11. On the drop-down menu from the cockpit's toolbar (top left), click on **Memory Analysis** and select **Database Overview** from the menu to return to the Database Overview page.
 
     ![Lateral Navigation](./images/3-11_MemoryAnalysisApp-LateralNavigation.png)
 

@@ -1,4 +1,4 @@
-# Exercise 5: Security Basics
+# Exercise 6: Security Basics
 
 Security administration encompasses a wide range of topics, from monitoring critical security settings, to auditing activity in the SAP HANA database, to managing SAP HANA users and roles.
 This exercise concentrates on user, role and user group management to provide you with a basic understanding of this important task of database administration.
@@ -45,7 +45,27 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
     ![Create User](./images/6-08_CreateUser.png)
 
+9. You are now in the  **User Management** app and can provide the details for the new user. Notice the *user group* field is pre-populated and that's because we navigated here from the *User Group Management* app. Create a new user with the following attributes:
 
+    - User name: TECHNICAL_USER
+    - User group: TECHNICAL_USER_GROUP
+    - Select the password authentication mechanism check box
+    - Password: Abcd1234
+    - Password confirmation: Abcd1234
+    - Force password change on next logon: No
 
+    Click **Save** in the bottom right corner.
+
+    ![Create User Dialog](./images/6-09_CreateUserDialog.png)
+
+10. On the drop-down menu from the cockpit's toolbar (top left), click on **User Management** and select **Role Management** from the menu to return to navigate to that app.
+
+    ![Create User Dialog](./images/6-10_UserMgmtLateralNavigation.png)
+
+11. You are now in the** Role Management** app. Click the **plus sign (+)** and create a new role with the following attributes:
+
+    - Role: TECHNICAL_USER_ROLE
+
+    ![Create Role](./images/6-11_CreateRole.png)
 
 Continue to [Exercise 7: ](../ex_7)
