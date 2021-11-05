@@ -54,11 +54,10 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
-5. Let's create two new database users by running the following commands in the SQL console.
+5. Let's create a new database users by running the following commands in the SQL console.
 
    ```SQL
    CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
-   CREATE USER USER2 PASSWORD Password2 no force_first_password_change;
    ```
 
    ![](images/CreateUsers.png)
