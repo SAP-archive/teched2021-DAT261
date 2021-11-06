@@ -6,7 +6,7 @@ In this exercise, we will explore the statement library and demonstrate how to i
 
     ![](images/OpenStatementLibrary.png)
 
-    The contents of the statement library are associated with the user used to log into the SAP BTP Cockpit and not a specfic database.
+    The contents of the statement library are associated with the user used to log into the SAP BTP Cockpit and not a specific database.
 
 2. Statements can be either system or user statements.  System statements are not editable and are from the monitoring view M_SYSTEM_INFORMATION_STATEMENTS.
 
@@ -55,25 +55,21 @@ In this exercise, we will explore the statement library and demonstrate how to i
 
     ![](images/SQLStatementCollectionNote.png)
 
-    Once unzipped, it can be seen that there are statements for different versions of SAP HANA. 
+    > Note that the downloaded zip file contains over 470 statements, some of which are for specific versions of SAP HANA.  The following steps import all statements, but you may wish to create your own zip containing a subset of the statements.  
+    > 
+    > ![](images/SQLCollectionVersions.png)
 
-    The following steps import statements that apply specifically to SAP HANA Cloud.
+    > Statements ending in _SHC specifically apply to SAP HANA Cloud.
 
-    * Create a zip of statements that contain **SHC**.
-        
-        ![](images/CreateZip.png)
-
-    * Import the zip file.
+    * In the statement library, select the **Import** toolbar item to import the previously downloaded zip file.
 
         ![](images/Import.png)
 
-        ![](images/ImportSHCStatements.png)
-
-    * Execute a statement such as the **HANA_Configuration_MiniChecks_SHC**.
+    * Find and then execute the  **HANA_Configuration_MiniChecks_SHC** statement.  Note it may take a minute to complete. 
     
         ![](images/HANAConfigurationMiniChecks.png)
 
-        Notice below that the results show the value for a check, what the expected range of values is for each check, an X if the value is outside the expected range, and an SAP Note to reference for further information. 
+    * Notice below that the results show the value for a check, what the expected range of values is for each check, an X if the value is outside the expected range, and an SAP Note to reference for further information. 
 
         ![](images/HANAConfigurationMiniChecksResult.png)
 
