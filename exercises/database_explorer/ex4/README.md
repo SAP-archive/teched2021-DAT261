@@ -6,24 +6,29 @@ In this exercise, we will explore the statement library and demonstrate how to i
 
     ![](images/OpenStatementLibrary.png)
 
-    The statement library is associated with the user used to log into the SAP BTP Cockpit.
+    The contents of the statement library are associated with the user used to log into the SAP BTP Cockpit and not a specfic database.
 
 2. Statements can be either system or user statements.  System statements are not editable and are from the monitoring view M_SYSTEM_INFORMATION_STATEMENTS.
 
     ![](images/SystemStatements.png)
 
-    The following is an example result of running the **Connection Attempts and Status** system statement after a successful and then failed connect attempt.
+    The following is an example result of running the **Connection Attempts and Status** system statement after a successful and then two failed connect attempts.
 
     ![](images/SystemStatementsConnections.png)
 
     ```sql
     CONNECT USER1 PASSWORD Password1;
     CONNECT USER1 PASSWORD WrongPwd;
+    CONNECT USER1 PASSWORD WrongPwd2;
+
+    (SELECT 'CURRENT_STATUS' AS STATUS, USER_NAME, LAST_SUCCESSFUL_CONNECT, LAST_INVALID_CONNECT_ATTEMPT, INVALID_CONNECT_ATTEMPTS FROM SYS.USERS WHERE USER_NAME NOT LIKE '_SYS%' AND USER_NAME != 'SYS' UNION (SELECT 'HISTORIC_CONNECT_ATTEMPTS' AS STATUS, USER_NAME, SUCCESSFUL_CONNECT_TIME AS LAST_SUCCESSFUL_CONNECT, NULL, INVALID_CONNECT_ATTEMPTS FROM SYS.INVALID_CONNECT_ATTEMPTS WHERE USER_NAME NOT LIKE '_SYS%' AND USER_NAME != 'SYS')) ORDER BY USER_NAME, STATUS;
     ```
 
-3. User statements can be added from the SQL console.
+    >The SQL calls the system view [INVALID_CONNECDT_ATTEMPTS](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/latest/en-US/ea60f23498704b6ea225f44595151f61.html) which provides the number of invalid connection attempts between two successful connections.
 
-    ![](images/AddUserStatement.png)
+3. User statements can be added from the SQL console.  
+
+    Paste the below contents into a SQL Console, rename the tab to Future Check-ins, and press the **Add to Statement Library** toolbar.
 
     ```sql
     /* 
@@ -38,7 +43,11 @@ In this exercise, we will explore the statement library and demonstrate how to i
         WHERE ARRIVAL >= CURRENT_DATE ORDER BY ARRIVAL ASC;
     ```
 
+    ![](images/AddUserStatement.png)
+
     >Note that the SQL console tab name is used for the name in the statement library.
+
+    Notice that a new user statement has been added to the statement library.
 
     ![](images/UserStatementAdded.png)
 

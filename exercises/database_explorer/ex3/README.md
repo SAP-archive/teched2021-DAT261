@@ -24,7 +24,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/TableColumns.png)
 
-    The runtime information of a table can also be viewed.
+    The runtime information of a table such as the number of records, or the memory consumption can also be viewed.
 
     ![](images/RuntimeInformation.png)
 
@@ -32,7 +32,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/GenerateCreate.png)
 
-4. The dependencies of an object can be shown.  
+4. The dependencies of an object can be shown.  As an example, the ROOM table is shown below as it has a foreign key reference to the HOTEL table. 
 
     ![](images/FindDepencies.png)
 
@@ -48,13 +48,15 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/ClickOnStoredProcedure.png)
 
-    Notice that there is an option to call the stored procedure.
+    Once opened, notice that there is an option to call the stored procedure.
 
     ![](images/CallStoredProcedure1.png)
+
+    This stored procedure takes an input parameter and when executed will generate 100 new reservations.
  
     ![](images/CallStoredProcedure2.png)
 
-7. Additional functionality is available from the catalog browser such as **Analyze SQLScript Code** which can provide suggestions for code quality, security, or performance and **Open for Debugging** which enables stored procedures, functions, or anonymous blocks to be debugged. 
+7. Additional functionality is available from the context menu of a stored procedure such as **Analyze SQLScript Code** which can provide suggestions for code quality, security, or performance and **Open for Debugging** which enables stored procedures, functions, or anonymous blocks to be debugged. 
 
     ![](images/AnalyzeSQLScriptCode.png)
 
