@@ -25,7 +25,7 @@ Database backups are crucial to ensuring data stays safe. In the SAP HANA Cloud 
 
 6. Select **Last 24 Hours** and click on **OK** to apply the chosen time frame. Notice you can also select a custom time frame.
 
-    ![Backups for Last 24 Hours](./images/8-06_BackupsLastFourDay.png)
+    ![Backups for Last 24 Hours](./images/8-06_BackupsLastDay.png)
 
 7. Switch the view from horizontal stacked chart to a table view by clicking the **table-view** button above the table and to the right.
 
