@@ -20,7 +20,7 @@ In your SAP HANA Cloud account (trial or non-trial), perform the following steps
 6.	Enter and confirm your administrator password – ***PLEASE REMEMBER IT!***
 7.	Click the button **"Create Instance"** at the bottom
 
-A new SAP HANA Cloud instance will be created, and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").
+A new SAP HANA Cloud instance will be created and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").
 
 # SAP HANA Cloud Central
 
@@ -45,7 +45,7 @@ The SAP HANA cockpit tool provides administration and monitoring of individual S
 
 ## Requirements
 
-Completed [Exercise 1 - Create Instances](exercises/hana_cloud_central/ex2/) or have access to a SAP HANA Cloud instance.
+Completed the SAP HANA Cloud Central [Exercise 1 - Create Instances](exercises/hana_cloud_central/ex2/) or have access to a SAP HANA Cloud instance.
 
 ## SAP HANA Cockpit Exercises
 
@@ -70,7 +70,7 @@ The SAP HANA database explorer is a web-based tool for browsing and working with
 
 ## Requirements
 
-Completed [Exercise 1 - Create Instances](exercises/hana_cloud_central/ex2/) or have access to a SAP HANA Cloud instance.
+Completed the SAP HANA Cloud Central [Exercise 1 - Create Instances](exercises/hana_cloud_central/ex2/) or have access to a SAP HANA Cloud instance.
 
 
 ## SAP HANA Database Explorer Exercises

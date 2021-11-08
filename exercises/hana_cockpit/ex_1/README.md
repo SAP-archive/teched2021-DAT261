@@ -8,7 +8,7 @@ This exercise will teach you the basics of navigating the Database Overview page
 
 1. Navigate to your SAP HANA Cloud Trial instance from the SAP BTP Cockpit ("trial" subaccount and "dev" space). Open the SAP HANA cockpit by clicking item **Open in SAP HANA Cockpit** from the **Actions** menu.
 
-    **Note:** *If this is the first time you launch the SAP HANA cockpit or SAP HANA Database Explorer, you will be asked to enter your credentials. The default username is DBADMIN and the password is what you entered when creating the instance.*
+    **Note:** *If this is the first time you launch the SAP HANA cockpit or SAP HANA database explorer, you will be asked to enter your credentials. The default username is DBADMIN and the password is what you entered when creating the instance.*
 
     ![SAP BTP Cockpit](./images/1-01_BTPCockpit.png)
 
