@@ -8,7 +8,7 @@ In this section we will discuss about how to start, stop, and upgrade instances 
     ![](./images/1.png)
     </kbd>
     
-2. Click on Stop. A pop up shows up, confirming if you want to continue with stopping the instance. Note: Please do not stop the instance now so that we can proceed with other actions. Click on 'Cancel'.
+2. Click on Stop. A pop up shows up, confirming if you want to continue with stopping the instance. **Note: Please do not stop the instance now so that we can proceed with other actions. Click on Cancel.**
     <kbd>
     ![](./images/2.png)
     </kbd>
