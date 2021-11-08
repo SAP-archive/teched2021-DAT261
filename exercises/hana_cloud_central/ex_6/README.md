@@ -7,7 +7,7 @@ In this section, we will see how to delete an instance that we have created and 
     ![](./images_new/1.png)
     </kbd>
     
-2. Click on Delete. A Delete pop up comes up, asking to type ‘DELETE’. **Note: Please do not delete the instance now as it will be used in the subsequent exercises.**
+2. Click on Delete. A Delete pop up comes up, asking to type ‘DELETE’. **Note: Please do not delete the instance now as it will be used in the subsequent exercises.Click on Cancel.**
     <kbd>
     ![](./images_new/2.png)
     </kbd>
