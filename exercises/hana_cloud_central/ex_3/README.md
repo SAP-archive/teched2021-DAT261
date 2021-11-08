@@ -7,7 +7,7 @@ In this chapter, we will discuss about the Edit functionality across all the ins
     ![](./images_new/1.png)
     </kbd>
     
-2. An Edit instance pop up opens and you can see all the relevant fields that can be modified. These are the similar field that we already discussed while we created the instance.
+2. An Edit instance pop up opens and you can see all the relevant fields that can be modified.
     <kbd>
     ![](./images_new/2.png)
     </kbd>
