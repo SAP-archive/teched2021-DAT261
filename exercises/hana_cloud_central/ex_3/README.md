@@ -7,12 +7,12 @@ In this chapter, we will discuss about the Edit functionality across all the ins
     ![](./images_new/1.png)
     </kbd>
     
-2. An Edit instance pop up opens and you can see all the relevant fields that can be modified.
+2. An Edit instance dialog opens and you can see all the relevant fields that can be modified.
     <kbd>
     ![](./images_new/2.png)
     </kbd>
     
-3. As we scroll down the pop up, we see other fields that we can edit. Also, we can notice that, there are help icons that will lead to more details like what values the fields can take, what settings are preferable etc.
+3. As we scroll down the dialog, we see other fields that we can edit. Also, we can notice that, there are help icons that will lead to more details like what values the fields can take, what settings are preferable etc.
     <kbd>
     ![](./images_new/3.png)
     </kbd>
