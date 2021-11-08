@@ -1,6 +1,6 @@
 # Exercise 3 - Edit Instances
 
-In this chapter, we will discuss about the Edit functionality across all the instance types. An existing instance can be modified later as per requirement through the Edit functionality. Let us start by editing a SAP HANA Database instance first.
+In this chapter, we will discuss about the Edit functionality across all the instance types. An existing instance can be modified later as per requirement through the Edit functionality. Let us start by editing an SAP HANA Cloud, SAP HANA Database instance first.
 
 1. Click on the '...' icon to see the list of Actions that can be performed on an SAP HANA Database instance. Click on Edit.
     <kbd>
