@@ -48,4 +48,4 @@ We manage workload in SAP HANA by creating workload classes and workload class m
 
 Congratulations! You have completed the exercises for the SAP HANA cockpit and you are now able to monitor and manage individual SAP HANA databases.
 
-Continue to [SAP HANA database explorer - Exercise 1](../../database_explrer/ex1)
+Continue to [SAP HANA database explorer - Exercise 1](../../database_explorer/ex1)
