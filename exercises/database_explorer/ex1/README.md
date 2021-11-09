@@ -33,8 +33,8 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ![](images/SchemaMenu.png)
 
 
-4. Users may benefit from visual clues identifying  production databases. This next step will demonstrate how to label production databases, and how to remove the production label from a database. To enable this use SQL console to run the statements below. It is essential to refresh your browser to update the visual cues.
-
+4. Users may benefit from visual clues identifying  production databases. This next step will demonstrate how to label production databases, and how to remove the production label from a database. To enable this use SQL console to run the statements below and refresh your browser.
+   
     >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  
     
     >An instance of a SQL console is associated with the selected database.
@@ -48,6 +48,8 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/ProductionLabel.png)
 
+    >Note: Remember to refresh your browser window once you've run the above statement.
+
 
     As this database is not a production database, we can turn off this setting by executing the below SQL statement.
 
@@ -55,9 +57,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
-5. Users may be interested in adjusting 
-
-5. Let's create a new database users by running the following commands in the SQL console.
+5. Let's create new database users by running the following commands in the SQL console.
 
    ```SQL
    CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
@@ -66,7 +66,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
    ![](images/CreateUsers.png)
 
-6. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed left panel database context menu. Select the **Add Database with Different User**. Use the credentials USER1 and Password1.
+6. We will create a new database connection with one of our new users. To do this, right-click over your existing database connection listed left panel database context menu. Select the **Add Database with Different User**. Use the credentials USER1 and Password1.
 
     ![](images/NewDBUser.png)
 

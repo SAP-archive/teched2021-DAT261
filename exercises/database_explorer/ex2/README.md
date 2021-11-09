@@ -32,7 +32,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/ViewHistory.png)
 
-    > Note:  Items from the history can be dragged into the SQL console.  
+    > Note:  Items from the history can be clicked and dragged into the SQL console.  
 
 2. For the rest of the exercise, we will use SQL console associated with the USER1 connection.  Change the connection to use **DEMO_HANA_DB (USER1)** instead as shown below. Click the highlighted icon, and select the User1 connection.
 
@@ -40,7 +40,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/SqlConsole.png)
 
-3. Let's verify the SQL Console settings for this connection. Navigate to the database explorer settings icon on the left of your screen, and select SQL Console. Confirm that AutoSave settings are checked off. Click **Save** and return to database explorer.
+3. Let's verify the SQL Console settings for this connection. Navigate to the database explorer settings icon on the left of your screen, and select SQL Console. Confirm that AutoSave is enabled. Click **Save** and return to database explorer.
    
    ![](images/DBX_Settings.png)
 
@@ -194,7 +194,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/ViewBackgroundActivity.png)
 
-    >Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
+    >Note: Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
     
     >![](images/RunOnMultiple.png)
 
@@ -247,7 +247,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
  > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
 
- Copy the following SQL into the SQL console to try out the Statement Help panel.
+ Copy the following into the SQL console to try out the Statement Help panel.
 
  ```SQL
  SELECT
@@ -265,7 +265,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
  ![](images/StatementHelp.png)
 
 
-11. Execute the following SQL Statements to create a few some views, functions and stored procedures to further populate the HOTEL schema.  
+11. Execute the following SQL Statements to create a number of views, functions, and stored procedures to further populate the HOTEL schema.  
 
     ```SQL
     CREATE OR REPLACE VIEW HOTEL.RESERVATION_VIEW AS
@@ -371,7 +371,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     A chart will be displayed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
 
-    >Note: The Analysis tab contains a number of features, including the ability to view the SQL command used for the chart and the ability to export the chart or data from SAO HANA database explorer.
+    >Note: The Analysis tab contains a number of features, including the ability to view the SQL command used for the chart and the ability to export the chart or data from SAP HANA database explorer.
 
     ![](images/Analysis.png)
 

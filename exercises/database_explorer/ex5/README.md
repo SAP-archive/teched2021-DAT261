@@ -2,7 +2,7 @@
 
 In this exercise, we will mention some additional areas of functionality and provide links to where further exercises can be found around the topics of diagnostic files, graph and spatial, import/export, data lake connections, and remote sources.
 
-> Note: The following steps are meant to introduce the topics.  It is not intended that they be
+> Note: The following steps are meant to introduce the topics.  It is not intended that they be completed as activities.
 
 1. Trace file information can be examined using either SQL queries or using the Database Diagnostic Files.  
 
