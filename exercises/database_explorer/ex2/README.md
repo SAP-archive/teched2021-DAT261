@@ -245,24 +245,24 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
 10.  On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
 
-    > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
+ > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
 
-    Copy the following SQL into the SQL console to try out the Statement Help panel.
+ Copy the following SQL into the SQL console to try out the Statement Help panel.
 
-    ```SQL
-    SELECT
-    H.NAME AS HOTEL_NAME,
-    R.TYPE,
-    R.FREE,
-    R.PRICE
-    FROM
-    HOTEL.ROOM AS R
-    LEFT OUTER JOIN
-    HOTEL.HOTEL AS H
-    ON R.HNO = H.HNO;
-    ```
+ ```SQL
+ SELECT
+ H.NAME AS HOTEL_NAME,
+ R.TYPE,
+ R.FREE,
+ R.PRICE
+ FROM
+ HOTEL.ROOM AS R
+ LEFT OUTER JOIN
+ HOTEL.HOTEL AS H
+ ON R.HNO = H.HNO;
+ ```
 
-    ![](images/StatementHelp.png)
+ ![](images/StatementHelp.png)
 
 
 11. Execute the following SQL Statements to create a few some views, functions and stored procedures to further populate the HOTEL schema.  
@@ -358,7 +358,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     PRTLIB:PRINT_LINE('Rows inserted: ' || val);
     END;
     ```
-12.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select **Catalog**, then **Tables**, and search for the Reservations table.
+12. To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select **Catalog**, then **Tables**, and search for the Reservations table.
 
     ![](images/OpenData.png)
 
@@ -368,7 +368,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     2. Drag and drop the Type attribute into the Label Axis section. 
     3. Drag and drop the RESNO field into the Value Axis section. 
     4. Change the operation on RESNO from SUM to **COUNT**.  
-    
+
     A chart will be displayed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
 
     >Note: The Analysis tab contains a number of features, including the ability to view the SQL command used for the chart and the ability to export the chart or data from SAO HANA database explorer.
