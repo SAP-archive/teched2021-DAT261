@@ -24,16 +24,22 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     *In this example, the database is from a release in July 2021, week 30 of the year.*
 
-3. At the top of the left pane, click the arrow next to the database icon, to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files).
+3. Near the top of the database context menu on the left, click the arrow next to the database icon, to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files).
 
     ![](images/Catalog.png)
 
-    Expand **Catalog** then **Views**.  Directly above the list of views are search bars for schema and objects.  Search for the **SYS** schema and views that begin with **M_HOST**. Right-click and select **Open Data** to access those views. More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html).
+    Expand **Catalog** then select **Views**.  Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. Right-click and select **Open Data** to access those views. More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html).
 
     ![](images/SchemaMenu.png)
 
 
-4. Users may benefit from visual clues identifying  production databases. To enable this, run the SQL statements below and refresh the browser.  
+4. Users may benefit from visual clues identifying  production databases. This next step will demonstrate how to label production databases, and how to remove the production label from a database. To enable this use SQL console to run the statements below. It is essential to refresh your browser to update the visual cues.
+
+    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  
+    
+    >An instance of a SQL console is associated with the selected database.
+
+    >To execute SQL commands, click on the green run arrow.
 
     ```SQL
     SELECT * FROM M_INIFILE_CONTENTS WHERE KEY = 'usage';
@@ -42,11 +48,6 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/ProductionLabel.png)
 
-    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  
-    
-    >An instance of a SQL console is associated with the selected database.
-
-    >To execute SQL commands, click on the green run arrow.
 
     As this database is not a production database, we can turn off this setting by executing the below SQL statement.
 
@@ -54,15 +55,18 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
+5. Users may be interested in adjusting 
+
 5. Let's create a new database users by running the following commands in the SQL console.
 
    ```SQL
    CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
+   CREATE USER USER2 PASSWORD Password2 no force_first_password_change;
    ```
 
    ![](images/CreateUsers.png)
 
-6. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed on the left panel. Select the **Add Database with Different User**. Use the credentials USER1 and Password1.
+6. We will create a new database connection with a different user. To do this, right-click over your existing database connection listed left panel database context menu. Select the **Add Database with Different User**. Use the credentials USER1 and Password1.
 
     ![](images/NewDBUser.png)
 

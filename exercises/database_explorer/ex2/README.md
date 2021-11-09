@@ -4,7 +4,7 @@ In this exercise, we will use SAP HANA database explorer's SQL console. Steps fr
 For the rest of this workshop, we will be creating and working with a sample schema named **HOTEL**. This will represent a basic hotel administration system.
 
 
-1. Create a new schema by running the SQL command below. 
+1. Using the DBAdmin connection, create a new schema by running the SQL command below. 
 
     ```SQL
     CREATE SCHEMA HOTEL;
@@ -16,7 +16,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
    ![](images/CreateSchema.png)
 
-    Let's assign the users we created in the last exercise to some roles with privileges on the HOTEL schema.
+    Continuing the use of the DBAdmin connection, let's assign the users we created in the last exercise to roles with privileges on the HOTEL schema.
 
     ```SQL
     CREATE ROLE HOTEL_ADMIN;
@@ -34,13 +34,17 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     > Note:  Items from the history can be dragged into the SQL console.  
 
-2. For the rest of the exercise, we will use SQL console associated with the USER1 connection.  Change the connection to use **DEMO_HANA_DB (USER1)** instead as shown below.
-
-    ![](images/SqlConsole.png)
+2. For the rest of the exercise, we will use SQL console associated with the USER1 connection.  Change the connection to use **DEMO_HANA_DB (USER1)** instead as shown below. Click the highlighted icon, and select the User1 connection.
 
     >Note: The SQL console can be opened in full-screen mode by double tapping on the tab name. There is also an option to rename tabs in the right-click context menu.
 
-3. Populate the HOTEL schema with some tables. Run the following SQL statements.
+    ![](images/SqlConsole.png)
+
+3. Let's verify the SQL Console settings for this connection. Navigate to the database explorer settings icon on the left of your screen, and select SQL Console. Confirm that AutoSave settings are checked off. Click **Save** and return to database explorer.
+   
+   ![](images/DBX_Settings.png)
+
+4. Populate the HOTEL schema with some tables. Run the following SQL statements.
 
     ```SQL
     CREATE COLUMN TABLE HOTEL.HOTEL(
@@ -91,9 +95,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
     );
     ```
 
-4.  Add data into your tables by running the following SQL statements. If we anticipate a command to take some time, we can choose to run it as a background activity while completing other tasks.  To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**.
-
-    ![](images/BackgroundActivity.png)
+5.  Add data into your tables by running the following SQL statements. If we anticipate a command to take some time, we can choose to run it as a background activity while completing other tasks.  To do this, click the small arrow beside the green arrow that runs commands. From the dropdown that appears, select **Run as a Background Activity**. You will be prompted to specify how your system should respond to errors as shown below.
 
     ```SQL
     INSERT INTO HOTEL.HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -184,20 +186,27 @@ For the rest of this workshop, we will be creating and working with a sample sch
     INSERT INTO HOTEL.MAINTENANCE VALUES(11, 25, 'Renovate the bar area.  Replace TV and speakers', '2020-11-29', 'TV and Audio Superstore');
     INSERT INTO HOTEL.MAINTENANCE VALUES(12, 26, 'Roof repair due to storm', null, null);
     ```
+    ![](images/BackgroundActivity.png)
 
-    The Background Activities Monitor can be used to view the status.
+    ![](images/BackgroundActivityPopUp.png)
+
+    The Background Activities Monitor can be used to view the status. The Open Details icon will allow you to view the output of the commands. Once a command has been run as a Background Activity, SQL console will close the connection used to run the command. Reopen the connection before proceeding.
 
     ![](images/ViewBackgroundActivity.png)
 
     >Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
-    >
+    
     >![](images/RunOnMultiple.png)
 
-5.  A list of keyboard shortcuts can be found by right-clicking within the SQL console window.
+6. Find and Replace is available within a SQL console. The keyboard shortcut for this tool is **Ctrl+F**.  Once the Find tool appears on your screen, click the **+** sign to expand the Replace option.
+
+    ![](images/FindReplace.png)
+
+7.  A list of keyboard shortcuts can be found by right-clicking and selecting **Keyboard Shortcuts** within the SQL console window.
 
     ![](images/KeyboardShortcuts.png)
 
-    Navigate back to the SQL console and copy the below command.  Highlight the statement using the mouse.  Type **Ctrl+Alt+U** to make the text uppercase, and F9 to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2020 or later.
+    Navigate back to the SQL console and copy the below command.  Highlight the statement using the mouse.  Type **Ctrl+Alt+U** to make the text uppercase, and **F9** to run the current statement. This statement will create a partition that contains older reservations and one that contains reservations made in 2020 or later.
 
      ```SQL
     alter table hotel.reservation partition by range(arrival)
@@ -224,36 +233,19 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-6.  Text completion is a tool available within the SQL console. To use this feature type ``SE`` and then use Ctrl+Space on your keyboard to view a list of options. You can also type  ``SELECT * FROM HOTEL.RE`` and use Ctrl+Space on your keyboard to view a list of available tables.
-
+8.  Text completion is a tool available within the SQL console. To use this feature type  ``SELECT * FROM HOTEL.RE`` and then use **Ctrl+Space** on your keyboard to view a list of recommended tables to complete your statement. You can also type only ``SE`` and use **Ctrl+Space** to view a wide variety of options for statements.
+ 
     ![](images/CodeCompletion.png)
 
-7.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select Catalog, then Tables, and search for the Reservations table.
 
-    ![](images/OpenData.png)
-
-    Once found, right-click on Reservations and select **Open Data**.
-
-    1. At the top of your screen, select the **Analysis** tab. 
-    2. Drag and drop the Type attribute into the Label Axis section. 
-    3. Drag and drop the RESNO field into the Value Axis section. 
-    4. Change the operation on RESNO from SUM to **COUNT**.  
-    
-    A chart will be displayed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
-
-    ![](images/Analysis.png)
-
-8. Objects from the catalog or database browser can be dragged onto a SQL console.  Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu.
+9. Objects from the catalog or database browser can be dragged onto a SQL console.  Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu. To find the HOTEL.CUSTOMER table, use the search fields on the left to specify the HOTEL schema and CUSTOMER table.
 
     ![](images/Drag_Drop.png)
 
-9. Find and Replace is available within a SQL console. The keyboard shortcut for this tool is Ctrl+F.  Once the Find tool appears on your screen, click the + sign to expand the Replace option.
 
-    ![](images/FindReplace.png)
+10.  On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
 
-10. On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
-
-    ![](images/StatementHelp.png)
+    > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
 
     Copy the following SQL into the SQL console to try out the Statement Help panel.
 
@@ -270,9 +262,10 @@ For the rest of this workshop, we will be creating and working with a sample sch
     ON R.HNO = H.HNO;
     ```
 
-    > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
+    ![](images/StatementHelp.png)
 
-11. Execute the following SQL Statements to create a few some views, functions and stored procedures to futher populate the HOTEL schema.  
+
+11. Execute the following SQL Statements to create a few some views, functions and stored procedures to further populate the HOTEL schema.  
 
     ```SQL
     CREATE OR REPLACE VIEW HOTEL.RESERVATION_VIEW AS
@@ -365,6 +358,23 @@ For the rest of this workshop, we will be creating and working with a sample sch
     PRTLIB:PRINT_LINE('Rows inserted: ' || val);
     END;
     ```
+12.  To understand your data better, let's view an analysis of the Reservations table. Using the navigator on the left, select **Catalog**, then **Tables**, and search for the Reservations table.
+
+    ![](images/OpenData.png)
+
+    Once found, right-click on Reservations and select **Open Data**.
+
+    1. At the top of your screen, select the **Analysis** tab. 
+    2. Drag and drop the Type attribute into the Label Axis section. 
+    3. Drag and drop the RESNO field into the Value Axis section. 
+    4. Change the operation on RESNO from SUM to **COUNT**.  
+    
+    A chart will be displayed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
+
+    >Note: The Analysis tab contains a number of features, including the ability to view the SQL command used for the chart and the ability to export the chart or data from SAO HANA database explorer.
+
+    ![](images/Analysis.png)
+
 
 This concludes the exercise on the using SQL console.
 
