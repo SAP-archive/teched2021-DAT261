@@ -15,7 +15,7 @@ In this exercise, we will mention some additional areas of functionality and pro
     ```SQL
     SELECT * FROM M_TRACEFILES;
 
-    SELECT * FROM M_TRACEFILE_CONTENTS  WHERE HOST = '3a2ef55e-4214-4bd9-adfc-f547d8e2d384' AND FILE_NAME='indexserver_3a2ef55e-4214-4bd9-adfc-f547d8e2d384.30040.000.trc';
+    SELECT * FROM M_TRACEFILE_CONTENTS  WHERE HOST = '<instance_id>' AND FILE_NAME='<traceFileName>.trc';
 
     SELECT DB_USER, SCHEMA_NAME, START_TIME, STATEMENT_STRING, OBJECT_NAME FROM M_EXECUTED_STATEMENTS;
     ```
@@ -157,9 +157,12 @@ In this exercise, we will mention some additional areas of functionality and pro
 		CONFIGURATION 'Driver=libdbodbc17_r.so;host=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.iq.hdl.trial-XXXX.hanacloud.ondemand.com:443;ENC=TLS(tls_type=rsa;direct=yes)'
 			WITH CREDENTIAL TYPE 'PASSWORD'
 				USING 'user=HDLADMIN;password=myPassword1';
+    CALL PUBLIC.CHECK_REMOTE_SOURCE('HC_DL_TRIAL');
     ```
 
     ![](images/CreateRemoteSource.png)
+
+    >The host value can be found in the properties of the data lake IQ database connection.
 
     Once a remote source is created, virtual tables can be created that enable access to data that is stored in the remote system from the SAP HANA Cloud database.
 
