@@ -1,6 +1,6 @@
 # Exercise 5 - Further Steps with the SAP HANA Database Explorer
 
-In this exercise, we will mention some additional areas of functionality and provide links to where further exercises can be found around the topics of diagnostic files, graph and spatial, import/export, data lake connections, and remote sources.
+In this exercise, we will mention some additional areas of functionality and provide links to where further exercises can be found around the topics of diagnostic files, graph, spatial, import/export, data lake connections, and remote sources.
 
 > Note: The following steps are meant to introduce the topics.  It is not intended that they be completed as activities.
 
@@ -147,7 +147,7 @@ In this exercise, we will mention some additional areas of functionality and pro
     INSERT INTO TOURIST_REVIEWS(REVIEW_ID, REVIEW_DATE, DESTINATION_ID, DESTINATION_RATING, REVIEW) VALUES(2, '2019-02-02', 1, 4, 'We had an enjoyable meal.  The service and food was outstanding.  Would have liked to have slightly larger portions');
     ```
 
-6. Remote sources can be defined to connect to other data sources such as a data lake or an on-premise SAP HANA database from an SAP HANA Cloud database.  
+6. Remote sources can be defined to connect to other data sources such as a data lake or an on-premise SAP HANA database from an SAP HANA Cloud, SAP HANA database.  
 
     The following SQL statement executed in a SQL Console connected to an SAP HANA Cloud database creates a remote source to a data lake IQ.
 

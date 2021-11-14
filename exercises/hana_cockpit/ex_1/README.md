@@ -22,7 +22,7 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     Click on **Close** to dismiss the pop up.
 
-4. Below the toolbar you see the cockpit's collapsable header, where you'll find the status of the database, the database user you're connecting as, the host name, and a search bar. From the header, you can also change the database user (via the Choose Authentication button), enable single sign-on (via the Enble JWT SSO button) and open the SQL Console. You also change or filter the cards that appear on this page and save that as a new view.
+4. Below the toolbar you see the cockpit's collapsible header, where you'll find the status of the database, the database user you're connecting as, the host name, and a search bar. From the header, you can also change the database user (via the Choose Authentication button), enable single sign-on (via the Enable JWT SSO button) and open the SQL Console. You also change or filter the cards that appear on this page and save that as a new view.
 
     ![Header](./images/1-04_Header.png)
 

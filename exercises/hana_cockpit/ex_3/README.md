@@ -17,7 +17,7 @@ In this exercise, you review the information displayed in the Services card, exa
 
     ![Manage Services App](./images/3-02_ManageServicesApp.png)
 
-3. Let's personaliza the table a little by adding a column. Click the **Settings** button (gear icon above the table on the right).
+3. Let's personalize the table a little by adding a column. Click the **Settings** button (gear icon above the table on the right).
 
 4. Enter *used memory* in the search bar. Select **Used Memory (MB)** and click on **OK**.
 
@@ -34,7 +34,7 @@ In this exercise, you review the information displayed in the Services card, exa
     - Choose which host and service to examine
     - Change the units for the displayed values (MB, GB, or TB)
     - Select a time range to investigate, from the last 24 days to the last 6 weeks, or a custom range
-    - Examine the used memory by the top consumers, components, allocators and tbales
+    - Examine the used memory by the top consumers, components, allocators and tables
     - Examine out of memory events
     - Examine our of buffer events (when using SAP HANA native storage extensions)
     - The upper time chart visualizes the memory statistics. In addition to the total used memory by SAP HANA, you also see the allocation limits for the service and the host

@@ -44,7 +44,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/SearchAcrossAllDatabases.png)
 
-6. An object such as the stored procedure RESERVATION_GENERATOR can opened by clicking on it.  
+6. An object such as the stored procedure RESERVATION_GENERATOR can be opened by clicking on it.  
 
     ![](images/ClickOnStoredProcedure.png)
 

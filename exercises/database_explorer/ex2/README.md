@@ -40,7 +40,7 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/SqlConsole.png)
 
-3. Let's verify the SQL Console settings for this connection. Navigate to the database explorer settings icon on the left of your screen, and select SQL Console. Confirm that AutoSave is enabled. Click **Save** and return to database explorer.
+3. Examine the SQL Console preferences.  Navigate to the database explorer preferences icon on the left of your screen, and select **SQL Console**. Confirm that AutoSave is enabled. Click **Save** and return to database explorer.
    
    ![](images/DBX_Settings.png)
 
@@ -190,9 +190,11 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     ![](images/BackgroundActivityPopUp.png)
 
-    The Background Activities Monitor can be used to view the status. The Open Details icon will allow you to view the output of the commands. Once a command has been run as a Background Activity, SQL console will close the connection used to run the command. Reopen the connection before proceeding.
+    The Background Activities Monitor can be used to view the status. The Open Details icon will allow you to view the output of the commands. 
 
     ![](images/ViewBackgroundActivity.png)
+
+    Once a command has been run as a Background Activity, SQL console will close the connection used to run the command.  Reopen the connection before proceeding.
 
     >Note: Similar to running a script as a background activity, the **Run on Multiple Databases** is an option available to run SQL statements on multiple databases.
     
@@ -245,25 +247,24 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
 10.  On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
 
- > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
+    Copy the following into the SQL console to try out the Statement Help panel.
 
- Copy the following into the SQL console to try out the Statement Help panel.
+    ```SQL
+    SELECT
+    H.NAME AS HOTEL_NAME,
+    R.TYPE,
+    R.FREE,
+    R.PRICE
+    FROM
+    HOTEL.ROOM AS R
+    LEFT OUTER JOIN
+    HOTEL.HOTEL AS H
+    ON R.HNO = H.HNO;
+    ```
 
- ```SQL
- SELECT
- H.NAME AS HOTEL_NAME,
- R.TYPE,
- R.FREE,
- R.PRICE
- FROM
- HOTEL.ROOM AS R
- LEFT OUTER JOIN
- HOTEL.HOTEL AS H
- ON R.HNO = H.HNO;
- ```
+    ![](images/StatementHelp.png)
 
- ![](images/StatementHelp.png)
-
+    > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
 
 11. Execute the following SQL Statements to create a number of views, functions, and stored procedures to further populate the HOTEL schema.  
 
@@ -371,9 +372,9 @@ For the rest of this workshop, we will be creating and working with a sample sch
 
     A chart will be displayed. Alternate chart types can be selected at the top of the screen and the SQL used to for the chart is available. 
 
-    >Note: The Analysis tab contains a number of features, including the ability to view the SQL command used for the chart and the ability to export the chart or data from SAP HANA database explorer.
-
     ![](images/Analysis.png)
+
+    >Note: The Analysis tab contains a number of features, including the ability to view the SQL command used for the chart and the ability to export the chart or data from SAP HANA database explorer.
 
 
 This concludes the exercise on the using SQL console.

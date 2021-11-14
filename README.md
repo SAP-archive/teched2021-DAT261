@@ -41,7 +41,7 @@ To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigate
 
 # SAP HANA Cockpit
 
-The SAP HANA cockpit tool provides administration and monitoring of individual SAP HANA Cloud database instances. With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, SAP HANA services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also administer backsups, configuration parameters, table distribution, smart data access (SDA) and smart data integration (SDI). Finally, you can perform security tasks such as user & role management, data encryption, auditing, data anonymization and trust configuration. This workshop guides you through the basic operations to manage SAP HANA Cloud databases.
+The SAP HANA cockpit tool provides administration and monitoring of individual SAP HANA Cloud database instances. With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, SAP HANA services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also administer backups, configuration parameters, table distribution, smart data access (SDA) and smart data integration (SDI). Finally, you can perform security tasks such as user & role management, data encryption, auditing, data anonymization and trust configuration. This workshop guides you through the basic operations to manage SAP HANA Cloud databases.
 
 ## Requirements
 

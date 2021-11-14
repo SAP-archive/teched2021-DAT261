@@ -24,7 +24,7 @@ In this exercise, you'll examine the Alerts card, drill-down to obtain more info
 
 5. Click the **Back** button twice from the cockpit's toolbar to return to the Database Overview page.
 
-6. Locate the *Alerts* card and notice the alert count for Availabilty increased. The number of alerts depends on the database, but you’ll see at least one high and/or medium priority alert. Click on **Availability** to open the *Alerts* application.
+6. Locate the *Alerts* card and notice the alert count for Availability increased. The number of alerts depends on the database, but you’ll see at least one high and/or medium priority alert. Click on **Availability** to open the *Alerts* application.
 
     ![Availability Alert](./images/4-06_AvailabilityAlert.png)
 

@@ -24,7 +24,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     *In this example, the database is from a release in July 2021, week 30 of the year.*
 
-3. Near the top of the database context menu on the left, click the arrow next to the database icon, to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files).
+3. Click the arrow next to the database icon to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files).
 
     ![](images/Catalog.png)
 
@@ -69,6 +69,8 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 6. We will create a new database connection with one of our new users. To do this, right-click over your existing database connection listed left panel database context menu. Select the **Add Database with Different User**. Use the credentials USER1 and Password1.
 
     ![](images/NewDBUser.png)
+
+    A new database connection is created using USER1's credentials.
 
     ![](images/ConnectionUser1.png)
 
