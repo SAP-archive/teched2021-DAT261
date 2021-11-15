@@ -243,28 +243,27 @@ For the rest of this workshop, we will be creating and working with a sample sch
 9. Objects from the catalog or database browser can be dragged onto a SQL console.  Type ``SELECT * FROM`` and click and drag the HOTEL.CUSTOMER table from the menu. To find the HOTEL.CUSTOMER table, use the search fields on the left to specify the HOTEL schema and CUSTOMER table.
 
     ![](images/Drag_Drop.png)
+    
+10.  On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced. 
+    
+     Copy the following into the SQL console to try out the Statement Help panel.
+    
+     ```SQL
+     SELECT
+     H.NAME AS HOTEL_NAME,
+     R.TYPE,
+     R.FREE,
+     R.PRICE
+     FROM
+     HOTEL.ROOM AS R
+     LEFT OUTER JOIN
+     HOTEL.HOTEL AS H
+     ON R.HNO = H.HNO;
+     ```
 
+     ![](images/StatementHelp.png)
 
-10.  On the right-hand side of the SQL console, there is a Statement Help panel that provides more information about statement syntax, and any tables, functions, stored procedures, or SQL functions that have been referenced.
-
-    Copy the following into the SQL console to try out the Statement Help panel.
-
-    ```SQL
-    SELECT
-    H.NAME AS HOTEL_NAME,
-    R.TYPE,
-    R.FREE,
-    R.PRICE
-    FROM
-    HOTEL.ROOM AS R
-    LEFT OUTER JOIN
-    HOTEL.HOTEL AS H
-    ON R.HNO = H.HNO;
-    ```
-
-    ![](images/StatementHelp.png)
-
-    > Note: The Statement/Syntax section contains links to the SQL Reference Guide.
+     >Note: The Statement/Syntax section contains links to the SQL Reference Guide.
 
 11. Execute the following SQL Statements to create a number of views, functions, and stored procedures to further populate the HOTEL schema.  
 
