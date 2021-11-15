@@ -15,7 +15,7 @@ In this exercise, we will mention some additional areas of functionality and pro
     ```SQL
     SELECT * FROM M_TRACEFILES;
 
-    SELECT * FROM M_TRACEFILE_CONTENTS  WHERE HOST = '<instance_id>' AND FILE_NAME='<traceFileName>.trc';
+    SELECT * FROM M_TRACEFILE_CONTENTS  WHERE HOST = '<host>' AND FILE_NAME='<traceFileName>.trc';
 
     SELECT DB_USER, SCHEMA_NAME, START_TIME, STATEMENT_STRING, OBJECT_NAME FROM M_EXECUTED_STATEMENTS;
     ```
