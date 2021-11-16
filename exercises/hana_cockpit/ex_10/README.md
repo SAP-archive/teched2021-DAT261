@@ -33,7 +33,7 @@ We manage workload in SAP HANA by creating workload classes and workload class m
 
     ![Create Workload Mapping](./images/10-05_CreateWorkloadMapping.png)
 
-6. The newly created mapping appears in the table. Click the **Back** button to see the table of workload classes.
+6. The newly created mapping appears in the table. Click the **Back** button to return to the table displaying the workload classes.
 
     ![Sample Workload Class Mapping](./images/10-06_SampleMapping.png)
 
