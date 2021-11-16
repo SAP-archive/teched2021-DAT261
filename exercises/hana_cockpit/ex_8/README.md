@@ -10,7 +10,7 @@ Database backups are crucial to ensuring data stays safe. In the SAP HANA Cloud 
 
     ![Database Catalog in Horizontal Stacked Chart](./images/8-02_BackupCatalog-StackedChart.png)
 
-3. Click on the **horizontal bar for one of the backups** to get details on the disk space consumed by complete data backup and other backup types. Notice the amount of memory occupied by Log and Catalog Backups. Click **Close** button to close the pop up.
+3. Click on the **horizontal bar for one of the backups** to get details on the disk space consumed by complete data backup and other backup types. Notice the amount occupied by Log and Catalog Backups. Click **Close** button to close the pop up.
 
     ![Bar Details](./images/8-03_BackupCatalog-BarDetails.png)
 
