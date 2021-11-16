@@ -65,7 +65,7 @@ In this section, we will discuss about grouping, sorting, refreshing and other s
     ![](./images_new/13.png)
     </kbd>
     
-12. Click on the hyperlink available in the Replicas column. A popover appears with two buttons: Manage Services and Edit Replicas.
+12. Click on the hyperlink available in the Replicas column. A popover appears with two buttons: Manage Services and Edit Replicas. SAP HANA system replication is a mechanism for ensuring the high availability of your SAP HANA system. Through the continuous replication of data from a primary to a secondary system, including in-memory loading, system replication facilitates rapid failover in the event of a disaster. Productive operations can be resumed with minimal downtime. System replication can be set up or managed using the SAP HANA cockpit.
     <kbd>
     ![](./images_new/14.png)
     </kbd>
