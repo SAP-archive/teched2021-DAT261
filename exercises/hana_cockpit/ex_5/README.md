@@ -1,4 +1,4 @@
-# Exercise 5: Monitoring Databases
+# Exercise 5: Monitoring Memory Usage
 
 SAP HANA administrators must carefully monitor system computing resources to ensure optimal operation of the database. There are many metrics available to monitor in the SAP HANA cockpit, including memory, CPU and disk usage. You can view precise consumption details for those resources, as well as historical utilization information.
 

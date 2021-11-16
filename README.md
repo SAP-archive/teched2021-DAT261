@@ -54,7 +54,7 @@ Completed the SAP HANA Cloud Central [Exercise 1 - Create Instances](exercises/h
 - [Exercise 2 - Configuring Database Properties](exercises/hana_cockpit/ex_2/)
 - [Exercise 3 - Managing Services](exercises/hana_cockpit/ex_3/)
 - [Exercise 4 - Managing Alerts](exercises/hana_cockpit/ex_4/)
-- [Exercise 5 - Monitoring Databases](exercises/hana_cockpit/ex_5/)
+- [Exercise 5 - Monitoring Memory Usage](exercises/hana_cockpit/ex_5/)
 - [Exercise 6 - Security Basics](exercises/hana_cockpit/ex_6/)
 - [Exercise 7 - Performance Management](exercises/hana_cockpit/ex_7/)
 - [Exercise 8 - Database Backup](exercises/hana_cockpit/ex_8/)

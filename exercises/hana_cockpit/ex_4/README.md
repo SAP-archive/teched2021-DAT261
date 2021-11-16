@@ -38,4 +38,4 @@ In this exercise, you'll examine the Alerts card, drill-down to obtain more info
 
 9. Click the **Back** button at the top left to return to the Database Overview page.
 
-Continue to [Exercise 5: Monitoring Databases](../ex_5)
+Continue to [Exercise 5: Monitoring Memory Usage](../ex_5)
