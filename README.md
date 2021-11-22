@@ -1,4 +1,4 @@
-# DAT 261 Get Hands-On Experience with Administering and Operating SAP HANA Cloud
+# DAT261 - Get Hands-On Experience with Administering and Operating SAP HANA Cloud
 
 Welcome to the Hands-On Workshop session DAT261 – Administering and Operating SAP HANA Cloud!
 
