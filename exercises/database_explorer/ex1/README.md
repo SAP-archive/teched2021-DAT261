@@ -60,8 +60,8 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 5. Let's create new database users by running the following commands in the SQL console.
 
    ```SQL
-   CREATE USER USER1 PASSWORD Password1 no force_first_password_change;
-   CREATE USER USER2 PASSWORD Password2 no force_first_password_change;
+   CREATE USER USER1 PASSWORD Password1 no force_first_password_change SET USERGROUP DEFAULT;
+   CREATE USER USER2 PASSWORD Password2 no force_first_password_change SET USERGROUP DEFAULT;
    ```
 
    ![](images/CreateUsers.png)
