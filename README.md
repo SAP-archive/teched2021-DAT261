@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2021-DAT261)](https://api.reuse.software/info/github.com/SAP-samples/teched2021-DAT261)
+
 # DAT261 - Get Hands-On Experience with Administering and Operating SAP HANA Cloud
 
 Welcome to the Hands-On Workshop session DAT261 – Administering and Operating SAP HANA Cloud!
